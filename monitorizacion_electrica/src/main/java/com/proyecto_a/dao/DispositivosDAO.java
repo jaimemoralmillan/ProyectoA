@@ -44,6 +44,30 @@ public class DispositivosDAO {
         }
     }
 
+    //modificar la descripcion de un dispositivo (modificarDispositivo)
+
+    public static boolean modificarDescripcionDispositivo(int id, String descripcion) {
+
+        String sql = "UPDATE dispositivos SET descripcion= ? where idDispositivos = ?";
+
+        try (
+
+                Connection conn = Conexion.getConnection();
+                PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+            pstmt.setString(1, descripcion);
+            pstmt.setInt(2, id);
+            return pstmt.executeUpdate() > 0;
+
+        } catch (SQLException e) {
+
+            e.printStackTrace();
+            return false;
+
+        }
+    }
+
+
     // obtener todos los dispositivos
 
     public static ArrayList<Dispositivo> obtenerTodosDispositivos() {
