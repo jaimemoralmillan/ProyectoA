@@ -5,6 +5,7 @@ import com.google.gson.JsonParser;
 import com.proyecto_a.dao.PrecioElectricidadDAO;
 import com.proyecto_a.dto.PrecioElectricidad;
 
+
 public class LectorArchivosJson {
      public PrecioElectricidad extraerDatosJson(){
         PrecioElectricidad precioElectricidad = new PrecioElectricidad();

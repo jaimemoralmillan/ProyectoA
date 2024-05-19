@@ -25,6 +25,7 @@ public class GestorMonitorizacion {
     public boolean insertarPrecioElectricidad(PrecioElectricidad precioElectricidad) {
         return precioElectricidadDAO.insertarPrecioElectricidad(precioElectricidad);
     }
+    
 
     /*  Métodos para Libros
     public boolean agregarLibro(Libro libro) {

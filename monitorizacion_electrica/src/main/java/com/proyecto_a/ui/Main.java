@@ -10,7 +10,7 @@ public class Main {
         PrecioElectricidad precioElectricidad = new PrecioElectricidad();
         gestorMonitorizacion.extraerDatosJson();
         gestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
-
+        
         SwingUtilities.invokeLater(() -> {
             MonitorizacionGUI gui = new MonitorizacionGUI();
             gui.setVisible(true);

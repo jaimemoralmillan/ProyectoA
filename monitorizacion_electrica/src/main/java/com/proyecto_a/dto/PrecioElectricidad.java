@@ -6,7 +6,6 @@ public class PrecioElectricidad {
     private String fecha;
     private String hora;
     private float precioKwh;
-    
     // public PrecioElectricidad(){
     //     id=-1;
     //     fecha="";
