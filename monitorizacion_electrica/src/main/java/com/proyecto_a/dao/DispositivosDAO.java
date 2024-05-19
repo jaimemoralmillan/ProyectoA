@@ -26,7 +26,7 @@ public class DispositivosDAO {
 
     public static boolean eliminarDispositivo(int id) {
 
-        String sql = "DELETE FROM dispositivos where idDispositivos = ?";
+        String sql = "DELETE FROM dispositivos where idDispositivo = ?";
 
         try (
 
@@ -48,7 +48,7 @@ public class DispositivosDAO {
 
     public static boolean modificarDescripcionDispositivo(int id, String descripcion) {
 
-        String sql = "UPDATE dispositivos SET descripcion= ? where idDispositivos = ?";
+        String sql = "UPDATE dispositivos SET descripcion= ? where idDispositivo = ?";
 
         try (
 
@@ -82,7 +82,7 @@ public class DispositivosDAO {
 
             while (rs.next()) {
 
-                dispositivos.add(new Dispositivo(rs.getInt("IdDispositivos"), rs.getString("nombre"),
+                dispositivos.add(new Dispositivo(rs.getInt("IdDispositivo"), rs.getString("nombre"),
                         rs.getString("descripcion")));
             }
 
