@@ -1,40 +1,40 @@
 package com.proyecto_a.dto;
-import java.util.Date;
-import java.sql.Time;
-
-
 
 public class PrecioElectricidad {
     
-
-    private int idprecioElectricidad;
+    private int id;
+    private String fecha;
+    private String hora;
     private float precioKwh;
-    private Date fecha;
-    private Time hora;
-
-    public int getIdprecioElectricidad() {
-        return idprecioElectricidad;
+    
+    // public PrecioElectricidad(){
+    //     id=-1;
+    //     fecha="";
+    //     hora="";
+    //     precioKwh=-1.0f;
+    // }
+    public int getId() {
+        return id;
     }
-    public void setIdprecioElectricidad(int idprecioElectricidad) {
-        this.idprecioElectricidad = idprecioElectricidad;
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getFecha() {
+        return fecha;
+    }
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+    public String getHora() {
+        return hora;
+    }
+    public void setHora(String hora) {
+        this.hora = hora;
     }
     public float getPrecioKwh() {
         return precioKwh;
     }
     public void setPrecioKwh(float precioKwh) {
         this.precioKwh = precioKwh;
-    }
-    public Date getFecha() {
-        return fecha;
-    }
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
-    public Time getHora() {
-        return hora;
-    }
-    public void setHora(Time hora) {
-        this.hora = hora;
-    }
-    
+    }  
 }
