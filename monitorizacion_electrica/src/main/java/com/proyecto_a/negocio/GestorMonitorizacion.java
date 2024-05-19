@@ -2,20 +2,30 @@ package com.proyecto_a.negocio;
 
 
 import com.proyecto_a.dao.DispositivosDAO;
+import com.proyecto_a.dao.PrecioElectricidadDAO;
 import com.proyecto_a.dto.Dispositivo;
+import com.proyecto_a.dto.PrecioElectricidad;
 
 
 public class GestorMonitorizacion {
     
-
-
     private DispositivosDAO dispositivoDAO = new DispositivosDAO();
-   
+    private LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
+    private PrecioElectricidadDAO precioElectricidadDAO = new PrecioElectricidadDAO();
 
     // Métodos para dispositivos
     public boolean agregarDispositivo(Dispositivo dispositivo) {
         return dispositivoDAO.insertarDispositivo(dispositivo);
     }
+
+    // Métodos para leer e insertar datos de un json en la BD
+    public PrecioElectricidad extraerDatosJson() {
+        return lectorArchivosJson.extraerDatosJson();
+    }
+    public boolean insertarPrecioElectricidad(PrecioElectricidad precioElectricidad) {
+        return precioElectricidadDAO.insertarPrecioElectricidad(precioElectricidad);
+    }
+    
 
     /*  Métodos para Libros
     public boolean agregarLibro(Libro libro) {
