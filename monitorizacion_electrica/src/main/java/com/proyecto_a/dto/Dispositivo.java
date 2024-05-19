@@ -76,6 +76,7 @@ public class Dispositivo {
         dispositivosDefault.add("Aire Acondicionado");
         dispositivosDefault.add("Televisor");
         dispositivosDefault.add("Ordenador");
+        dispositivosDefault.add("Luces");
 
 
     }
