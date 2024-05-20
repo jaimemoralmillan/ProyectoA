@@ -7,11 +7,12 @@ import com.proyecto_a.dto.PrecioElectricidad;
 
 
 public class LectorArchivosJson {
+    private boolean insertado = false;
      public PrecioElectricidad extraerDatosJson(){
         PrecioElectricidad precioElectricidad = new PrecioElectricidad();
         PrecioElectricidadDAO precioElectricidadDAO = new PrecioElectricidadDAO();
         //FileReader abre el archivo json para lectura y el JsonParser.parseReader  utiliza gson para parsear el archivo json en un objeto de tipo JsonObject
-        try (FileReader leerJsonPrecios = new FileReader("nuevoJSONpreciosElectricidadSoloUnaSemana.json")) {
+        try (FileReader leerJsonPrecios = new FileReader("monitorizacion_electrica\\nuevoJSONpreciosElectricidadSoloUnaSemana.json")) {
             JsonObject jsonObject = JsonParser.parseReader(leerJsonPrecios).getAsJsonObject();
 
             // Recorremos las fechas y horas para extraer los datos. Con jsonObject.keySet() se obtiene un conjunto de todas las claves (horas) dentro del objeto json. Y con el jsonObject.getAsJsonObject(fecha) para cada fecha, obtiene el objeto json correspondiente a esa fecha, que contiene los datos de las horas.
@@ -29,6 +30,9 @@ public class LectorArchivosJson {
                     precioElectricidad.setHora(horaValue);//Asigna el valor extraído de la hora al objeto "precioElectricidad"
                     precioElectricidad.setPrecioKwh(precioKwh);//Asigna el valor extraído del precio al objeto "precioElectricidad"
 
+                    if (!insertado) {
+                        insertado = true;
+                    }
                     // Aquí se podrían insertar los datos en la base de datos si queremos, pero como una función va en negocio y otra en dto lo he puesto así.
                     precioElectricidadDAO.insertarPrecioElectricidad(precioElectricidad);
                 }
