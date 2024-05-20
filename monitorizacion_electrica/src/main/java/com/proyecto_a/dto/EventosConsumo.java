@@ -1,26 +1,31 @@
 package com.proyecto_a.dto;
 
-import java.util.Date;
-
 public class EventosConsumo {
     
     private int idEventosConsumo;
-    private Date fechaInicio;
+    private String fechaInicio;
+    private String fechaFin;
     private float consumoKwh;
     private float precioTotal;
-    private int dispositivos_id ;
-
+    private int dispositivos_id;
+    
     public int getIdEventosConsumo() {
         return idEventosConsumo;
     }
     public void setIdEventosConsumo(int idEventosConsumo) {
         this.idEventosConsumo = idEventosConsumo;
     }
-    public Date getFechaInicio() {
+    public String getFechaInicio() {
         return fechaInicio;
     }
-    public void setFechaInicio(Date fechaInicio) {
+    public void setFechaInicio(String fechaInicio) {
         this.fechaInicio = fechaInicio;
+    }
+    public String getFechaFin() {
+        return fechaFin;
+    }
+    public void setFechaFin(String fechaFin) {
+        this.fechaFin = fechaFin;
     }
     public float getConsumoKwh() {
         return consumoKwh;
@@ -40,5 +45,7 @@ public class EventosConsumo {
     public void setDispositivos_id(int dispositivos_id) {
         this.dispositivos_id = dispositivos_id;
     }
+
+    
 
 }
