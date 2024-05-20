@@ -13,7 +13,7 @@ public class Main {
         gestorMonitorizacion.extraerDatosJson();
         gestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
         
-        FranjaHorariaDAO.insertarFranjas(Inicializacion.franjas);
+        FranjaHorariaDAO.insertarFranjas(Inicializacion.franjas); // Inserta las franjas horarias en la base de datos si no existe ya en la base de datos.
 
         SwingUtilities.invokeLater(() -> {
             MonitorizacionGUI gui = new MonitorizacionGUI();

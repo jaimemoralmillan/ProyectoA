@@ -5,8 +5,8 @@ import com.proyecto_a.dto.FranjaHoraria;
 
 public class Inicializacion {
     
-    public FranjaHorariaDAO dao = new FranjaHorariaDAO();
-        public static FranjaHoraria[] franjas = {
+    public FranjaHorariaDAO dao = new FranjaHorariaDAO(); // Instancia de la clase FranjaHorariaDAO.
+        public static FranjaHoraria[] franjas = { // Array de franjas horarias.
             new FranjaHoraria("Madrugada", "00:00:00", "06:00:00"),
             new FranjaHoraria("Mañana", "06:00:00", "08:00:00"),
             new FranjaHoraria("Mañana/Tarde", "08:00:00", "14:00:00"),
