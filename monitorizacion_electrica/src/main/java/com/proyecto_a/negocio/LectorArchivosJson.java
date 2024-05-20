@@ -12,7 +12,7 @@ public class LectorArchivosJson {
         PrecioElectricidad precioElectricidad = new PrecioElectricidad();
         PrecioElectricidadDAO precioElectricidadDAO = new PrecioElectricidadDAO();
         //FileReader abre el archivo json para lectura y el JsonParser.parseReader  utiliza gson para parsear el archivo json en un objeto de tipo JsonObject
-        try (FileReader leerJsonPrecios = new FileReader("monitorizacion_electrica\\nuevoJSONpreciosElectricidadSoloUnaSemana.json")) {
+        try (FileReader leerJsonPrecios = new FileReader("monitorizacion_electrica\\may_2024_data.json")) {
             JsonObject jsonObject = JsonParser.parseReader(leerJsonPrecios).getAsJsonObject();
 
             // Recorremos las fechas y horas para extraer los datos. Con jsonObject.keySet() se obtiene un conjunto de todas las claves (horas) dentro del objeto json. Y con el jsonObject.getAsJsonObject(fecha) para cada fecha, obtiene el objeto json correspondiente a esa fecha, que contiene los datos de las horas.
