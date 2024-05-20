@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import com.proyecto_a.dto.FranjaHoraria;
 
 public class FranjaHorariaDAO {
-    public boolean insertarFranjas(FranjaHoraria[] franjas) {
+    public static boolean insertarFranjas(FranjaHoraria[] franjas) {
         String sql = "INSERT INTO franjaHoraria (descripcion, horaInicio, horaFin) " +
                      "SELECT ?, ?, ? WHERE NOT EXISTS (" +
                      "SELECT 1 FROM franjaHoraria WHERE descripcion = ? AND horaInicio = ? AND horaFin = ?)";
