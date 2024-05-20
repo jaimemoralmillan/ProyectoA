@@ -1,12 +1,19 @@
 package com.proyecto_a.dto;
-import java.sql.Time;
 public class FranjaHoraria {
     
     private int idFranjaHoraria;
     private String descripcion;
-    private Time horaInicio;
-    private Time horaFin;
-    private int dispositivos_id;
+    private String horaInicio;
+    private String horaFin;
+    
+    public FranjaHoraria(String descripcion, String horaInicio, String horaFin) {
+        this.descripcion = descripcion;
+        this.horaInicio = horaInicio;
+        this.horaFin = horaFin;
+    }
+
+    public FranjaHoraria() {
+    }
     
     public int getIdFranjaHoraria() {
         return idFranjaHoraria;
@@ -20,27 +27,16 @@ public class FranjaHoraria {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    public Time getHoraInicio() {
+    public String getHoraInicio() {
         return horaInicio;
     }
-    public void setHoraInicio(Time horaInicio) {
+    public void setHoraInicio(String horaInicio) {
         this.horaInicio = horaInicio;
     }
-    public Time getHoraFin() {
+    public String getHoraFin() {
         return horaFin;
     }
-    public void setHoraFin(Time horaFin) {
+    public void setHoraFin(String horaFin) {
         this.horaFin = horaFin;
     }
-    public int getDispositivos_id() {
-        return dispositivos_id;
-    }
-    public void setDispositivos_id(int dispositivos_id) {
-        this.dispositivos_id = dispositivos_id;
-    }
-
-
-
-
-
 }

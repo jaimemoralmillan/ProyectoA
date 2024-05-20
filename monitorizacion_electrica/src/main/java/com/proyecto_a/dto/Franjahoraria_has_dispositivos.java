@@ -4,9 +4,14 @@ package com.proyecto_a.dto;
 public class Franjahoraria_has_dispositivos {
     private int franjaHoraria_id;
     private int dispositivos_id;
-    @SuppressWarnings("unused")
-    private enum nivelPrioridad{Óptima, Aceptable, Mala};
+    private String nivelPrioridad;
 
+    public String getNivelPrioridad() {
+        return nivelPrioridad;
+    }
+    public void setNivelPrioridad(String nivelPrioridad) {
+        this.nivelPrioridad = nivelPrioridad;
+    }
     public int getFranjaHoraria_id() {
         return franjaHoraria_id;
     }
