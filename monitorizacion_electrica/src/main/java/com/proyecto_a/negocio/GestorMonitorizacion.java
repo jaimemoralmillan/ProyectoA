@@ -5,6 +5,7 @@ import com.proyecto_a.dao.DispositivosDAO;
 import com.proyecto_a.dto.Dispositivo;
 
 
+
 public class GestorMonitorizacion {
     
 
@@ -16,7 +17,7 @@ public class GestorMonitorizacion {
     public boolean agregarDispositivo(Dispositivo dispositivo) {
         return dispositivoDAO.insertarDispositivo(dispositivo);
     }
-
+    
     /*  Métodos para Libros
     public boolean agregarLibro(Libro libro) {
         return libroDAO.insertarLibro(libro);

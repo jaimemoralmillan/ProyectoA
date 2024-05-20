@@ -108,10 +108,8 @@ public class MonitorizacionGUI extends JFrame {
             JOptionPane.showMessageDialog(this, "Error al agregar dispositivo.");
         }
 
-
-     
-
-
+        cargarDispositivos();
+        
     }
 
 
