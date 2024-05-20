@@ -19,13 +19,13 @@ public class GestorMonitorizacion {
     }
 
     // Métodos para leer e insertar datos de un json en la BD
-    public PrecioElectricidad extraerDatosJson() {
-        return lectorArchivosJson.extraerDatosJson();
+    public PrecioElectricidad extraerDatosJsonPrecios() {
+        return lectorArchivosJson.extraerDatosJsonPreciosElectricidad();
     }
     public boolean insertarPrecioElectricidad(PrecioElectricidad precioElectricidad) {
         return precioElectricidadDAO.insertarPrecioElectricidad(precioElectricidad);
     }
-    
+
 
     /*  Métodos para Libros
     public boolean agregarLibro(Libro libro) {
