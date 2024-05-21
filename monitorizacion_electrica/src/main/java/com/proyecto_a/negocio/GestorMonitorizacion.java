@@ -29,8 +29,8 @@ public class GestorMonitorizacion {
     // Métodos para leer e insertar datos de un json en la BD
 
         //Método para extraer datos del JSON de los precios de electricidad
-    public static PrecioElectricidad extraerDatosJsonPrecios(PrecioElectricidad precioElectricidad) {
-        return LectorArchivosJson.extraerDatosJsonPreciosElectricidad(precioElectricidad);
+    public static PrecioElectricidad extraerDatosJsonPrecios() {
+        return LectorArchivosJson.extraerDatosJsonPreciosElectricidad();
     }
 
         //Método para insertar en la BDD los precios de electricidad

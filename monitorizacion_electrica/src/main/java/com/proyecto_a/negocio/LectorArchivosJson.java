@@ -20,7 +20,9 @@ import com.proyecto_a.dto.PrecioElectricidad;
 
 public class LectorArchivosJson {
     private static boolean insertado = false;
-     public static PrecioElectricidad extraerDatosJsonPreciosElectricidad(PrecioElectricidad precioElectricidad){
+     public static PrecioElectricidad extraerDatosJsonPreciosElectricidad(){
+
+        PrecioElectricidad precioElectricidad = new PrecioElectricidad();
        
         
         //FileReader abre el archivo json para lectura y el JsonParser.parseReader  utiliza gson para parsear el archivo json en un objeto de tipo JsonObject

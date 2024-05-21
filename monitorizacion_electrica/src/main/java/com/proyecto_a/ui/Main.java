@@ -12,9 +12,8 @@ import com.proyecto_a.negocio.LectorArchivosJson;
 
 public class Main {
     public static void main(String[] args) {
-        PrecioElectricidad precioElectricidad = new PrecioElectricidad();
-        GestorMonitorizacion.extraerDatosJsonPrecios(precioElectricidad);
-        //GestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
+        
+        GestorMonitorizacion.extraerDatosJsonPrecios();
         GestorMonitorizacion.insertarFranjas();
        
         //LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
