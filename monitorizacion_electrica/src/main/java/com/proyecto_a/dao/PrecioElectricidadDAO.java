@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import com.proyecto_a.dto.PrecioElectricidad;
 
 public class PrecioElectricidadDAO {
-    public boolean insertarPrecioElectricidad(PrecioElectricidad precioElectricidad) {
+    public static boolean insertarPrecioElectricidad(PrecioElectricidad precioElectricidad) {  
         try (Connection conn = Conexion.getConnection()) {
             if (conn != null) {
                 String sql = "INSERT INTO precioElectricidad (fecha, hora, precioKwh) VALUES (?,?,?)";

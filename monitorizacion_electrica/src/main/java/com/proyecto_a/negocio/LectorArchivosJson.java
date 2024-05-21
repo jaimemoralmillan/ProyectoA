@@ -1,15 +1,15 @@
 package com.proyecto_a.negocio;
 import java.io.FileReader;
-import java.io.IOException;
+//import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.lang.reflect.Type;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonIOException;
+//import com.google.gson.JsonIOException;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.google.gson.JsonSyntaxException;
+//import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.proyecto_a.dao.DispositivosDAO;
 import com.proyecto_a.dao.EventosConsumosDAO;
@@ -21,12 +21,14 @@ import com.proyecto_a.dto.PrecioElectricidad;
 
 
 public class LectorArchivosJson {
-    private boolean insertado = false;
-     public PrecioElectricidad extraerDatosJsonPreciosElectricidad(){
+    private static boolean insertado = false;
+     public static PrecioElectricidad extraerDatosJsonPreciosElectricidad(){
+
         PrecioElectricidad precioElectricidad = new PrecioElectricidad();
-        PrecioElectricidadDAO precioElectricidadDAO = new PrecioElectricidadDAO();
+       
+        
         //FileReader abre el archivo json para lectura y el JsonParser.parseReader  utiliza gson para parsear el archivo json en un objeto de tipo JsonObject
-        try (FileReader leerJsonPrecios = new FileReader("may_2024_data.json")) {
+        try (FileReader leerJsonPrecios = new FileReader("monitorizacion_electrica\\may_2024_data.json")) {
             JsonObject jsonObject = JsonParser.parseReader(leerJsonPrecios).getAsJsonObject();
 
             // Recorremos las fechas y horas para extraer los datos. Con jsonObject.keySet() se obtiene un conjunto de todas las claves (horas) dentro del objeto json. Y con el jsonObject.getAsJsonObject(fecha) para cada fecha, obtiene el objeto json correspondiente a esa fecha, que contiene los datos de las horas.
@@ -48,7 +50,7 @@ public class LectorArchivosJson {
                         insertado = true;
                     }
                     // Aquí se podrían insertar los datos en la base de datos si queremos, pero como una función va en negocio y otra en dto lo he puesto así.
-                    precioElectricidadDAO.insertarPrecioElectricidad(precioElectricidad);
+                    PrecioElectricidadDAO.insertarPrecioElectricidad(precioElectricidad);
                 }
             }
 
