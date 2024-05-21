@@ -1,5 +1,5 @@
 package com.proyecto_a.dto;
-import java.sql.Time;
+
 public class FranjaHoraria {
     
     private int idFranjaHoraria;
@@ -8,6 +8,13 @@ public class FranjaHoraria {
     private String horaFin;
     private int dispositivos_id;
     
+    public static FranjaHoraria[] franjas = { // Array de franjas horarias.
+        new FranjaHoraria("Madrugada", "00:00:00", "06:00:00"),
+        new FranjaHoraria("Mañana", "06:00:00", "08:00:00"),
+        new FranjaHoraria("Mañana/Tarde", "08:00:00", "14:00:00"),
+        new FranjaHoraria("Tarde/Noche", "14:00:00", "18:00:00"),
+        new FranjaHoraria("Noche", "18:00:00", "24:00:00")
+    };
   
     public int getIdFranjaHoraria() {
         return idFranjaHoraria;
