@@ -2,28 +2,40 @@ package com.proyecto_a.negocio;
 
 
 import com.proyecto_a.dao.DispositivosDAO;
+import com.proyecto_a.dao.FranjaHorariaDAO;
 import com.proyecto_a.dao.PrecioElectricidadDAO;
 import com.proyecto_a.dto.Dispositivo;
+import com.proyecto_a.dto.FranjaHoraria;
 import com.proyecto_a.dto.PrecioElectricidad;
 
 
 public class GestorMonitorizacion {
     
-    private DispositivosDAO dispositivoDAO = new DispositivosDAO();
-    private LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
-    private PrecioElectricidadDAO precioElectricidadDAO = new PrecioElectricidadDAO();
-
+   
     // Métodos para dispositivos
-    public boolean agregarDispositivo(Dispositivo dispositivo) {
-        return dispositivoDAO.insertarDispositivo(dispositivo);
+        //Método que el usuario agregue un nuevo dispositivo mediante la UI
+    public static boolean agregarDispositivo(Dispositivo dispositivo) {
+        return DispositivosDAO.insertarDispositivo(dispositivo);
     }
+
+    //Métodos para franjahoraria
+
+        //agregar franjas horarias por defecto a la bdd
+        public static void insertarFranjas(){
+            FranjaHorariaDAO.insertarFranjas(FranjaHoraria.franjas);
+        }
+        
 
     // Métodos para leer e insertar datos de un json en la BD
-    public PrecioElectricidad extraerDatosJsonPrecios() {
-        return lectorArchivosJson.extraerDatosJsonPreciosElectricidad();
+
+        //Método para extraer datos del JSON de los precios de electricidad
+    public static PrecioElectricidad extraerDatosJsonPrecios(PrecioElectricidad precioElectricidad) {
+        return LectorArchivosJson.extraerDatosJsonPreciosElectricidad(precioElectricidad);
     }
-    public boolean insertarPrecioElectricidad(PrecioElectricidad precioElectricidad) {
-        return precioElectricidadDAO.insertarPrecioElectricidad(precioElectricidad);
+
+        //Método para insertar en la BDD los precios de electricidad
+    public static boolean insertarPrecioElectricidad(PrecioElectricidad precioElectricidad) {
+        return PrecioElectricidadDAO.insertarPrecioElectricidad(precioElectricidad);
     }
 
 

@@ -11,8 +11,6 @@ import com.proyecto_a.dto.Dispositivo;
 public class MonitorizacionGUI extends JFrame {
 
 
-    //preguntar rodolfo por que se usa el gestor monitorizacion
-    private GestorMonitorizacion gestorMonitorizacion = new GestorMonitorizacion();
 
     //inicializacion de todos los elementos que se vayan a usar y que tenga que leer una funcion: botones, combobox,paneles,campos de texto....
     //txt=caja de texto, btn=boton , combo=combobox (desplegable)
@@ -155,7 +153,7 @@ public class MonitorizacionGUI extends JFrame {
         String nombre = comboSeleccionarDispositivo.getSelectedItem().toString();
         String descripcion = txtDispositivoDescripcion.getText();
         Dispositivo dispositivo = new Dispositivo(0, nombre, descripcion);
-        if (gestorMonitorizacion.agregarDispositivo(dispositivo)) {
+        if (GestorMonitorizacion.agregarDispositivo(dispositivo)) {
             JOptionPane.showMessageDialog(this, "Dispositivo agregado exitosamente.");
         } else {
             JOptionPane.showMessageDialog(this, "Error al agregar dispositivo.");
