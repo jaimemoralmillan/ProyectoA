@@ -20,7 +20,7 @@ public class Main {
         lectorArchivosJson.extraerDatosJsonDispositivos();
         lectorArchivosJson.extraerDatosJsonEventosConsumo();
         
-        GestorMonitorizacion.extraerDatosJsonPrecios();
+        
         GestorMonitorizacion.insertarFranjas();
        
         //LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();

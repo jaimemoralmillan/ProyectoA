@@ -41,7 +41,7 @@ public class DispositivosDAO {
     
     
     // Crear un dispositivo el usuario
-    public boolean insertarDispositivo(Dispositivo dispositivo) {
+    public static boolean insertarDispositivo(Dispositivo dispositivo) {
         String sql = "INSERT INTO dispositivos (nombre,descripcion) VALUES (?,?)";
         try (Connection conn = Conexion.getConnection();
                 PreparedStatement pstmt = conn.prepareStatement(sql)) {

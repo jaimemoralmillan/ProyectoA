@@ -65,7 +65,7 @@ public class LectorArchivosJson {
         List<EventosConsumo> eventosConsumo = new ArrayList<>();
         EventosConsumosDAO eventosConsumosDAO = new EventosConsumosDAO();
 
-        try (FileReader leerJsonEventos = new FileReader("may_2024_appliance_events.json")) {
+        try (FileReader leerJsonEventos = new FileReader("monitorizacion_electrica\\may_2024_appliance_events.json")) {
             Gson gson = new Gson();
             Type listType = new TypeToken<List<EventosConsumo>>() {}.getType();
             eventosConsumo = gson.fromJson(leerJsonEventos, listType);
@@ -88,7 +88,7 @@ public class LectorArchivosJson {
             List<Dispositivo> dispositivos = new ArrayList<>();
             DispositivosDAO dispositivosDAO = new DispositivosDAO();
     
-            try (FileReader leerJsonEventos = new FileReader("may_2024_appliance_events.json")) {
+            try (FileReader leerJsonEventos = new FileReader("monitorizacion_electrica\\may_2024_appliance_events.json")) {
                 Gson gson = new Gson();
                 Type listType = new TypeToken<List<Dispositivo>>() {}.getType();
                 dispositivos = gson.fromJson(leerJsonEventos, listType);
