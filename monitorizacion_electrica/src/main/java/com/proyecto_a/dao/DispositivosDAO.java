@@ -10,20 +10,35 @@ public class DispositivosDAO {
 
     // Insertar dispositivo desde el archivo json
     public boolean insertarDispositivoDesdeJson(Dispositivo dispositivo) {
-      
+        int affectedRows=0;
         String sql = "INSERT INTO dispositivos (nombre,descripcion, consumoPorHora) VALUES (?,?,?)";
+        String selectSQL = "SELECT COUNT(*) FROM dispositivos WHERE descripcion = ?";
         try (Connection conn = Conexion.getConnection();
-            PreparedStatement pstmt = conn.prepareStatement(sql)) {
-                pstmt.setString(1, dispositivo.getNombre());
-                pstmt.setString(2, dispositivo.getDescripcion());
-                pstmt.setFloat(3, dispositivo.getConsumoPorHora());
-                int affectedRows = pstmt.executeUpdate();
-                return affectedRows > 0;  
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            PreparedStatement pstmtSelect = conn.prepareStatement(selectSQL)){
+                
+                if (dispositivo != null && dispositivo.getDescripcion() != null) {
+                    pstmtSelect.setString(1, dispositivo.getDescripcion());
+                    ResultSet rsDescripcion = pstmtSelect.executeQuery();
+                    rsDescripcion.next();
+                    int count = rsDescripcion.getInt(1);
+                    
+                    if (count == 0) {
+                        pstmt.setString(1, dispositivo.getNombre());
+                        pstmt.setString(2, dispositivo.getDescripcion());
+                        pstmt.setFloat(3, dispositivo.getConsumoPorHora());
+                        affectedRows = pstmt.executeUpdate();
+                    }
+                }
+            
+                 
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
+        return affectedRows > 0; 
     }
+    
     
     // Crear un dispositivo el usuario
     public boolean insertarDispositivo(Dispositivo dispositivo) {
@@ -113,5 +128,17 @@ public class DispositivosDAO {
         }
 
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
