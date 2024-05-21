@@ -12,12 +12,12 @@ public class EventosConsumosDAO {
     public boolean insertarEventosConsumo(EventosConsumo eventosConsumo) {
         try (Connection conn = Conexion.getConnection()) {
             if (conn != null) {
-                String sql = "INSERT INTO eventosConsumo (fechaInicio, fechaFin, consumoKwh) VALUES (?,?,?)";
+                String sql = "INSERT INTO eventosConsumo (fechaInicio, fechaFin, idDispositivo) VALUES (?,?,?)";
                 PreparedStatement pstmt = conn.prepareStatement(sql);
 
                 pstmt.setString(1, eventosConsumo.getFechaInicio());
                 pstmt.setString(2, eventosConsumo.getFechaFin());
-                pstmt.setFloat(3, eventosConsumo.getConsumoKwh());
+                pstmt.setInt(3, eventosConsumo.getIdDispositivo());
                 // pstmt.setInt(4, eventosConsumo.getidDispositivo); Añadir id en los values
                 
              

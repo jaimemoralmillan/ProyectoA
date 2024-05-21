@@ -6,8 +6,7 @@ public class EventosConsumo {
     private String fechaInicio;
     private String fechaFin;
     private float consumoKwh;
-    private float precioTotal;
-    private int dispositivos_id;
+    private int idDispositivo;
     
     public int getIdEventosConsumo() {
         return idEventosConsumo;
@@ -33,18 +32,15 @@ public class EventosConsumo {
     public void setConsumoKwh(float consumoKwh) {
         this.consumoKwh = consumoKwh;
     }
-    public float getPrecioTotal() {
-        return precioTotal;
+    public int getIdDispositivo() {
+        return idDispositivo;
     }
-    public void setPrecioTotal(float precioTotal) {
-        this.precioTotal = precioTotal;
+    public void setIdDispositivo(int idDispositivo) {
+        this.idDispositivo = idDispositivo;
     }
-    public int getDispositivos_id() {
-        return dispositivos_id;
-    }
-    public void setDispositivos_id(int dispositivos_id) {
-        this.dispositivos_id = dispositivos_id;
-    }
+
+    
+    
 
     
 
