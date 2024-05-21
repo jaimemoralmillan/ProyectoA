@@ -10,6 +10,8 @@ public class Dispositivo {
     private String nombre;
     private String descripcion;
     private static ArrayList<String> dispositivosDefault = new ArrayList<>();
+    private float consumoPorHora;
+    private int idCategoria;
     
     
 
@@ -45,11 +47,35 @@ public class Dispositivo {
         return dispositivosDefault;
     }
 
+    public float getConsumoPorHora() {
+        return consumoPorHora;
+    }
+
+    public void setConsumoPorHora(float consumoPorHora) {
+        this.consumoPorHora = consumoPorHora;
+    }
+
+    public int getIdCategoria() {
+        return idCategoria;
+    }
+
+    public void setIdCategoria(int idCategoria) {
+        this.idCategoria = idCategoria;
+    }
+
     // constructores
     public Dispositivo(int idDispositivo, String nombre, String descripcion) {
         this.idDispositivo = idDispositivo;
         this.nombre = nombre;
         this.descripcion = descripcion;
+    }
+
+    public Dispositivo(int idDispositivo, String nombre, String descripcion, float consumoPorHora, int idCategoria) {
+        this.idDispositivo = idDispositivo;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.consumoPorHora = consumoPorHora;
+        this.idCategoria = idCategoria;
     }
 
     public Dispositivo() {
@@ -80,6 +106,10 @@ public class Dispositivo {
 
 
     }
+
+    
+
+    
     
 
    

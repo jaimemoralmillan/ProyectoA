@@ -11,8 +11,10 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
+import com.proyecto_a.dao.DispositivosDAO;
 import com.proyecto_a.dao.EventosConsumosDAO;
 import com.proyecto_a.dao.PrecioElectricidadDAO;
+import com.proyecto_a.dto.Dispositivo;
 import com.proyecto_a.dto.EventosConsumo;
 import com.proyecto_a.dto.PrecioElectricidad;
 
@@ -61,13 +63,16 @@ public class LectorArchivosJson {
         List<EventosConsumo> eventosConsumo = new ArrayList<>();
         EventosConsumosDAO eventosConsumosDAO = new EventosConsumosDAO();
 
-        try (FileReader leerJsonEventos = new FileReader("may_2024_appliance_events.json")) {
+        try (FileReader leerJsonEventos = new FileReader("monitorizacion_electrica\\may_2024_appliance_events.json")) {
             Gson gson = new Gson();
             Type listType = new TypeToken<List<EventosConsumo>>() {}.getType();
             eventosConsumo = gson.fromJson(leerJsonEventos, listType);
             if (eventosConsumo != null) {
                       for (EventosConsumo evento : eventosConsumo) {
                       eventosConsumosDAO.insertarEventosConsumo(evento);
+                        // if (!insertado) {
+                        // insertado = true;
+                        // }
                       }
                     }
         } catch (Exception e) {
@@ -75,6 +80,29 @@ public class LectorArchivosJson {
         }
         return eventosConsumo;
         }   
+
+        //Parsear json y extraer los datos para la función de insertar dipositivos
+        public List<Dispositivo> extraerDatosJsonDispositivos(){
+            List<Dispositivo> dispositivos = new ArrayList<>();
+            DispositivosDAO dispositivosDAO = new DispositivosDAO();
+    
+            try (FileReader leerJsonEventos = new FileReader("monitorizacion_electrica\\may_2024_appliance_events.json")) {
+                Gson gson = new Gson();
+                Type listType = new TypeToken<List<Dispositivo>>() {}.getType();
+                dispositivos = gson.fromJson(leerJsonEventos, listType);
+                if (dispositivosDAO != null) {
+                          for (Dispositivo evento : dispositivos) {
+                          dispositivosDAO.insertarDispositivoDesdeJson(evento);
+                            // if (!insertado) {
+                            // insertado = true;
+                            // }
+                          }
+                        }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return dispositivos;
+            }   
 }
 
 

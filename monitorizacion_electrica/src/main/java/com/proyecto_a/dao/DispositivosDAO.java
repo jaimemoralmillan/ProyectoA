@@ -1,13 +1,31 @@
 package com.proyecto_a.dao;
 
 import com.proyecto_a.dto.Dispositivo;
+import com.proyecto_a.dto.EventosConsumo;
 
 import java.util.ArrayList;
 import java.sql.*;
 
 public class DispositivosDAO {
 
-    // Crear un dispositivo
+    // Insertar dispositivo desde el archivo json
+    public boolean insertarDispositivoDesdeJson(Dispositivo dispositivo) {
+      
+        String sql = "INSERT INTO dispositivos (nombre,descripcion, consumoPorHora) VALUES (?,?,?)";
+        try (Connection conn = Conexion.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(sql)) {
+                pstmt.setString(1, dispositivo.getNombre());
+                pstmt.setString(2, dispositivo.getDescripcion());
+                pstmt.setFloat(3, dispositivo.getConsumoPorHora());
+                int affectedRows = pstmt.executeUpdate();
+                return affectedRows > 0;  
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    
+    // Crear un dispositivo el usuario
     public boolean insertarDispositivo(Dispositivo dispositivo) {
         String sql = "INSERT INTO dispositivos (nombre,descripcion) VALUES (?,?)";
         try (Connection conn = Conexion.getConnection();

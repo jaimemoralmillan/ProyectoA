@@ -9,12 +9,13 @@ import com.proyecto_a.negocio.LectorArchivosJson;
 
 public class Main {
     public static void main(String[] args) {
-        GestorMonitorizacion gestorMonitorizacion = new GestorMonitorizacion();
-        PrecioElectricidad precioElectricidad = new PrecioElectricidad();
-        gestorMonitorizacion.extraerDatosJsonPrecios();
-        gestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
+        // GestorMonitorizacion gestorMonitorizacion = new GestorMonitorizacion();
+        // PrecioElectricidad precioElectricidad = new PrecioElectricidad();
+        // gestorMonitorizacion.extraerDatosJsonPrecios();
+        // gestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
 
         LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
+        lectorArchivosJson.extraerDatosJsonDispositivos();
         lectorArchivosJson.extraerDatosJsonEventosConsumo();
         // lectorArchivosJson.procesarJsonYGuardarEventosEnBD();
         // EventosConsumosDAO eventosConsumosDAO = new EventosConsumosDAO();
