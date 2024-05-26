@@ -5,10 +5,10 @@ import java.awt.event.*;
 import java.util.ArrayList;
 
 import com.proyecto_a.negocio.GestorMonitorizacion;
-import com.proyecto_a.negocio.Inicializacion;
 import com.proyecto_a.negocio.LectorArchivosJson;
 import com.proyecto_a.dao.DispositivosDAO;
 import com.proyecto_a.dao.EventosConsumosDAO;
+import com.proyecto_a.dao.EventosPrecioDAO;
 import com.proyecto_a.dto.Dispositivo;
 import com.proyecto_a.dto.PrecioElectricidad;
 
@@ -244,7 +244,7 @@ public class MonitorizacionGUI extends JFrame {
 
            public void funcionesActualizacionBD(ActionEvent event){
 
-         PrecioElectricidad precioElectricidad = new PrecioElectricidad();
+        PrecioElectricidad precioElectricidad = new PrecioElectricidad();
         GestorMonitorizacion.extraerDatosJsonPrecios();
         GestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
 
@@ -255,6 +255,8 @@ public class MonitorizacionGUI extends JFrame {
         
         GestorMonitorizacion.insertarFranjas();
         EventosConsumosDAO.actualizarConsumoKwhEventosConsumo();
+        EventosPrecioDAO.InsertarEventosPrecio();
+        cargarDispositivosBDD();
 
     }
        

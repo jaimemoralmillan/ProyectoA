@@ -3,37 +3,34 @@ package com.proyecto_a.dto;
 public class PrecioElectricidad {
     
     private int id;
-    private String fecha;
-    private String hora;
+    private String fechaInicio;
+    private String fechaFin;
     private float precioKwh;
-    // public PrecioElectricidad(){
-    //     id=-1;
-    //     fecha="";
-    //     hora="";
-    //     precioKwh=-1.0f;
-    // }
+    
     public int getId() {
         return id;
     }
     public void setId(int id) {
         this.id = id;
     }
-    public String getFecha() {
-        return fecha;
+    public String getFechaInicio() {
+        return fechaInicio;
     }
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setFechaInicio(String fechaInicio) {
+        this.fechaInicio = fechaInicio;
     }
-    public String getHora() {
-        return hora;
+    public String getFechaFin() {
+        return fechaFin;
     }
-    public void setHora(String hora) {
-        this.hora = hora;
+    public void setFechaFin(String fechaFin) {
+        this.fechaFin = fechaFin;
     }
     public float getPrecioKwh() {
         return precioKwh;
     }
     public void setPrecioKwh(float precioKwh) {
         this.precioKwh = precioKwh;
-    }  
+    }
+   
+   
 }

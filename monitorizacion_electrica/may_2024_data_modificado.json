@@ -1,0 +1,4528 @@
+{
+  "2024-05-01" : {
+    "00-01" : {
+      "preciokWh" : 0.11459,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 00:00:00",
+      "fechaFin" : "2024-05-01 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.11193,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 01:00:00",
+      "fechaFin" : "2024-05-01 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.11522,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 02:00:00",
+      "fechaFin" : "2024-05-01 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.10788,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 03:00:00",
+      "fechaFin" : "2024-05-01 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.06004,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 04:00:00",
+      "fechaFin" : "2024-05-01 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.1116,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 05:00:00",
+      "fechaFin" : "2024-05-01 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.1062,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 06:00:00",
+      "fechaFin" : "2024-05-01 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.11627,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 07:00:00",
+      "fechaFin" : "2024-05-01 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.1126,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 08:00:00",
+      "fechaFin" : "2024-05-01 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.06278,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 09:00:00",
+      "fechaFin" : "2024-05-01 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.11247,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 10:00:00",
+      "fechaFin" : "2024-05-01 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.10573,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 11:00:00",
+      "fechaFin" : "2024-05-01 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.07674,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 12:00:00",
+      "fechaFin" : "2024-05-01 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.06824,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 13:00:00",
+      "fechaFin" : "2024-05-01 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.06215,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 14:00:00",
+      "fechaFin" : "2024-05-01 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.11552,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 15:00:00",
+      "fechaFin" : "2024-05-01 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.0745,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 16:00:00",
+      "fechaFin" : "2024-05-01 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.06976,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 17:00:00",
+      "fechaFin" : "2024-05-01 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.09995,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 18:00:00",
+      "fechaFin" : "2024-05-01 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.07179,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 19:00:00",
+      "fechaFin" : "2024-05-01 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.07457,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 20:00:00",
+      "fechaFin" : "2024-05-01 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.0987,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 21:00:00",
+      "fechaFin" : "2024-05-01 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.0859,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 22:00:00",
+      "fechaFin" : "2024-05-01 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.10034,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-01 23:00:00",
+      "fechaFin" : "2024-05-01 00:00:00"
+    }
+  },
+  "2024-05-02" : {
+    "00-01" : {
+      "preciokWh" : 0.10172,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 00:00:00",
+      "fechaFin" : "2024-05-02 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.11309,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 01:00:00",
+      "fechaFin" : "2024-05-02 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.10682,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 02:00:00",
+      "fechaFin" : "2024-05-02 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.08765,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 03:00:00",
+      "fechaFin" : "2024-05-02 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.07625,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 04:00:00",
+      "fechaFin" : "2024-05-02 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.07389,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 05:00:00",
+      "fechaFin" : "2024-05-02 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.08451,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 06:00:00",
+      "fechaFin" : "2024-05-02 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.09375,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 07:00:00",
+      "fechaFin" : "2024-05-02 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.07102,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 08:00:00",
+      "fechaFin" : "2024-05-02 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.07732,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 09:00:00",
+      "fechaFin" : "2024-05-02 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.08773,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 10:00:00",
+      "fechaFin" : "2024-05-02 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.07648,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 11:00:00",
+      "fechaFin" : "2024-05-02 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.11136,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 12:00:00",
+      "fechaFin" : "2024-05-02 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.07275,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 13:00:00",
+      "fechaFin" : "2024-05-02 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.07661,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 14:00:00",
+      "fechaFin" : "2024-05-02 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.1034,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 15:00:00",
+      "fechaFin" : "2024-05-02 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.10102,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 16:00:00",
+      "fechaFin" : "2024-05-02 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.11709,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 17:00:00",
+      "fechaFin" : "2024-05-02 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.07685,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 18:00:00",
+      "fechaFin" : "2024-05-02 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.11898,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 19:00:00",
+      "fechaFin" : "2024-05-02 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.10855,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 20:00:00",
+      "fechaFin" : "2024-05-02 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.10465,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 21:00:00",
+      "fechaFin" : "2024-05-02 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.08139,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 22:00:00",
+      "fechaFin" : "2024-05-02 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.07584,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-02 23:00:00",
+      "fechaFin" : "2024-05-02 00:00:00"
+    }
+  },
+  "2024-05-03" : {
+    "00-01" : {
+      "preciokWh" : 0.10489,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 00:00:00",
+      "fechaFin" : "2024-05-03 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.09259,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 01:00:00",
+      "fechaFin" : "2024-05-03 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.07023,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 02:00:00",
+      "fechaFin" : "2024-05-03 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.0767,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 03:00:00",
+      "fechaFin" : "2024-05-03 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.11629,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 04:00:00",
+      "fechaFin" : "2024-05-03 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.09038,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 05:00:00",
+      "fechaFin" : "2024-05-03 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.09756,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 06:00:00",
+      "fechaFin" : "2024-05-03 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.11561,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 07:00:00",
+      "fechaFin" : "2024-05-03 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.11468,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 08:00:00",
+      "fechaFin" : "2024-05-03 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.067,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 09:00:00",
+      "fechaFin" : "2024-05-03 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.09024,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 10:00:00",
+      "fechaFin" : "2024-05-03 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.0625,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 11:00:00",
+      "fechaFin" : "2024-05-03 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.09102,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 12:00:00",
+      "fechaFin" : "2024-05-03 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.07091,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 13:00:00",
+      "fechaFin" : "2024-05-03 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.06474,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 14:00:00",
+      "fechaFin" : "2024-05-03 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.06956,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 15:00:00",
+      "fechaFin" : "2024-05-03 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.06907,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 16:00:00",
+      "fechaFin" : "2024-05-03 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.06432,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 17:00:00",
+      "fechaFin" : "2024-05-03 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.09732,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 18:00:00",
+      "fechaFin" : "2024-05-03 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.10294,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 19:00:00",
+      "fechaFin" : "2024-05-03 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.08199,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 20:00:00",
+      "fechaFin" : "2024-05-03 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.09133,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 21:00:00",
+      "fechaFin" : "2024-05-03 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.07409,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 22:00:00",
+      "fechaFin" : "2024-05-03 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.10259,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-03 23:00:00",
+      "fechaFin" : "2024-05-03 00:00:00"
+    }
+  },
+  "2024-05-04" : {
+    "00-01" : {
+      "preciokWh" : 0.10144,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 00:00:00",
+      "fechaFin" : "2024-05-04 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.11992,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 01:00:00",
+      "fechaFin" : "2024-05-04 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.09853,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 02:00:00",
+      "fechaFin" : "2024-05-04 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.08783,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 03:00:00",
+      "fechaFin" : "2024-05-04 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.06458,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 04:00:00",
+      "fechaFin" : "2024-05-04 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.06244,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 05:00:00",
+      "fechaFin" : "2024-05-04 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.08479,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 06:00:00",
+      "fechaFin" : "2024-05-04 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.07228,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 07:00:00",
+      "fechaFin" : "2024-05-04 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.08255,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 08:00:00",
+      "fechaFin" : "2024-05-04 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.0748,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 09:00:00",
+      "fechaFin" : "2024-05-04 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.0925,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 10:00:00",
+      "fechaFin" : "2024-05-04 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.06286,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 11:00:00",
+      "fechaFin" : "2024-05-04 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.0838,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 12:00:00",
+      "fechaFin" : "2024-05-04 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.08768,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 13:00:00",
+      "fechaFin" : "2024-05-04 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.10864,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 14:00:00",
+      "fechaFin" : "2024-05-04 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.10105,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 15:00:00",
+      "fechaFin" : "2024-05-04 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.0984,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 16:00:00",
+      "fechaFin" : "2024-05-04 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.10181,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 17:00:00",
+      "fechaFin" : "2024-05-04 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.07491,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 18:00:00",
+      "fechaFin" : "2024-05-04 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.09487,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 19:00:00",
+      "fechaFin" : "2024-05-04 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.06345,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 20:00:00",
+      "fechaFin" : "2024-05-04 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.11428,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 21:00:00",
+      "fechaFin" : "2024-05-04 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.11647,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 22:00:00",
+      "fechaFin" : "2024-05-04 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.09044,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-04 23:00:00",
+      "fechaFin" : "2024-05-04 00:00:00"
+    }
+  },
+  "2024-05-05" : {
+    "00-01" : {
+      "preciokWh" : 0.07716,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 00:00:00",
+      "fechaFin" : "2024-05-05 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.07279,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 01:00:00",
+      "fechaFin" : "2024-05-05 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.06941,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 02:00:00",
+      "fechaFin" : "2024-05-05 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.09715,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 03:00:00",
+      "fechaFin" : "2024-05-05 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.09929,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 04:00:00",
+      "fechaFin" : "2024-05-05 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.10685,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 05:00:00",
+      "fechaFin" : "2024-05-05 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.098,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 06:00:00",
+      "fechaFin" : "2024-05-05 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.08115,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 07:00:00",
+      "fechaFin" : "2024-05-05 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.09261,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 08:00:00",
+      "fechaFin" : "2024-05-05 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.09751,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 09:00:00",
+      "fechaFin" : "2024-05-05 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.11529,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 10:00:00",
+      "fechaFin" : "2024-05-05 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.1008,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 11:00:00",
+      "fechaFin" : "2024-05-05 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.11962,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 12:00:00",
+      "fechaFin" : "2024-05-05 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.10727,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 13:00:00",
+      "fechaFin" : "2024-05-05 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.11782,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 14:00:00",
+      "fechaFin" : "2024-05-05 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.07095,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 15:00:00",
+      "fechaFin" : "2024-05-05 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09155,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 16:00:00",
+      "fechaFin" : "2024-05-05 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.10711,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 17:00:00",
+      "fechaFin" : "2024-05-05 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.07409,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 18:00:00",
+      "fechaFin" : "2024-05-05 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.06525,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 19:00:00",
+      "fechaFin" : "2024-05-05 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.10214,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 20:00:00",
+      "fechaFin" : "2024-05-05 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.11562,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 21:00:00",
+      "fechaFin" : "2024-05-05 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.10929,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 22:00:00",
+      "fechaFin" : "2024-05-05 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.10351,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-05 23:00:00",
+      "fechaFin" : "2024-05-05 00:00:00"
+    }
+  },
+  "2024-05-06" : {
+    "00-01" : {
+      "preciokWh" : 0.11359,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 00:00:00",
+      "fechaFin" : "2024-05-06 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.11006,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 01:00:00",
+      "fechaFin" : "2024-05-06 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.10476,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 02:00:00",
+      "fechaFin" : "2024-05-06 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.07065,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 03:00:00",
+      "fechaFin" : "2024-05-06 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.10653,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 04:00:00",
+      "fechaFin" : "2024-05-06 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.11737,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 05:00:00",
+      "fechaFin" : "2024-05-06 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.07519,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 06:00:00",
+      "fechaFin" : "2024-05-06 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.10722,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 07:00:00",
+      "fechaFin" : "2024-05-06 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.06605,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 08:00:00",
+      "fechaFin" : "2024-05-06 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.09996,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 09:00:00",
+      "fechaFin" : "2024-05-06 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.08285,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 10:00:00",
+      "fechaFin" : "2024-05-06 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.10912,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 11:00:00",
+      "fechaFin" : "2024-05-06 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.11411,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 12:00:00",
+      "fechaFin" : "2024-05-06 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.08322,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 13:00:00",
+      "fechaFin" : "2024-05-06 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.09181,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 14:00:00",
+      "fechaFin" : "2024-05-06 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.11474,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 15:00:00",
+      "fechaFin" : "2024-05-06 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09307,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 16:00:00",
+      "fechaFin" : "2024-05-06 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.11086,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 17:00:00",
+      "fechaFin" : "2024-05-06 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.06588,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 18:00:00",
+      "fechaFin" : "2024-05-06 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.08991,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 19:00:00",
+      "fechaFin" : "2024-05-06 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.06656,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 20:00:00",
+      "fechaFin" : "2024-05-06 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.09532,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 21:00:00",
+      "fechaFin" : "2024-05-06 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.0711,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 22:00:00",
+      "fechaFin" : "2024-05-06 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.08894,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-06 23:00:00",
+      "fechaFin" : "2024-05-06 00:00:00"
+    }
+  },
+  "2024-05-07" : {
+    "00-01" : {
+      "preciokWh" : 0.11685,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 00:00:00",
+      "fechaFin" : "2024-05-07 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.11559,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 01:00:00",
+      "fechaFin" : "2024-05-07 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.11364,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 02:00:00",
+      "fechaFin" : "2024-05-07 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.11079,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 03:00:00",
+      "fechaFin" : "2024-05-07 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.06995,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 04:00:00",
+      "fechaFin" : "2024-05-07 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.06769,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 05:00:00",
+      "fechaFin" : "2024-05-07 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.11181,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 06:00:00",
+      "fechaFin" : "2024-05-07 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.0716,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 07:00:00",
+      "fechaFin" : "2024-05-07 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.11234,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 08:00:00",
+      "fechaFin" : "2024-05-07 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.10601,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 09:00:00",
+      "fechaFin" : "2024-05-07 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.11714,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 10:00:00",
+      "fechaFin" : "2024-05-07 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.06629,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 11:00:00",
+      "fechaFin" : "2024-05-07 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.06424,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 12:00:00",
+      "fechaFin" : "2024-05-07 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.06367,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 13:00:00",
+      "fechaFin" : "2024-05-07 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.06546,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 14:00:00",
+      "fechaFin" : "2024-05-07 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.08694,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 15:00:00",
+      "fechaFin" : "2024-05-07 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.08745,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 16:00:00",
+      "fechaFin" : "2024-05-07 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.1081,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 17:00:00",
+      "fechaFin" : "2024-05-07 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.08502,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 18:00:00",
+      "fechaFin" : "2024-05-07 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.08633,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 19:00:00",
+      "fechaFin" : "2024-05-07 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.09309,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 20:00:00",
+      "fechaFin" : "2024-05-07 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.06128,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 21:00:00",
+      "fechaFin" : "2024-05-07 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.10684,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 22:00:00",
+      "fechaFin" : "2024-05-07 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.11184,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-07 23:00:00",
+      "fechaFin" : "2024-05-07 00:00:00"
+    }
+  },
+  "2024-05-08" : {
+    "00-01" : {
+      "preciokWh" : 0.09513,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 00:00:00",
+      "fechaFin" : "2024-05-08 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.09027,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 01:00:00",
+      "fechaFin" : "2024-05-08 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.08608,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 02:00:00",
+      "fechaFin" : "2024-05-08 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.08122,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 03:00:00",
+      "fechaFin" : "2024-05-08 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.0669,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 04:00:00",
+      "fechaFin" : "2024-05-08 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.06756,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 05:00:00",
+      "fechaFin" : "2024-05-08 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.07641,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 06:00:00",
+      "fechaFin" : "2024-05-08 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.11387,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 07:00:00",
+      "fechaFin" : "2024-05-08 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.09091,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 08:00:00",
+      "fechaFin" : "2024-05-08 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.06959,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 09:00:00",
+      "fechaFin" : "2024-05-08 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.11586,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 10:00:00",
+      "fechaFin" : "2024-05-08 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.06096,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 11:00:00",
+      "fechaFin" : "2024-05-08 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.11441,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 12:00:00",
+      "fechaFin" : "2024-05-08 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.10371,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 13:00:00",
+      "fechaFin" : "2024-05-08 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.06746,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 14:00:00",
+      "fechaFin" : "2024-05-08 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.11936,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 15:00:00",
+      "fechaFin" : "2024-05-08 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.10486,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 16:00:00",
+      "fechaFin" : "2024-05-08 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.09511,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 17:00:00",
+      "fechaFin" : "2024-05-08 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.07074,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 18:00:00",
+      "fechaFin" : "2024-05-08 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.08264,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 19:00:00",
+      "fechaFin" : "2024-05-08 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.11199,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 20:00:00",
+      "fechaFin" : "2024-05-08 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.06372,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 21:00:00",
+      "fechaFin" : "2024-05-08 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.08608,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 22:00:00",
+      "fechaFin" : "2024-05-08 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.08993,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-08 23:00:00",
+      "fechaFin" : "2024-05-08 00:00:00"
+    }
+  },
+  "2024-05-09" : {
+    "00-01" : {
+      "preciokWh" : 0.08535,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 00:00:00",
+      "fechaFin" : "2024-05-09 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.07414,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 01:00:00",
+      "fechaFin" : "2024-05-09 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.11748,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 02:00:00",
+      "fechaFin" : "2024-05-09 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.07963,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 03:00:00",
+      "fechaFin" : "2024-05-09 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.06307,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 04:00:00",
+      "fechaFin" : "2024-05-09 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.07781,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 05:00:00",
+      "fechaFin" : "2024-05-09 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.08113,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 06:00:00",
+      "fechaFin" : "2024-05-09 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.07986,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 07:00:00",
+      "fechaFin" : "2024-05-09 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.11666,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 08:00:00",
+      "fechaFin" : "2024-05-09 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.08865,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 09:00:00",
+      "fechaFin" : "2024-05-09 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.06474,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 10:00:00",
+      "fechaFin" : "2024-05-09 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.0989,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 11:00:00",
+      "fechaFin" : "2024-05-09 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.10901,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 12:00:00",
+      "fechaFin" : "2024-05-09 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.07549,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 13:00:00",
+      "fechaFin" : "2024-05-09 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.09698,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 14:00:00",
+      "fechaFin" : "2024-05-09 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.0822,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 15:00:00",
+      "fechaFin" : "2024-05-09 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09442,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 16:00:00",
+      "fechaFin" : "2024-05-09 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.08759,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 17:00:00",
+      "fechaFin" : "2024-05-09 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.07254,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 18:00:00",
+      "fechaFin" : "2024-05-09 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.06834,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 19:00:00",
+      "fechaFin" : "2024-05-09 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.09337,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 20:00:00",
+      "fechaFin" : "2024-05-09 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.06957,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 21:00:00",
+      "fechaFin" : "2024-05-09 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.06808,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 22:00:00",
+      "fechaFin" : "2024-05-09 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.06075,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-09 23:00:00",
+      "fechaFin" : "2024-05-09 00:00:00"
+    }
+  },
+  "2024-05-10" : {
+    "00-01" : {
+      "preciokWh" : 0.1008,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 00:00:00",
+      "fechaFin" : "2024-05-10 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.07315,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 01:00:00",
+      "fechaFin" : "2024-05-10 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.08467,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 02:00:00",
+      "fechaFin" : "2024-05-10 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.06066,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 03:00:00",
+      "fechaFin" : "2024-05-10 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.10423,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 04:00:00",
+      "fechaFin" : "2024-05-10 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.09529,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 05:00:00",
+      "fechaFin" : "2024-05-10 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.09858,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 06:00:00",
+      "fechaFin" : "2024-05-10 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.10722,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 07:00:00",
+      "fechaFin" : "2024-05-10 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.11829,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 08:00:00",
+      "fechaFin" : "2024-05-10 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.0889,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 09:00:00",
+      "fechaFin" : "2024-05-10 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.08913,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 10:00:00",
+      "fechaFin" : "2024-05-10 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.1051,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 11:00:00",
+      "fechaFin" : "2024-05-10 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.08158,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 12:00:00",
+      "fechaFin" : "2024-05-10 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.07413,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 13:00:00",
+      "fechaFin" : "2024-05-10 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.07733,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 14:00:00",
+      "fechaFin" : "2024-05-10 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.11039,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 15:00:00",
+      "fechaFin" : "2024-05-10 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09599,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 16:00:00",
+      "fechaFin" : "2024-05-10 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.07961,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 17:00:00",
+      "fechaFin" : "2024-05-10 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.06764,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 18:00:00",
+      "fechaFin" : "2024-05-10 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.11203,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 19:00:00",
+      "fechaFin" : "2024-05-10 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.10198,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 20:00:00",
+      "fechaFin" : "2024-05-10 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.08732,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 21:00:00",
+      "fechaFin" : "2024-05-10 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.10966,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 22:00:00",
+      "fechaFin" : "2024-05-10 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.06249,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-10 23:00:00",
+      "fechaFin" : "2024-05-10 00:00:00"
+    }
+  },
+  "2024-05-11" : {
+    "00-01" : {
+      "preciokWh" : 0.1053,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 00:00:00",
+      "fechaFin" : "2024-05-11 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.11555,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 01:00:00",
+      "fechaFin" : "2024-05-11 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.09185,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 02:00:00",
+      "fechaFin" : "2024-05-11 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.07727,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 03:00:00",
+      "fechaFin" : "2024-05-11 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.11896,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 04:00:00",
+      "fechaFin" : "2024-05-11 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.06415,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 05:00:00",
+      "fechaFin" : "2024-05-11 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.08029,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 06:00:00",
+      "fechaFin" : "2024-05-11 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.10941,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 07:00:00",
+      "fechaFin" : "2024-05-11 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.10692,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 08:00:00",
+      "fechaFin" : "2024-05-11 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.11339,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 09:00:00",
+      "fechaFin" : "2024-05-11 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.06774,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 10:00:00",
+      "fechaFin" : "2024-05-11 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.08859,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 11:00:00",
+      "fechaFin" : "2024-05-11 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.0844,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 12:00:00",
+      "fechaFin" : "2024-05-11 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.11003,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 13:00:00",
+      "fechaFin" : "2024-05-11 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.10745,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 14:00:00",
+      "fechaFin" : "2024-05-11 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.10685,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 15:00:00",
+      "fechaFin" : "2024-05-11 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.1196,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 16:00:00",
+      "fechaFin" : "2024-05-11 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.07032,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 17:00:00",
+      "fechaFin" : "2024-05-11 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.08646,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 18:00:00",
+      "fechaFin" : "2024-05-11 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.08026,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 19:00:00",
+      "fechaFin" : "2024-05-11 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.09789,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 20:00:00",
+      "fechaFin" : "2024-05-11 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.08653,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 21:00:00",
+      "fechaFin" : "2024-05-11 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.1062,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 22:00:00",
+      "fechaFin" : "2024-05-11 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.1051,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-11 23:00:00",
+      "fechaFin" : "2024-05-11 00:00:00"
+    }
+  },
+  "2024-05-12" : {
+    "00-01" : {
+      "preciokWh" : 0.10613,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 00:00:00",
+      "fechaFin" : "2024-05-12 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.06455,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 01:00:00",
+      "fechaFin" : "2024-05-12 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.08447,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 02:00:00",
+      "fechaFin" : "2024-05-12 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.07095,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 03:00:00",
+      "fechaFin" : "2024-05-12 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.11954,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 04:00:00",
+      "fechaFin" : "2024-05-12 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.10939,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 05:00:00",
+      "fechaFin" : "2024-05-12 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.1125,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 06:00:00",
+      "fechaFin" : "2024-05-12 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.07261,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 07:00:00",
+      "fechaFin" : "2024-05-12 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.08973,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 08:00:00",
+      "fechaFin" : "2024-05-12 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.11577,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 09:00:00",
+      "fechaFin" : "2024-05-12 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.07765,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 10:00:00",
+      "fechaFin" : "2024-05-12 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.0606,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 11:00:00",
+      "fechaFin" : "2024-05-12 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.11294,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 12:00:00",
+      "fechaFin" : "2024-05-12 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.07174,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 13:00:00",
+      "fechaFin" : "2024-05-12 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.0692,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 14:00:00",
+      "fechaFin" : "2024-05-12 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.10262,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 15:00:00",
+      "fechaFin" : "2024-05-12 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.08077,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 16:00:00",
+      "fechaFin" : "2024-05-12 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.0766,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 17:00:00",
+      "fechaFin" : "2024-05-12 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.07173,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 18:00:00",
+      "fechaFin" : "2024-05-12 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.06059,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 19:00:00",
+      "fechaFin" : "2024-05-12 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.06574,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 20:00:00",
+      "fechaFin" : "2024-05-12 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.07276,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 21:00:00",
+      "fechaFin" : "2024-05-12 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.09093,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 22:00:00",
+      "fechaFin" : "2024-05-12 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.06002,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-12 23:00:00",
+      "fechaFin" : "2024-05-12 00:00:00"
+    }
+  },
+  "2024-05-13" : {
+    "00-01" : {
+      "preciokWh" : 0.09638,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 00:00:00",
+      "fechaFin" : "2024-05-13 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.08074,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 01:00:00",
+      "fechaFin" : "2024-05-13 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.10527,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 02:00:00",
+      "fechaFin" : "2024-05-13 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.09718,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 03:00:00",
+      "fechaFin" : "2024-05-13 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.08463,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 04:00:00",
+      "fechaFin" : "2024-05-13 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.06053,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 05:00:00",
+      "fechaFin" : "2024-05-13 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.10993,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 06:00:00",
+      "fechaFin" : "2024-05-13 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.06332,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 07:00:00",
+      "fechaFin" : "2024-05-13 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.11864,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 08:00:00",
+      "fechaFin" : "2024-05-13 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.08191,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 09:00:00",
+      "fechaFin" : "2024-05-13 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.09293,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 10:00:00",
+      "fechaFin" : "2024-05-13 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.11038,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 11:00:00",
+      "fechaFin" : "2024-05-13 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.09107,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 12:00:00",
+      "fechaFin" : "2024-05-13 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.07908,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 13:00:00",
+      "fechaFin" : "2024-05-13 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.10378,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 14:00:00",
+      "fechaFin" : "2024-05-13 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.09893,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 15:00:00",
+      "fechaFin" : "2024-05-13 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.08091,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 16:00:00",
+      "fechaFin" : "2024-05-13 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.10989,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 17:00:00",
+      "fechaFin" : "2024-05-13 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.08344,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 18:00:00",
+      "fechaFin" : "2024-05-13 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.06522,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 19:00:00",
+      "fechaFin" : "2024-05-13 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.09819,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 20:00:00",
+      "fechaFin" : "2024-05-13 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.08061,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 21:00:00",
+      "fechaFin" : "2024-05-13 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.08465,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 22:00:00",
+      "fechaFin" : "2024-05-13 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.09602,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-13 23:00:00",
+      "fechaFin" : "2024-05-13 00:00:00"
+    }
+  },
+  "2024-05-14" : {
+    "00-01" : {
+      "preciokWh" : 0.0854,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 00:00:00",
+      "fechaFin" : "2024-05-14 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.11594,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 01:00:00",
+      "fechaFin" : "2024-05-14 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.09007,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 02:00:00",
+      "fechaFin" : "2024-05-14 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.08063,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 03:00:00",
+      "fechaFin" : "2024-05-14 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.09711,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 04:00:00",
+      "fechaFin" : "2024-05-14 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.11994,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 05:00:00",
+      "fechaFin" : "2024-05-14 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.07389,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 06:00:00",
+      "fechaFin" : "2024-05-14 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.09675,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 07:00:00",
+      "fechaFin" : "2024-05-14 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.07312,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 08:00:00",
+      "fechaFin" : "2024-05-14 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.10022,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 09:00:00",
+      "fechaFin" : "2024-05-14 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.08862,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 10:00:00",
+      "fechaFin" : "2024-05-14 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.08227,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 11:00:00",
+      "fechaFin" : "2024-05-14 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.07695,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 12:00:00",
+      "fechaFin" : "2024-05-14 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.07802,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 13:00:00",
+      "fechaFin" : "2024-05-14 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.06052,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 14:00:00",
+      "fechaFin" : "2024-05-14 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.0998,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 15:00:00",
+      "fechaFin" : "2024-05-14 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.07345,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 16:00:00",
+      "fechaFin" : "2024-05-14 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.07623,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 17:00:00",
+      "fechaFin" : "2024-05-14 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.09465,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 18:00:00",
+      "fechaFin" : "2024-05-14 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.09446,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 19:00:00",
+      "fechaFin" : "2024-05-14 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.07504,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 20:00:00",
+      "fechaFin" : "2024-05-14 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.0867,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 21:00:00",
+      "fechaFin" : "2024-05-14 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.09928,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 22:00:00",
+      "fechaFin" : "2024-05-14 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.07329,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-14 23:00:00",
+      "fechaFin" : "2024-05-14 00:00:00"
+    }
+  },
+  "2024-05-15" : {
+    "00-01" : {
+      "preciokWh" : 0.09505,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 00:00:00",
+      "fechaFin" : "2024-05-15 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.11418,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 01:00:00",
+      "fechaFin" : "2024-05-15 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.09658,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 02:00:00",
+      "fechaFin" : "2024-05-15 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.06683,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 03:00:00",
+      "fechaFin" : "2024-05-15 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.08055,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 04:00:00",
+      "fechaFin" : "2024-05-15 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.09691,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 05:00:00",
+      "fechaFin" : "2024-05-15 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.08484,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 06:00:00",
+      "fechaFin" : "2024-05-15 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.10318,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 07:00:00",
+      "fechaFin" : "2024-05-15 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.07224,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 08:00:00",
+      "fechaFin" : "2024-05-15 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.08814,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 09:00:00",
+      "fechaFin" : "2024-05-15 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.08996,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 10:00:00",
+      "fechaFin" : "2024-05-15 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.06401,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 11:00:00",
+      "fechaFin" : "2024-05-15 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.08503,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 12:00:00",
+      "fechaFin" : "2024-05-15 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.08231,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 13:00:00",
+      "fechaFin" : "2024-05-15 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.09129,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 14:00:00",
+      "fechaFin" : "2024-05-15 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.10269,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 15:00:00",
+      "fechaFin" : "2024-05-15 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.10547,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 16:00:00",
+      "fechaFin" : "2024-05-15 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.07129,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 17:00:00",
+      "fechaFin" : "2024-05-15 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.09714,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 18:00:00",
+      "fechaFin" : "2024-05-15 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.10591,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 19:00:00",
+      "fechaFin" : "2024-05-15 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.08448,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 20:00:00",
+      "fechaFin" : "2024-05-15 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.07713,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 21:00:00",
+      "fechaFin" : "2024-05-15 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.06043,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 22:00:00",
+      "fechaFin" : "2024-05-15 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.06272,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-15 23:00:00",
+      "fechaFin" : "2024-05-15 00:00:00"
+    }
+  },
+  "2024-05-16" : {
+    "00-01" : {
+      "preciokWh" : 0.11384,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 00:00:00",
+      "fechaFin" : "2024-05-16 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.06717,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 01:00:00",
+      "fechaFin" : "2024-05-16 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.10111,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 02:00:00",
+      "fechaFin" : "2024-05-16 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.08191,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 03:00:00",
+      "fechaFin" : "2024-05-16 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.06184,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 04:00:00",
+      "fechaFin" : "2024-05-16 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.11106,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 05:00:00",
+      "fechaFin" : "2024-05-16 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.1034,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 06:00:00",
+      "fechaFin" : "2024-05-16 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.08778,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 07:00:00",
+      "fechaFin" : "2024-05-16 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.10187,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 08:00:00",
+      "fechaFin" : "2024-05-16 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.06595,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 09:00:00",
+      "fechaFin" : "2024-05-16 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.0634,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 10:00:00",
+      "fechaFin" : "2024-05-16 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.11123,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 11:00:00",
+      "fechaFin" : "2024-05-16 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.09374,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 12:00:00",
+      "fechaFin" : "2024-05-16 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.10106,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 13:00:00",
+      "fechaFin" : "2024-05-16 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.06353,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 14:00:00",
+      "fechaFin" : "2024-05-16 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.064,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 15:00:00",
+      "fechaFin" : "2024-05-16 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.06245,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 16:00:00",
+      "fechaFin" : "2024-05-16 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.09651,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 17:00:00",
+      "fechaFin" : "2024-05-16 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.08864,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 18:00:00",
+      "fechaFin" : "2024-05-16 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.09408,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 19:00:00",
+      "fechaFin" : "2024-05-16 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.11376,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 20:00:00",
+      "fechaFin" : "2024-05-16 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.09928,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 21:00:00",
+      "fechaFin" : "2024-05-16 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.10904,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 22:00:00",
+      "fechaFin" : "2024-05-16 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.09707,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-16 23:00:00",
+      "fechaFin" : "2024-05-16 00:00:00"
+    }
+  },
+  "2024-05-17" : {
+    "00-01" : {
+      "preciokWh" : 0.08654,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 00:00:00",
+      "fechaFin" : "2024-05-17 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.08363,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 01:00:00",
+      "fechaFin" : "2024-05-17 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.10036,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 02:00:00",
+      "fechaFin" : "2024-05-17 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.06447,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 03:00:00",
+      "fechaFin" : "2024-05-17 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.11266,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 04:00:00",
+      "fechaFin" : "2024-05-17 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.10557,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 05:00:00",
+      "fechaFin" : "2024-05-17 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.11255,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 06:00:00",
+      "fechaFin" : "2024-05-17 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.09323,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 07:00:00",
+      "fechaFin" : "2024-05-17 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.07231,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 08:00:00",
+      "fechaFin" : "2024-05-17 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.07591,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 09:00:00",
+      "fechaFin" : "2024-05-17 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.07923,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 10:00:00",
+      "fechaFin" : "2024-05-17 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.11515,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 11:00:00",
+      "fechaFin" : "2024-05-17 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.10001,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 12:00:00",
+      "fechaFin" : "2024-05-17 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.08409,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 13:00:00",
+      "fechaFin" : "2024-05-17 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.08926,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 14:00:00",
+      "fechaFin" : "2024-05-17 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.10142,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 15:00:00",
+      "fechaFin" : "2024-05-17 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09937,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 16:00:00",
+      "fechaFin" : "2024-05-17 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.10602,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 17:00:00",
+      "fechaFin" : "2024-05-17 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.10886,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 18:00:00",
+      "fechaFin" : "2024-05-17 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.11691,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 19:00:00",
+      "fechaFin" : "2024-05-17 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.07759,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 20:00:00",
+      "fechaFin" : "2024-05-17 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.08187,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 21:00:00",
+      "fechaFin" : "2024-05-17 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.0625,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 22:00:00",
+      "fechaFin" : "2024-05-17 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.11835,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-17 23:00:00",
+      "fechaFin" : "2024-05-17 00:00:00"
+    }
+  },
+  "2024-05-18" : {
+    "00-01" : {
+      "preciokWh" : 0.11602,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 00:00:00",
+      "fechaFin" : "2024-05-18 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.09689,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 01:00:00",
+      "fechaFin" : "2024-05-18 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.09399,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 02:00:00",
+      "fechaFin" : "2024-05-18 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.07445,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 03:00:00",
+      "fechaFin" : "2024-05-18 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.08503,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 04:00:00",
+      "fechaFin" : "2024-05-18 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.08347,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 05:00:00",
+      "fechaFin" : "2024-05-18 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.08506,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 06:00:00",
+      "fechaFin" : "2024-05-18 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.08838,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 07:00:00",
+      "fechaFin" : "2024-05-18 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.11354,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 08:00:00",
+      "fechaFin" : "2024-05-18 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.08316,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 09:00:00",
+      "fechaFin" : "2024-05-18 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.09575,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 10:00:00",
+      "fechaFin" : "2024-05-18 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.08876,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 11:00:00",
+      "fechaFin" : "2024-05-18 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.11724,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 12:00:00",
+      "fechaFin" : "2024-05-18 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.11785,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 13:00:00",
+      "fechaFin" : "2024-05-18 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.10261,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 14:00:00",
+      "fechaFin" : "2024-05-18 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.06056,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 15:00:00",
+      "fechaFin" : "2024-05-18 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.06593,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 16:00:00",
+      "fechaFin" : "2024-05-18 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.10865,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 17:00:00",
+      "fechaFin" : "2024-05-18 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.08861,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 18:00:00",
+      "fechaFin" : "2024-05-18 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.06086,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 19:00:00",
+      "fechaFin" : "2024-05-18 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.09771,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 20:00:00",
+      "fechaFin" : "2024-05-18 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.06981,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 21:00:00",
+      "fechaFin" : "2024-05-18 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.10839,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 22:00:00",
+      "fechaFin" : "2024-05-18 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.06697,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-18 23:00:00",
+      "fechaFin" : "2024-05-18 00:00:00"
+    }
+  },
+  "2024-05-19" : {
+    "00-01" : {
+      "preciokWh" : 0.08698,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 00:00:00",
+      "fechaFin" : "2024-05-19 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.07651,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 01:00:00",
+      "fechaFin" : "2024-05-19 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.11328,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 02:00:00",
+      "fechaFin" : "2024-05-19 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.10928,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 03:00:00",
+      "fechaFin" : "2024-05-19 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.08502,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 04:00:00",
+      "fechaFin" : "2024-05-19 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.06182,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 05:00:00",
+      "fechaFin" : "2024-05-19 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.07464,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 06:00:00",
+      "fechaFin" : "2024-05-19 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.06043,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 07:00:00",
+      "fechaFin" : "2024-05-19 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.0643,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 08:00:00",
+      "fechaFin" : "2024-05-19 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.09466,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 09:00:00",
+      "fechaFin" : "2024-05-19 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.10261,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 10:00:00",
+      "fechaFin" : "2024-05-19 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.06825,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 11:00:00",
+      "fechaFin" : "2024-05-19 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.10058,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 12:00:00",
+      "fechaFin" : "2024-05-19 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.06928,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 13:00:00",
+      "fechaFin" : "2024-05-19 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.10864,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 14:00:00",
+      "fechaFin" : "2024-05-19 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.08623,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 15:00:00",
+      "fechaFin" : "2024-05-19 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.1195,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 16:00:00",
+      "fechaFin" : "2024-05-19 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.10935,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 17:00:00",
+      "fechaFin" : "2024-05-19 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.07382,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 18:00:00",
+      "fechaFin" : "2024-05-19 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.10908,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 19:00:00",
+      "fechaFin" : "2024-05-19 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.09315,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 20:00:00",
+      "fechaFin" : "2024-05-19 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.11655,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 21:00:00",
+      "fechaFin" : "2024-05-19 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.08178,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 22:00:00",
+      "fechaFin" : "2024-05-19 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.08205,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-19 23:00:00",
+      "fechaFin" : "2024-05-19 00:00:00"
+    }
+  },
+  "2024-05-20" : {
+    "00-01" : {
+      "preciokWh" : 0.07998,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 00:00:00",
+      "fechaFin" : "2024-05-20 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.06292,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 01:00:00",
+      "fechaFin" : "2024-05-20 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.10734,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 02:00:00",
+      "fechaFin" : "2024-05-20 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.063,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 03:00:00",
+      "fechaFin" : "2024-05-20 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.07319,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 04:00:00",
+      "fechaFin" : "2024-05-20 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.09552,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 05:00:00",
+      "fechaFin" : "2024-05-20 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.11822,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 06:00:00",
+      "fechaFin" : "2024-05-20 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.09529,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 07:00:00",
+      "fechaFin" : "2024-05-20 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.06382,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 08:00:00",
+      "fechaFin" : "2024-05-20 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.0682,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 09:00:00",
+      "fechaFin" : "2024-05-20 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.07898,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 10:00:00",
+      "fechaFin" : "2024-05-20 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.0806,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 11:00:00",
+      "fechaFin" : "2024-05-20 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.07215,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 12:00:00",
+      "fechaFin" : "2024-05-20 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.06348,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 13:00:00",
+      "fechaFin" : "2024-05-20 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.09668,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 14:00:00",
+      "fechaFin" : "2024-05-20 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.07021,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 15:00:00",
+      "fechaFin" : "2024-05-20 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09398,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 16:00:00",
+      "fechaFin" : "2024-05-20 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.09512,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 17:00:00",
+      "fechaFin" : "2024-05-20 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.09657,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 18:00:00",
+      "fechaFin" : "2024-05-20 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.11873,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 19:00:00",
+      "fechaFin" : "2024-05-20 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.09059,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 20:00:00",
+      "fechaFin" : "2024-05-20 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.08092,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 21:00:00",
+      "fechaFin" : "2024-05-20 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.0725,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 22:00:00",
+      "fechaFin" : "2024-05-20 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.07036,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-20 23:00:00",
+      "fechaFin" : "2024-05-20 00:00:00"
+    }
+  },
+  "2024-05-21" : {
+    "00-01" : {
+      "preciokWh" : 0.08682,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 00:00:00",
+      "fechaFin" : "2024-05-21 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.06419,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 01:00:00",
+      "fechaFin" : "2024-05-21 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.0963,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 02:00:00",
+      "fechaFin" : "2024-05-21 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.10279,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 03:00:00",
+      "fechaFin" : "2024-05-21 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.0707,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 04:00:00",
+      "fechaFin" : "2024-05-21 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.06916,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 05:00:00",
+      "fechaFin" : "2024-05-21 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.11285,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 06:00:00",
+      "fechaFin" : "2024-05-21 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.1121,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 07:00:00",
+      "fechaFin" : "2024-05-21 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.1096,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 08:00:00",
+      "fechaFin" : "2024-05-21 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.11233,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 09:00:00",
+      "fechaFin" : "2024-05-21 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.09604,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 10:00:00",
+      "fechaFin" : "2024-05-21 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.0856,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 11:00:00",
+      "fechaFin" : "2024-05-21 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.11427,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 12:00:00",
+      "fechaFin" : "2024-05-21 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.09469,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 13:00:00",
+      "fechaFin" : "2024-05-21 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.11214,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 14:00:00",
+      "fechaFin" : "2024-05-21 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.06034,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 15:00:00",
+      "fechaFin" : "2024-05-21 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.10905,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 16:00:00",
+      "fechaFin" : "2024-05-21 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.09959,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 17:00:00",
+      "fechaFin" : "2024-05-21 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.06977,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 18:00:00",
+      "fechaFin" : "2024-05-21 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.113,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 19:00:00",
+      "fechaFin" : "2024-05-21 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.0684,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 20:00:00",
+      "fechaFin" : "2024-05-21 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.06253,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 21:00:00",
+      "fechaFin" : "2024-05-21 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.08299,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 22:00:00",
+      "fechaFin" : "2024-05-21 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.11159,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-21 23:00:00",
+      "fechaFin" : "2024-05-21 00:00:00"
+    }
+  },
+  "2024-05-22" : {
+    "00-01" : {
+      "preciokWh" : 0.11809,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 00:00:00",
+      "fechaFin" : "2024-05-22 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.10865,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 01:00:00",
+      "fechaFin" : "2024-05-22 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.06151,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 02:00:00",
+      "fechaFin" : "2024-05-22 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.09998,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 03:00:00",
+      "fechaFin" : "2024-05-22 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.0704,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 04:00:00",
+      "fechaFin" : "2024-05-22 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.06973,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 05:00:00",
+      "fechaFin" : "2024-05-22 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.08274,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 06:00:00",
+      "fechaFin" : "2024-05-22 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.0885,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 07:00:00",
+      "fechaFin" : "2024-05-22 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.06211,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 08:00:00",
+      "fechaFin" : "2024-05-22 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.08261,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 09:00:00",
+      "fechaFin" : "2024-05-22 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.06717,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 10:00:00",
+      "fechaFin" : "2024-05-22 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.08678,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 11:00:00",
+      "fechaFin" : "2024-05-22 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.1011,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 12:00:00",
+      "fechaFin" : "2024-05-22 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.11843,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 13:00:00",
+      "fechaFin" : "2024-05-22 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.07389,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 14:00:00",
+      "fechaFin" : "2024-05-22 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.11418,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 15:00:00",
+      "fechaFin" : "2024-05-22 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.08982,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 16:00:00",
+      "fechaFin" : "2024-05-22 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.11881,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 17:00:00",
+      "fechaFin" : "2024-05-22 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.08865,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 18:00:00",
+      "fechaFin" : "2024-05-22 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.11519,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 19:00:00",
+      "fechaFin" : "2024-05-22 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.11411,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 20:00:00",
+      "fechaFin" : "2024-05-22 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.09499,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 21:00:00",
+      "fechaFin" : "2024-05-22 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.0768,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 22:00:00",
+      "fechaFin" : "2024-05-22 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.06147,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-22 23:00:00",
+      "fechaFin" : "2024-05-22 00:00:00"
+    }
+  },
+  "2024-05-23" : {
+    "00-01" : {
+      "preciokWh" : 0.10855,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 00:00:00",
+      "fechaFin" : "2024-05-23 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.0945,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 01:00:00",
+      "fechaFin" : "2024-05-23 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.10755,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 02:00:00",
+      "fechaFin" : "2024-05-23 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.11668,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 03:00:00",
+      "fechaFin" : "2024-05-23 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.07785,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 04:00:00",
+      "fechaFin" : "2024-05-23 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.11305,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 05:00:00",
+      "fechaFin" : "2024-05-23 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.07474,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 06:00:00",
+      "fechaFin" : "2024-05-23 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.06139,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 07:00:00",
+      "fechaFin" : "2024-05-23 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.11008,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 08:00:00",
+      "fechaFin" : "2024-05-23 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.10802,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 09:00:00",
+      "fechaFin" : "2024-05-23 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.07828,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 10:00:00",
+      "fechaFin" : "2024-05-23 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.07262,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 11:00:00",
+      "fechaFin" : "2024-05-23 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.10865,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 12:00:00",
+      "fechaFin" : "2024-05-23 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.11828,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 13:00:00",
+      "fechaFin" : "2024-05-23 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.11827,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 14:00:00",
+      "fechaFin" : "2024-05-23 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.11394,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 15:00:00",
+      "fechaFin" : "2024-05-23 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.07961,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 16:00:00",
+      "fechaFin" : "2024-05-23 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.08752,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 17:00:00",
+      "fechaFin" : "2024-05-23 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.113,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 18:00:00",
+      "fechaFin" : "2024-05-23 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.07931,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 19:00:00",
+      "fechaFin" : "2024-05-23 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.09781,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 20:00:00",
+      "fechaFin" : "2024-05-23 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.11544,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 21:00:00",
+      "fechaFin" : "2024-05-23 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.06548,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 22:00:00",
+      "fechaFin" : "2024-05-23 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.10558,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-23 23:00:00",
+      "fechaFin" : "2024-05-23 00:00:00"
+    }
+  },
+  "2024-05-24" : {
+    "00-01" : {
+      "preciokWh" : 0.09682,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 00:00:00",
+      "fechaFin" : "2024-05-24 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.11213,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 01:00:00",
+      "fechaFin" : "2024-05-24 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.10791,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 02:00:00",
+      "fechaFin" : "2024-05-24 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.07596,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 03:00:00",
+      "fechaFin" : "2024-05-24 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.09177,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 04:00:00",
+      "fechaFin" : "2024-05-24 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.11533,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 05:00:00",
+      "fechaFin" : "2024-05-24 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.11242,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 06:00:00",
+      "fechaFin" : "2024-05-24 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.07789,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 07:00:00",
+      "fechaFin" : "2024-05-24 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.11521,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 08:00:00",
+      "fechaFin" : "2024-05-24 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.08468,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 09:00:00",
+      "fechaFin" : "2024-05-24 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.1032,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 10:00:00",
+      "fechaFin" : "2024-05-24 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.0924,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 11:00:00",
+      "fechaFin" : "2024-05-24 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.06281,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 12:00:00",
+      "fechaFin" : "2024-05-24 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.07545,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 13:00:00",
+      "fechaFin" : "2024-05-24 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.10605,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 14:00:00",
+      "fechaFin" : "2024-05-24 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.07742,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 15:00:00",
+      "fechaFin" : "2024-05-24 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.06711,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 16:00:00",
+      "fechaFin" : "2024-05-24 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.11003,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 17:00:00",
+      "fechaFin" : "2024-05-24 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.10873,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 18:00:00",
+      "fechaFin" : "2024-05-24 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.10388,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 19:00:00",
+      "fechaFin" : "2024-05-24 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.06241,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 20:00:00",
+      "fechaFin" : "2024-05-24 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.09088,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 21:00:00",
+      "fechaFin" : "2024-05-24 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.07848,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 22:00:00",
+      "fechaFin" : "2024-05-24 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.07879,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-24 23:00:00",
+      "fechaFin" : "2024-05-24 00:00:00"
+    }
+  },
+  "2024-05-25" : {
+    "00-01" : {
+      "preciokWh" : 0.10151,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 00:00:00",
+      "fechaFin" : "2024-05-25 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.07812,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 01:00:00",
+      "fechaFin" : "2024-05-25 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.08369,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 02:00:00",
+      "fechaFin" : "2024-05-25 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.06184,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 03:00:00",
+      "fechaFin" : "2024-05-25 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.09003,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 04:00:00",
+      "fechaFin" : "2024-05-25 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.09745,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 05:00:00",
+      "fechaFin" : "2024-05-25 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.10114,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 06:00:00",
+      "fechaFin" : "2024-05-25 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.06662,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 07:00:00",
+      "fechaFin" : "2024-05-25 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.06479,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 08:00:00",
+      "fechaFin" : "2024-05-25 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.07174,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 09:00:00",
+      "fechaFin" : "2024-05-25 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.10846,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 10:00:00",
+      "fechaFin" : "2024-05-25 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.06189,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 11:00:00",
+      "fechaFin" : "2024-05-25 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.09192,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 12:00:00",
+      "fechaFin" : "2024-05-25 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.09972,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 13:00:00",
+      "fechaFin" : "2024-05-25 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.08129,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 14:00:00",
+      "fechaFin" : "2024-05-25 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.07686,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 15:00:00",
+      "fechaFin" : "2024-05-25 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09459,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 16:00:00",
+      "fechaFin" : "2024-05-25 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.11877,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 17:00:00",
+      "fechaFin" : "2024-05-25 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.06212,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 18:00:00",
+      "fechaFin" : "2024-05-25 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.07021,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 19:00:00",
+      "fechaFin" : "2024-05-25 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.07059,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 20:00:00",
+      "fechaFin" : "2024-05-25 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.11922,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 21:00:00",
+      "fechaFin" : "2024-05-25 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.07381,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 22:00:00",
+      "fechaFin" : "2024-05-25 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.10005,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-25 23:00:00",
+      "fechaFin" : "2024-05-25 00:00:00"
+    }
+  },
+  "2024-05-26" : {
+    "00-01" : {
+      "preciokWh" : 0.10843,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 00:00:00",
+      "fechaFin" : "2024-05-26 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.06738,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 01:00:00",
+      "fechaFin" : "2024-05-26 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.07073,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 02:00:00",
+      "fechaFin" : "2024-05-26 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.10702,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 03:00:00",
+      "fechaFin" : "2024-05-26 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.10819,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 04:00:00",
+      "fechaFin" : "2024-05-26 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.10685,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 05:00:00",
+      "fechaFin" : "2024-05-26 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.09863,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 06:00:00",
+      "fechaFin" : "2024-05-26 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.09219,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 07:00:00",
+      "fechaFin" : "2024-05-26 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.09182,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 08:00:00",
+      "fechaFin" : "2024-05-26 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.11383,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 09:00:00",
+      "fechaFin" : "2024-05-26 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.06021,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 10:00:00",
+      "fechaFin" : "2024-05-26 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.0939,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 11:00:00",
+      "fechaFin" : "2024-05-26 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.1157,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 12:00:00",
+      "fechaFin" : "2024-05-26 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.0789,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 13:00:00",
+      "fechaFin" : "2024-05-26 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.10905,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 14:00:00",
+      "fechaFin" : "2024-05-26 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.08041,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 15:00:00",
+      "fechaFin" : "2024-05-26 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09784,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 16:00:00",
+      "fechaFin" : "2024-05-26 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.07981,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 17:00:00",
+      "fechaFin" : "2024-05-26 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.08721,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 18:00:00",
+      "fechaFin" : "2024-05-26 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.07541,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 19:00:00",
+      "fechaFin" : "2024-05-26 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.08328,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 20:00:00",
+      "fechaFin" : "2024-05-26 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.1109,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 21:00:00",
+      "fechaFin" : "2024-05-26 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.11129,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 22:00:00",
+      "fechaFin" : "2024-05-26 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.08089,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-26 23:00:00",
+      "fechaFin" : "2024-05-26 00:00:00"
+    }
+  },
+  "2024-05-27" : {
+    "00-01" : {
+      "preciokWh" : 0.11653,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 00:00:00",
+      "fechaFin" : "2024-05-27 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.08012,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 01:00:00",
+      "fechaFin" : "2024-05-27 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.11175,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 02:00:00",
+      "fechaFin" : "2024-05-27 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.09765,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 03:00:00",
+      "fechaFin" : "2024-05-27 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.08026,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 04:00:00",
+      "fechaFin" : "2024-05-27 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.07375,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 05:00:00",
+      "fechaFin" : "2024-05-27 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.08282,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 06:00:00",
+      "fechaFin" : "2024-05-27 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.06275,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 07:00:00",
+      "fechaFin" : "2024-05-27 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.11095,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 08:00:00",
+      "fechaFin" : "2024-05-27 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.08237,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 09:00:00",
+      "fechaFin" : "2024-05-27 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.08327,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 10:00:00",
+      "fechaFin" : "2024-05-27 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.10474,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 11:00:00",
+      "fechaFin" : "2024-05-27 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.09135,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 12:00:00",
+      "fechaFin" : "2024-05-27 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.08548,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 13:00:00",
+      "fechaFin" : "2024-05-27 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.07752,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 14:00:00",
+      "fechaFin" : "2024-05-27 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.09573,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 15:00:00",
+      "fechaFin" : "2024-05-27 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.1087,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 16:00:00",
+      "fechaFin" : "2024-05-27 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.07678,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 17:00:00",
+      "fechaFin" : "2024-05-27 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.07785,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 18:00:00",
+      "fechaFin" : "2024-05-27 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.09426,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 19:00:00",
+      "fechaFin" : "2024-05-27 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.09789,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 20:00:00",
+      "fechaFin" : "2024-05-27 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.06342,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 21:00:00",
+      "fechaFin" : "2024-05-27 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.09533,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 22:00:00",
+      "fechaFin" : "2024-05-27 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.06549,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-27 23:00:00",
+      "fechaFin" : "2024-05-27 00:00:00"
+    }
+  },
+  "2024-05-28" : {
+    "00-01" : {
+      "preciokWh" : 0.10388,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 00:00:00",
+      "fechaFin" : "2024-05-28 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.06754,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 01:00:00",
+      "fechaFin" : "2024-05-28 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.08113,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 02:00:00",
+      "fechaFin" : "2024-05-28 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.07244,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 03:00:00",
+      "fechaFin" : "2024-05-28 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.10265,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 04:00:00",
+      "fechaFin" : "2024-05-28 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.10106,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 05:00:00",
+      "fechaFin" : "2024-05-28 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.1165,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 06:00:00",
+      "fechaFin" : "2024-05-28 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.09834,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 07:00:00",
+      "fechaFin" : "2024-05-28 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.07277,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 08:00:00",
+      "fechaFin" : "2024-05-28 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.06409,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 09:00:00",
+      "fechaFin" : "2024-05-28 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.06914,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 10:00:00",
+      "fechaFin" : "2024-05-28 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.09852,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 11:00:00",
+      "fechaFin" : "2024-05-28 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.06033,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 12:00:00",
+      "fechaFin" : "2024-05-28 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.10247,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 13:00:00",
+      "fechaFin" : "2024-05-28 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.0837,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 14:00:00",
+      "fechaFin" : "2024-05-28 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.08784,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 15:00:00",
+      "fechaFin" : "2024-05-28 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.07395,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 16:00:00",
+      "fechaFin" : "2024-05-28 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.08344,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 17:00:00",
+      "fechaFin" : "2024-05-28 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.10074,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 18:00:00",
+      "fechaFin" : "2024-05-28 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.07508,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 19:00:00",
+      "fechaFin" : "2024-05-28 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.06,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 20:00:00",
+      "fechaFin" : "2024-05-28 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.06208,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 21:00:00",
+      "fechaFin" : "2024-05-28 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.08811,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 22:00:00",
+      "fechaFin" : "2024-05-28 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.11433,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-28 23:00:00",
+      "fechaFin" : "2024-05-28 00:00:00"
+    }
+  },
+  "2024-05-29" : {
+    "00-01" : {
+      "preciokWh" : 0.08063,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 00:00:00",
+      "fechaFin" : "2024-05-29 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.09402,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 01:00:00",
+      "fechaFin" : "2024-05-29 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.07619,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 02:00:00",
+      "fechaFin" : "2024-05-29 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.09131,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 03:00:00",
+      "fechaFin" : "2024-05-29 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.06296,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 04:00:00",
+      "fechaFin" : "2024-05-29 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.11713,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 05:00:00",
+      "fechaFin" : "2024-05-29 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.0854,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 06:00:00",
+      "fechaFin" : "2024-05-29 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.07723,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 07:00:00",
+      "fechaFin" : "2024-05-29 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.09822,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 08:00:00",
+      "fechaFin" : "2024-05-29 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.06179,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 09:00:00",
+      "fechaFin" : "2024-05-29 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.0618,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 10:00:00",
+      "fechaFin" : "2024-05-29 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.11892,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 11:00:00",
+      "fechaFin" : "2024-05-29 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.09186,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 12:00:00",
+      "fechaFin" : "2024-05-29 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.06754,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 13:00:00",
+      "fechaFin" : "2024-05-29 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.07166,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 14:00:00",
+      "fechaFin" : "2024-05-29 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.11574,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 15:00:00",
+      "fechaFin" : "2024-05-29 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09891,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 16:00:00",
+      "fechaFin" : "2024-05-29 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.08651,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 17:00:00",
+      "fechaFin" : "2024-05-29 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.08441,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 18:00:00",
+      "fechaFin" : "2024-05-29 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.08996,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 19:00:00",
+      "fechaFin" : "2024-05-29 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.0777,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 20:00:00",
+      "fechaFin" : "2024-05-29 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.11625,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 21:00:00",
+      "fechaFin" : "2024-05-29 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.08435,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 22:00:00",
+      "fechaFin" : "2024-05-29 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.11152,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-29 23:00:00",
+      "fechaFin" : "2024-05-29 00:00:00"
+    }
+  },
+  "2024-05-30" : {
+    "00-01" : {
+      "preciokWh" : 0.10177,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 00:00:00",
+      "fechaFin" : "2024-05-30 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.0893,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 01:00:00",
+      "fechaFin" : "2024-05-30 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.11508,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 02:00:00",
+      "fechaFin" : "2024-05-30 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.10435,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 03:00:00",
+      "fechaFin" : "2024-05-30 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.11151,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 04:00:00",
+      "fechaFin" : "2024-05-30 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.11076,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 05:00:00",
+      "fechaFin" : "2024-05-30 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.09166,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 06:00:00",
+      "fechaFin" : "2024-05-30 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.0685,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 07:00:00",
+      "fechaFin" : "2024-05-30 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.09547,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 08:00:00",
+      "fechaFin" : "2024-05-30 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.09282,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 09:00:00",
+      "fechaFin" : "2024-05-30 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.10953,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 10:00:00",
+      "fechaFin" : "2024-05-30 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.07586,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 11:00:00",
+      "fechaFin" : "2024-05-30 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.11989,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 12:00:00",
+      "fechaFin" : "2024-05-30 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.11945,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 13:00:00",
+      "fechaFin" : "2024-05-30 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.08002,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 14:00:00",
+      "fechaFin" : "2024-05-30 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.07836,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 15:00:00",
+      "fechaFin" : "2024-05-30 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.09328,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 16:00:00",
+      "fechaFin" : "2024-05-30 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.10479,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 17:00:00",
+      "fechaFin" : "2024-05-30 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.08174,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 18:00:00",
+      "fechaFin" : "2024-05-30 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.07647,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 19:00:00",
+      "fechaFin" : "2024-05-30 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.10172,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 20:00:00",
+      "fechaFin" : "2024-05-30 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.06883,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 21:00:00",
+      "fechaFin" : "2024-05-30 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.07181,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 22:00:00",
+      "fechaFin" : "2024-05-30 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.09256,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-30 23:00:00",
+      "fechaFin" : "2024-05-30 00:00:00"
+    }
+  },
+  "2024-05-31" : {
+    "00-01" : {
+      "preciokWh" : 0.06717,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 00:00:00",
+      "fechaFin" : "2024-05-31 01:00:00"
+    },
+    "01-02" : {
+      "preciokWh" : 0.1077,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 01:00:00",
+      "fechaFin" : "2024-05-31 02:00:00"
+    },
+    "02-03" : {
+      "preciokWh" : 0.06509,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 02:00:00",
+      "fechaFin" : "2024-05-31 03:00:00"
+    },
+    "03-04" : {
+      "preciokWh" : 0.10242,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 03:00:00",
+      "fechaFin" : "2024-05-31 04:00:00"
+    },
+    "04-05" : {
+      "preciokWh" : 0.11017,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 04:00:00",
+      "fechaFin" : "2024-05-31 05:00:00"
+    },
+    "05-06" : {
+      "preciokWh" : 0.08156,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 05:00:00",
+      "fechaFin" : "2024-05-31 06:00:00"
+    },
+    "06-07" : {
+      "preciokWh" : 0.09473,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 06:00:00",
+      "fechaFin" : "2024-05-31 07:00:00"
+    },
+    "07-08" : {
+      "preciokWh" : 0.07127,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 07:00:00",
+      "fechaFin" : "2024-05-31 08:00:00"
+    },
+    "08-09" : {
+      "preciokWh" : 0.06714,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 08:00:00",
+      "fechaFin" : "2024-05-31 09:00:00"
+    },
+    "09-10" : {
+      "preciokWh" : 0.09835,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 09:00:00",
+      "fechaFin" : "2024-05-31 10:00:00"
+    },
+    "10-11" : {
+      "preciokWh" : 0.09463,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 10:00:00",
+      "fechaFin" : "2024-05-31 11:00:00"
+    },
+    "11-12" : {
+      "preciokWh" : 0.08528,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 11:00:00",
+      "fechaFin" : "2024-05-31 12:00:00"
+    },
+    "12-13" : {
+      "preciokWh" : 0.09303,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 12:00:00",
+      "fechaFin" : "2024-05-31 13:00:00"
+    },
+    "13-14" : {
+      "preciokWh" : 0.09718,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 13:00:00",
+      "fechaFin" : "2024-05-31 14:00:00"
+    },
+    "14-15" : {
+      "preciokWh" : 0.07292,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 14:00:00",
+      "fechaFin" : "2024-05-31 15:00:00"
+    },
+    "15-16" : {
+      "preciokWh" : 0.07604,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 15:00:00",
+      "fechaFin" : "2024-05-31 16:00:00"
+    },
+    "16-17" : {
+      "preciokWh" : 0.11131,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 16:00:00",
+      "fechaFin" : "2024-05-31 17:00:00"
+    },
+    "17-18" : {
+      "preciokWh" : 0.06773,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 17:00:00",
+      "fechaFin" : "2024-05-31 18:00:00"
+    },
+    "18-19" : {
+      "preciokWh" : 0.06376,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 18:00:00",
+      "fechaFin" : "2024-05-31 19:00:00"
+    },
+    "19-20" : {
+      "preciokWh" : 0.09283,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 19:00:00",
+      "fechaFin" : "2024-05-31 20:00:00"
+    },
+    "20-21" : {
+      "preciokWh" : 0.06502,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 20:00:00",
+      "fechaFin" : "2024-05-31 21:00:00"
+    },
+    "21-22" : {
+      "preciokWh" : 0.10761,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 21:00:00",
+      "fechaFin" : "2024-05-31 22:00:00"
+    },
+    "22-23" : {
+      "preciokWh" : 0.08844,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 22:00:00",
+      "fechaFin" : "2024-05-31 23:00:00"
+    },
+    "23-00" : {
+      "preciokWh" : 0.10312,
+      "unidades" : "€/kWh",
+      "fechaInicio" : "2024-05-31 23:00:00",
+      "fechaFin" : "2024-05-31 00:00:00"
+    }
+  }
+}

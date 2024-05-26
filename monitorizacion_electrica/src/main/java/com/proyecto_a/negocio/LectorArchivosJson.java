@@ -24,11 +24,9 @@ public class LectorArchivosJson {
     private static boolean insertado = false;
      public static PrecioElectricidad extraerDatosJsonPreciosElectricidad(){
 
-        PrecioElectricidad precioElectricidad = new PrecioElectricidad();
-       
         
         //FileReader abre el archivo json para lectura y el JsonParser.parseReader  utiliza gson para parsear el archivo json en un objeto de tipo JsonObject
-        try (FileReader leerJsonPrecios = new FileReader("monitorizacion_electrica\\may_2024_data.json")) {
+        try (FileReader leerJsonPrecios = new FileReader("monitorizacion_electrica\\may_2024_data_modificado.json")) {
             JsonObject jsonObject = JsonParser.parseReader(leerJsonPrecios).getAsJsonObject();
 
             // Recorremos las fechas y horas para extraer los datos. Con jsonObject.keySet() se obtiene un conjunto de todas las claves (horas) dentro del objeto json. Y con el jsonObject.getAsJsonObject(fecha) para cada fecha, obtiene el objeto json correspondiente a esa fecha, que contiene los datos de las horas.
@@ -38,12 +36,13 @@ public class LectorArchivosJson {
                 for (String hora : horas.keySet()) {
                     JsonObject detalle = horas.getAsJsonObject(hora);
                     // Extraer datos del objeto JSON parseado y mostrarlos.
-                    String fechaValue = detalle.get("fecha").getAsString();// Obtiene y convierte el valor de "fecha" a cadena.
-                    String horaValue = detalle.get("hora").getAsString();// Obtiene y convierte el valor de "hora" a cadena.
+                    String fechaInicioValue = detalle.get("fechaInicio").getAsString();// Obtiene y convierte el valor de "fecha" a cadena.
+                    String fechaFinValue = detalle.get("fechaFin").getAsString();// Obtiene y convierte el valor de "hora" a cadena.
                     float precioKwh = detalle.get("preciokWh").getAsFloat();// Obtiene y convierte el valor de "preciokWh" a float.
 
-                    precioElectricidad.setFecha(fechaValue); //Asigna el valor extraído de la fecha al objeto "precioElectricidad"
-                    precioElectricidad.setHora(horaValue);//Asigna el valor extraído de la hora al objeto "precioElectricidad"
+                    PrecioElectricidad precioElectricidad = new PrecioElectricidad();
+                    precioElectricidad.setFechaInicio(fechaInicioValue); //Asigna el valor extraído de la fecha al objeto "precioElectricidad"
+                    precioElectricidad.setFechaFin(fechaFinValue);//Asigna el valor extraído de la hora al objeto "precioElectricidad"
                     precioElectricidad.setPrecioKwh(precioKwh);//Asigna el valor extraído del precio al objeto "precioElectricidad"
 
                     if (!insertado) {
@@ -57,7 +56,8 @@ public class LectorArchivosJson {
         } catch (Exception e) {
             e.printStackTrace();  // Imprime el rastro del error si ocurre uno durante la escritura.
         }
-        return  precioElectricidad;
+        
+        return null;
     }
 
 
