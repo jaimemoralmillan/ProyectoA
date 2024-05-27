@@ -13,13 +13,13 @@ import com.proyecto_a.dao.Dispositivos_has_franjaHorariaDAO;
 public class Main {
     public static void main(String[] args) {
         
-        PrecioElectricidad precioElectricidad = new PrecioElectricidad();
-        GestorMonitorizacion.extraerDatosJsonPrecios();
-        GestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
+       // PrecioElectricidad precioElectricidad = new PrecioElectricidad();
+       // GestorMonitorizacion.extraerDatosJsonPrecios();
+        //GestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
 
-        LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
-        lectorArchivosJson.extraerDatosJsonDispositivos();
-        lectorArchivosJson.extraerDatosJsonEventosConsumo();
+       // LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
+        //lectorArchivosJson.extraerDatosJsonDispositivos();
+        //lectorArchivosJson.extraerDatosJsonEventosConsumo();
         
         
         GestorMonitorizacion.insertarFranjas();

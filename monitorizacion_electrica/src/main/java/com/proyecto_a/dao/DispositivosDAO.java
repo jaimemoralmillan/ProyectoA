@@ -1,7 +1,7 @@
 package com.proyecto_a.dao;
 
 import com.proyecto_a.dto.Dispositivo;
-import com.proyecto_a.dto.EventosConsumo;
+
 
 import java.util.ArrayList;
 import java.util.List;

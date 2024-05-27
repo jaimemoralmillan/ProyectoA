@@ -5,8 +5,12 @@ import java.awt.event.*;
 import java.util.ArrayList;
 
 import com.proyecto_a.negocio.GestorMonitorizacion;
+import com.proyecto_a.negocio.LectorArchivosJson;
 import com.proyecto_a.dao.DispositivosDAO;
+import com.proyecto_a.dao.EventosConsumosDAO;
+import com.proyecto_a.dao.EventosPrecioDAO;
 import com.proyecto_a.dto.Dispositivo;
+import com.proyecto_a.dto.PrecioElectricidad;
 
 public class MonitorizacionGUI extends JFrame {
 
@@ -15,7 +19,7 @@ public class MonitorizacionGUI extends JFrame {
     //inicializacion de todos los elementos que se vayan a usar y que tenga que leer una funcion: botones, combobox,paneles,campos de texto....
     //txt=caja de texto, btn=boton , combo=combobox (desplegable)
     private JTextField txtDispositivoDescripcion,txtDispositivoModificar;
-    private JButton btnAgregarDispositivo;
+    private JButton btnAgregarDispositivo,btnActualizarBaseDatos;
     private JComboBox<Dispositivo>  comboDispositivosEliminar, comboDispositivosModificar;
     private JComboBox<String>  comboSeleccionarDispositivo;
 
@@ -40,14 +44,16 @@ public class MonitorizacionGUI extends JFrame {
        
         JLabel etiquetaNombreDispositivo = new JLabel("Seleccione el dispositivo para agregar: ");
         comboSeleccionarDispositivo = new JComboBox<>();
-        //txtDispositivoNombre = new JTextField(); version antigua en la que el user introducia el nombre del dispositivo
+        
       
         JLabel etiquetaDescripcionDispositivo = new JLabel("Descripcion del Dispositivo: ");
         txtDispositivoDescripcion = new JTextField();
         btnAgregarDispositivo = new JButton("Agregar Dispositivo");
+        btnActualizarBaseDatos = new JButton("Actualizar Base de Datos");
 
         //se le agrega el action listener al botón que va a agregar; cuando se le clica ejecuta la funcion agregarDispositivo
         btnAgregarDispositivo.addActionListener(this::agregarDispositivo);
+        btnActualizarBaseDatos.addActionListener(this::funcionesActualizacionBD);
        
         //ahora añadimos todos los elementos en el orden que queramos: se ponen de izq a derecha, 2 por fila.
         // 
@@ -57,6 +63,7 @@ public class MonitorizacionGUI extends JFrame {
         pestanaAgregarDispositivo.add(etiquetaDescripcionDispositivo);
         pestanaAgregarDispositivo.add(txtDispositivoDescripcion);
         pestanaAgregarDispositivo.add(btnAgregarDispositivo);
+        pestanaAgregarDispositivo.add(btnActualizarBaseDatos);
 
     //UI ELIMINAR DISPOSITIVO
 
@@ -82,6 +89,8 @@ public class MonitorizacionGUI extends JFrame {
         pestanaModificarDispositivo.add(etiquetaNuevaDescripcion);
         pestanaModificarDispositivo.add(txtDispositivoModificar);
         pestanaModificarDispositivo.add(btnModificarDispositivo);
+
+        
 
 
         //Añadimos las pestañas al panel
@@ -230,6 +239,26 @@ public class MonitorizacionGUI extends JFrame {
             }
     
            }
+
+           //funcion actualizar base de datos
+
+           public void funcionesActualizacionBD(ActionEvent event){
+
+        PrecioElectricidad precioElectricidad = new PrecioElectricidad();
+        GestorMonitorizacion.extraerDatosJsonPrecios();
+        GestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
+
+        LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
+        lectorArchivosJson.extraerDatosJsonDispositivos();
+        lectorArchivosJson.extraerDatosJsonEventosConsumo();
+        
+        
+        GestorMonitorizacion.insertarFranjas();
+        EventosConsumosDAO.actualizarConsumoKwhEventosConsumo();
+        EventosPrecioDAO.InsertarEventosPrecio();
+        cargarDispositivosBDD();
+
+    }
        
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MonitorizacionGUI().setVisible(true));
