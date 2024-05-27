@@ -1,12 +1,14 @@
 package com.proyecto_a.ui;
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 import java.awt.event.*;
 import java.util.ArrayList;
 
 import com.proyecto_a.negocio.GestorMonitorizacion;
 import com.proyecto_a.negocio.LectorArchivosJson;
 import com.proyecto_a.dao.DispositivosDAO;
+import com.proyecto_a.dao.Dispositivos_has_franjaHorariaDAO;
 import com.proyecto_a.dao.EventosConsumosDAO;
 import com.proyecto_a.dao.EventosPrecioDAO;
 import com.proyecto_a.dto.Dispositivo;
@@ -252,8 +254,11 @@ public class MonitorizacionGUI extends JFrame {
         lectorArchivosJson.extraerDatosJsonDispositivos();
         lectorArchivosJson.extraerDatosJsonEventosConsumo();
         
-        
         GestorMonitorizacion.insertarFranjas();
+        List<String> nombresDispositivos = DispositivosDAO.obtenerNombresDispositivos();
+        for (String nombreDispositivo : nombresDispositivos) {
+            Dispositivos_has_franjaHorariaDAO.insertarFranjasParaDispositivo(nombreDispositivo);
+        }
         EventosConsumosDAO.actualizarConsumoKwhEventosConsumo();
         EventosPrecioDAO.InsertarEventosPrecio();
         cargarDispositivosBDD();

@@ -22,12 +22,13 @@ public class Main {
         //lectorArchivosJson.extraerDatosJsonEventosConsumo();
         
         
-        GestorMonitorizacion.insertarFranjas();
+       // GestorMonitorizacion.insertarFranjas();
+       /* 
         List<String> nombresDispositivos = DispositivosDAO.obtenerNombresDispositivos();
         for (String nombreDispositivo : nombresDispositivos) {
             Dispositivos_has_franjaHorariaDAO.insertarFranjasParaDispositivo(nombreDispositivo);
         }
-
+        */
         //LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
         //lectorArchivosJson.extraerDatosJsonEventosConsumo();
         // lectorArchivosJson.procesarJsonYGuardarEventosEnBD();
