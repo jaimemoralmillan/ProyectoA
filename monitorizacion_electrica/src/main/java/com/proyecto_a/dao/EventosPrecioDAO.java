@@ -85,6 +85,35 @@ public class EventosPrecioDAO {
             }
         }
     }
-}
+
+    public static float calcularConsumoPorDia(String fecha){
+        String SQL = "SELECT SUM(ep.consumoParcial * pe.precioKwh) as gastoTotal FROM EventoPrecio ep JOIN PrecioElectricidad pe ON ep.idPrecioElectricidad = pe.idPrecioElectricidad JOIN EventosConsumo ec ON ep.idEventosConsumo = ec.idEventosConsumo WHERE DATE(ep.periodoInicio) = ?";
+        float gastoTotal=0;
+        try (
+            Connection conn = Conexion.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(SQL);) {
+                pstmt.setString(1, fecha);
+            ResultSet  rs = pstmt.executeQuery();
+            
+            while (rs.next()) {
+
+                gastoTotal=rs.getFloat(1);
+                
+            }
+
+            return gastoTotal;
+
+
+    }  catch (SQLException e ) {
+
+        e.printStackTrace();
+        return 0;
+    
+    }
+
+
+
+} }
+
 
 
