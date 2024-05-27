@@ -1,6 +1,5 @@
 package com.proyecto_a.negocio;
 
-
 import com.proyecto_a.dao.DispositivosDAO;
 import com.proyecto_a.dao.FranjaHorariaDAO;
 import com.proyecto_a.dao.PrecioElectricidadDAO;
@@ -24,6 +23,7 @@ public class GestorMonitorizacion {
         public static void insertarFranjas(){
             FranjaHorariaDAO.insertarFranjas(FranjaHoraria.franjas);
         }
+        
         
 
     // Métodos para leer e insertar datos de un json en la BD

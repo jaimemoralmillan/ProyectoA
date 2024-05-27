@@ -4,6 +4,7 @@ import com.proyecto_a.dto.Dispositivo;
 import com.proyecto_a.dto.EventosConsumo;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.sql.*;
 
 public class DispositivosDAO {
@@ -127,6 +128,26 @@ public class DispositivosDAO {
             return null;
         }
 
+    }
+
+
+    // Prueba Nicklas para Franjas
+    public static List<String> obtenerNombresDispositivos() {
+        List<String> nombresDispositivos = new ArrayList<>();
+        String obtenerNombresSQL = "SELECT nombre FROM Dispositivos";
+
+        try (Connection conn = Conexion.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(obtenerNombresSQL);
+             ResultSet rs = pstmt.executeQuery()) {
+
+            while (rs.next()) {
+                nombresDispositivos.add(rs.getString("nombre"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return nombresDispositivos;
     }
 }
 

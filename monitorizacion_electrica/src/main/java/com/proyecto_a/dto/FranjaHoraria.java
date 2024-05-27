@@ -56,7 +56,8 @@ public class FranjaHoraria {
     }
 
 
-
-
+    public FranjaHoraria(int idFranjaHoraria) {
+        this.idFranjaHoraria = idFranjaHoraria;
+    }
 
 }

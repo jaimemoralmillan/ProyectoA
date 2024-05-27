@@ -109,7 +109,11 @@ public class Dispositivo {
 
     
 
-    
+    // Nicklas constructor para FranjasHorarias
+    public Dispositivo(int idDispositivo, String nombre) {
+        this.idDispositivo = idDispositivo;
+        this.nombre = nombre;
+    }
     
 
    

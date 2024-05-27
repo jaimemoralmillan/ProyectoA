@@ -1,13 +1,14 @@
 package com.proyecto_a.ui;
+import java.util.List;
+
 import javax.swing.SwingUtilities;
 
-import com.proyecto_a.dao.EventosConsumosDAO;
-import com.proyecto_a.dao.FranjaHorariaDAO;
-import com.proyecto_a.dto.EventosConsumo;
-import com.proyecto_a.dto.FranjaHoraria;
+
 import com.proyecto_a.dto.PrecioElectricidad;
 import com.proyecto_a.negocio.GestorMonitorizacion;
 import com.proyecto_a.negocio.LectorArchivosJson;
+import com.proyecto_a.dao.DispositivosDAO;
+import com.proyecto_a.dao.Dispositivos_has_franjaHorariaDAO;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,7 +23,11 @@ public class Main {
         
         
         GestorMonitorizacion.insertarFranjas();
-       
+        List<String> nombresDispositivos = DispositivosDAO.obtenerNombresDispositivos();
+        for (String nombreDispositivo : nombresDispositivos) {
+            Dispositivos_has_franjaHorariaDAO.insertarFranjasParaDispositivo(nombreDispositivo);
+        }
+
         //LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
         //lectorArchivosJson.extraerDatosJsonEventosConsumo();
         // lectorArchivosJson.procesarJsonYGuardarEventosEnBD();
