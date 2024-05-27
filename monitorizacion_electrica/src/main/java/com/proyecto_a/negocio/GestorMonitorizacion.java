@@ -1,8 +1,10 @@
 package com.proyecto_a.negocio;
 
+import com.proyecto_a.dao.CategoriaDAO;
 import com.proyecto_a.dao.DispositivosDAO;
 import com.proyecto_a.dao.FranjaHorariaDAO;
 import com.proyecto_a.dao.PrecioElectricidadDAO;
+import com.proyecto_a.dto.Categoria;
 import com.proyecto_a.dto.Dispositivo;
 import com.proyecto_a.dto.FranjaHoraria;
 import com.proyecto_a.dto.PrecioElectricidad;
@@ -24,6 +26,12 @@ public class GestorMonitorizacion {
             FranjaHorariaDAO.insertarFranjas(FranjaHoraria.franjas);
         }
         
+    //Metodos para categoria
+
+        //agregar categorias por defecto a la bdd
+        public static void insertarCategorias(){
+            CategoriaDAO.insertarCategorias(Categoria.categorias);
+        }
         
 
     // Métodos para leer e insertar datos de un json en la BD

@@ -29,7 +29,4 @@ public class Dispositivos_has_franjaHoraria {
     public void setNivelPrioridad(String nivelPrioridad) {
         this.nivelPrioridad = nivelPrioridad;
     }
-    
-
-
 }
