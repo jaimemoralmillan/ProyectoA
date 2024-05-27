@@ -1,5 +1,7 @@
 package com.proyecto_a.negocio;
 
+import java.util.List;
+
 import com.proyecto_a.dao.CategoriaDAO;
 import com.proyecto_a.dao.DispositivosDAO;
 import com.proyecto_a.dao.FranjaHorariaDAO;
@@ -32,6 +34,16 @@ public class GestorMonitorizacion {
         public static void insertarCategorias(){
             CategoriaDAO.insertarCategorias(Categoria.categorias);
         }
+
+        public static void actualizarCategoriasDispositivos() {
+            List<Dispositivo> dispositivos = DispositivosDAO.obtenerTodosDispositivos();
+            for (Dispositivo dispositivo : dispositivos) {
+                boolean actualizado = DispositivosDAO.modificarCategoriaDispositivo(dispositivo.getId());
+                if (!actualizado) {
+                    System.out.println("No se ha podido actualizar la categoria para el dispositivo con id: " + dispositivo.getId());
+                }
+            }
+        }   
         
 
     // Métodos para leer e insertar datos de un json en la BD

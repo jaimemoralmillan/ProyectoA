@@ -5,7 +5,15 @@ public class Categoria {
     private int idCategoria;
     private String nombre;
     private String descripcion;
-    private String franjaConsumo; 
+    private double consumoMinimo;
+    private double consumoMaximo;
+
+    public Categoria(String nombre, String descripcion, double consumoMinimo, double consumoMaximo) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.consumoMinimo = consumoMinimo;
+        this.consumoMaximo = consumoMaximo;
+    }
 
     public static String a = "A";
     public static String b = "B";
@@ -15,11 +23,6 @@ public class Categoria {
     public static String f = "F";
     public static String g = "G";
     
-    public Categoria(String nombre, String descripcion, String franjaConsumo) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.franjaConsumo = franjaConsumo;
-    }
     public int getIdCategoria() {
         return idCategoria;
     }
@@ -38,14 +41,31 @@ public class Categoria {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    public String getFranjaConsumo() {
-        return franjaConsumo;
+    public double getConsumoMinimo() {
+        return consumoMinimo;
     }
-    public void setFranjaConsumo(String franjaConsumo) {
-        this.franjaConsumo = franjaConsumo;
+    public void setConsumoMinimo(double consumoMinimo) {
+        this.consumoMinimo = consumoMinimo;
+    }
+    public double getConsumoMaximo() {
+        return consumoMaximo;
+    }
+    public void setConsumoMaximo(double consumoMaximo) {
+        this.consumoMaximo = consumoMaximo;
     }
     
-    public static Categoria[] categorias = { // Array de categorias.
+    public static Categoria[] categorias = {
+        new Categoria(a, "Bajo Consumo", 0.0, 0.05),
+        new Categoria(b, "Bajo Consumo", 0.051, 0.1),
+        new Categoria(c, "Consumo Medio", 0.101, 0.3),
+        new Categoria(d, "Consumo Medio", 0.301, 0.5),
+        new Categoria(e, "Consumo Medio", 0.501, 1.0),
+        new Categoria(f, "Alto Consumo", 1.001, 2.0),
+        new Categoria(g, "Alto Consumo", 2.001, 3.0)
+    };
+}
+
+    /*public static Categoria[] categorias = { // Array de categorias.
         new Categoria("A", "Bajo Consumo", ">0.06846"),
         new Categoria("B", "Bajo Consumo", "0.06847 - 0.07688"),
         new Categoria("C", "Consumo Medio", "0.07689 - 0.08530"),
@@ -53,6 +73,5 @@ public class Categoria {
         new Categoria("E", "Consumo Medio", "0.09373 - 0.10214"),
         new Categoria("F", "Alto Consumo", "0.10215 - 0.11056"),
         new Categoria("G", "Alto Consumo", "0.11057<")
-    };
-    
-}
+    };*/
+

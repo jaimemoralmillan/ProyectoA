@@ -126,7 +126,7 @@ public class DispositivosDAO {
 
     }
 
-    // Prueba Nicklas para Franjas
+    // Nicklas para Franjas
 
     public static List<String> obtenerNombresDispositivos() {
         List<String> nombresDispositivos = new ArrayList<>();
@@ -146,22 +146,43 @@ public class DispositivosDAO {
         return nombresDispositivos;
     }
 
-    // Prueba Nicklas para Categorias
+    // Nicklas para Categoria
 
-    public static boolean modificarCategoriaDispositivo(int id, int idCategoria) {
-
-        String sql = "UPDATE dispositivos SET idCategoria = ? where idDispositivo = ?";
+    public static boolean modificarCategoriaDispositivo(int id) {
+        String obtenerConsumoSQL = "SELECT consumoPorHora FROM dispositivos WHERE idDispositivo = ?";
+        String determinarCategoriaSQL = "SELECT idCategoria FROM categoria WHERE ? BETWEEN consumoMinimo AND consumoMaximo";
+        String actualizarCategoriaSQL = "UPDATE dispositivos SET idCategoria = ? WHERE idDispositivo = ?";
+        
         try (Connection conn = Conexion.getConnection();
-                PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setInt(1, idCategoria);
-            pstmt.setInt(2, id);
-            return pstmt.executeUpdate() > 0;
-
+             PreparedStatement obtenerConsumoStmt = conn.prepareStatement(obtenerConsumoSQL);
+             PreparedStatement determinarCategoriaStmt = conn.prepareStatement(determinarCategoriaSQL);
+             PreparedStatement actualizarCategoriaStmt = conn.prepareStatement(actualizarCategoriaSQL)) {
+            
+            // Pillas el consumo por hora del dispositivo
+            obtenerConsumoStmt.setInt(1, id);
+            ResultSet rs = obtenerConsumoStmt.executeQuery();
+            if (!rs.next()) {
+                return false; // No se ha encontrado el dispositivo
+            }
+            double consumoPorHora = rs.getDouble("consumoPorHora");
+    
+            // Calcula la categoría del dispositivo
+            determinarCategoriaStmt.setDouble(1, consumoPorHora);
+            rs = determinarCategoriaStmt.executeQuery();
+            if (!rs.next()) {
+                return false; // No se encuentra la categoría
+            }
+            int idCategoria = rs.getInt("idCategoria");
+    
+            // Actualizar la categoría del dispositivo
+            actualizarCategoriaStmt.setInt(1, idCategoria);
+            actualizarCategoriaStmt.setInt(2, id);
+            return actualizarCategoriaStmt.executeUpdate() > 0;
+    
         } catch (SQLException e) {
-
             e.printStackTrace();
             return false;
-
         }
     }
+    
 }
