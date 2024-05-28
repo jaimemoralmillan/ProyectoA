@@ -146,9 +146,9 @@ public class DispositivosDAO {
         return nombresDispositivos;
     }
 
-    // Nicklas para Categoria
-
-    public static boolean modificarCategoriaDispositivo(int id) {
+    // Nicklas para Categorias
+    // Modifica la categoria del dispositivo, dependiendo de su consumo por hora.
+    public static boolean modificarCategoriaDispositivo(int id) { // Modifica la categoria del dispositivo.
         String obtenerConsumoSQL = "SELECT consumoPorHora FROM dispositivos WHERE idDispositivo = ?";
         String determinarCategoriaSQL = "SELECT idCategoria FROM categoria WHERE ? BETWEEN consumoMinimo AND consumoMaximo";
         String actualizarCategoriaSQL = "UPDATE dispositivos SET idCategoria = ? WHERE idDispositivo = ?";
