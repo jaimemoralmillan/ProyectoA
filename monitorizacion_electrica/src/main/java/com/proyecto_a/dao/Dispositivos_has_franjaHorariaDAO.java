@@ -126,7 +126,7 @@ public class Dispositivos_has_franjaHorariaDAO {
                 prioridad = Dispositivos_has_franjaHoraria.mala;
             } else if (franja.getIdFranjaHoraria() == 2) {
                 prioridad = Dispositivos_has_franjaHoraria.aceptable;
-            } else if (franja.getIdFranjaHoraria() == 5) {
+            } else if (franja.getIdFranjaHoraria() == 4) {
                 prioridad = Dispositivos_has_franjaHoraria.optimo;
             }
         } else if ("Ordenador".equalsIgnoreCase(dispositivo.getNombre())) {
