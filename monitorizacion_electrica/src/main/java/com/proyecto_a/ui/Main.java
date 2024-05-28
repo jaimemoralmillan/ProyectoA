@@ -31,13 +31,6 @@ public class Main {
             Dispositivos_has_franjaHorariaDAO.insertarFranjasParaDispositivo(nombreDispositivo);
         }
         
-        
-        /*LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
-        lectorArchivosJson.extraerDatosJsonEventosConsumo();
-        lectorArchivosJson.procesarJsonYGuardarEventosEnBD();
-        EventosConsumosDAO eventosConsumosDAO = new EventosConsumosDAO();*/
-       
-
         SwingUtilities.invokeLater(() -> {
             MonitorizacionGUI gui = new MonitorizacionGUI();
             gui.setVisible(true);
