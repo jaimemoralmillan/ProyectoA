@@ -3,6 +3,9 @@ import java.sql.*;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+import com.proyecto_a.dto.Dispositivo;
+import com.proyecto_a.dto.EventosConsumo;
+
 
 public class EventosPrecioDAO {
     
@@ -86,6 +89,7 @@ public class EventosPrecioDAO {
         }
     }
 
+     //funcion de calculo de consumo por dia
     public static float calcularConsumoPorDia(String fecha){
         String SQL = "SELECT SUM(ep.consumoParcial * pe.precioKwh) as gastoTotal FROM EventoPrecio ep JOIN PrecioElectricidad pe ON ep.idPrecioElectricidad = pe.idPrecioElectricidad JOIN EventosConsumo ec ON ep.idEventosConsumo = ec.idEventosConsumo WHERE DATE(ep.periodoInicio) = ?";
         float gastoTotal=0;
@@ -111,7 +115,7 @@ public class EventosPrecioDAO {
     
     } } 
 
-
+ //funcion de calculo de consumo por rango
     public static float calcularConsumoPorRango(String fecha1,String fecha2){
 
         String SQL = "SELECT SUM(ep.consumoParcial * pe.precioKwh) AS gastoTotal\r\n" + //
@@ -148,8 +152,43 @@ public class EventosPrecioDAO {
 
 
 
+
+
 }
 
+
+//funcion de calculo de consumo por dispositivo
+
+public static float calculoConsumoPorDispositivo (Dispositivo dispositivo) {
+float gastoTotal=0;
+String SQL="SELECT SUM(ep.consumoParcial * pe.precioKwh) AS gastoTotal FROM EventoPrecio ep JOIN PrecioElectricidad pe ON ep.idPrecioElectricidad = pe.idPrecioElectricidad JOIN EventosConsumo ec ON ep.idEventosConsumo = ec.idEventosConsumo WHERE ec.idDispositivo = ?";
+try (
+    Connection conn = Conexion.getConnection();
+    PreparedStatement pstmt = conn.prepareStatement(SQL);) {
+        pstmt.setInt(1, dispositivo.getId());
+      
+    ResultSet  rs = pstmt.executeQuery();
+    
+    while (rs.next()) {
+
+        gastoTotal=rs.getFloat(1);
+        
+    }
+
+    return gastoTotal;
+
+
+}  catch (SQLException e ) {
+
+e.printStackTrace();
+return 0;
+
+}
+
+
+
+
+}
 
 
 }
