@@ -187,8 +187,42 @@ return 0;
 
 
 
-
 }
+
+//funcion de calculo de consumo por dispositivo en rango de dias
+
+public static float calculoConsumoPorDispositivoEnRango (Dispositivo dispositivo,String fecha1, String fecha2) {
+    float gastoTotal=0;
+    String SQL="SELECT SUM(ep.consumoParcial * pe.precioKwh) AS gastoTotal FROM EventoPrecio ep JOIN PrecioElectricidad pe ON ep.idPrecioElectricidad = pe.idPrecioElectricidad JOIN EventosConsumo ec ON ep.idEventosConsumo = ec.idEventosConsumo WHERE ec.idDispositivo = ? AND ep.periodoInicio BETWEEN ? AND ?";
+    try (
+        Connection conn = Conexion.getConnection();
+        PreparedStatement pstmt = conn.prepareStatement(SQL);) {
+            pstmt.setInt(1, dispositivo.getId());
+            pstmt.setString(2,fecha1);
+            pstmt.setString(3,fecha2);
+          
+        ResultSet  rs = pstmt.executeQuery();
+        
+        while (rs.next()) {
+    
+            gastoTotal=rs.getFloat(1);
+            
+        }
+    
+        return gastoTotal;
+    
+    
+    }  catch (SQLException e ) {
+    
+    e.printStackTrace();
+    return 0;
+    
+    }
+    
+    
+    
+    
+    }
 
 
 }
