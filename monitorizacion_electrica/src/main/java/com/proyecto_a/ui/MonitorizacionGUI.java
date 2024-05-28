@@ -5,6 +5,7 @@ import java.awt.*;
 import java.util.List;
 import java.awt.event.*;
 import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 import com.proyecto_a.negocio.GestorMonitorizacion;
@@ -25,8 +26,8 @@ public class MonitorizacionGUI extends JFrame {
     //txt=caja de texto, btn=boton , combo=combobox (desplegable)
     private JTextField txtDispositivoDescripcion,txtDispositivoModificar;
     private JButton btnAgregarDispositivo,btnActualizarBaseDatos;
-    private JComboBox<Dispositivo>  comboDispositivosEliminar, comboDispositivosModificar,comboSeleccionaDispositivoCalculo;
-    private JComboBox<String>  comboSeleccionarDispositivo,comboSeleccionDia1,comboSeleccionDia2,comboSeleccionDia3;
+    private JComboBox<Dispositivo>  comboDispositivosEliminar, comboDispositivosModificar,comboSeleccionaDispositivoCalculo,comboSeleccionaDispositivoEnRango;
+    private JComboBox<String>  comboSeleccionarDispositivo,comboSeleccionDia1,comboSeleccionDia2,comboSeleccionDia3,comboSeleccionDia4,comboSeleccionDia5;
     
     
 
@@ -140,6 +141,28 @@ public class MonitorizacionGUI extends JFrame {
         pestanaCalculoPorDispositivo.add(etiquetaElegirDispositivoGasto);
         pestanaCalculoPorDispositivo.add(comboSeleccionaDispositivoCalculo);
         pestanaCalculoPorDispositivo.add(btnCalcularGastoPorDispositivo);
+
+        //UI calcular gasto por dispositivo en rango
+
+
+        JPanel pestanaCalculoPorDispositivoEnRango = new JPanel(new GridLayout(0,2,10,10));
+        JButton btnCalcularGastoPorDispositivoEnRango = new JButton("Calcular Gasto Dispositivo en Rango");
+        JLabel etiquetaElegirDispositivoGastoEnRango = new JLabel("Seleccione el dispositivo");
+        JLabel etiquetaElegirFechaDispositivoEnRango1 =  new JLabel("Seleccione el primer dia del rango");
+        JLabel etiquetaElegirFechaDispositivoEnRango2 =  new JLabel("Seleccione el ultimo dia del rango");
+        comboSeleccionaDispositivoEnRango = new JComboBox<>();
+        comboSeleccionDia4 = new JComboBox<>();
+        comboSeleccionDia5 = new JComboBox<>();
+        btnCalcularGastoPorDispositivoEnRango.addActionListener(this::calcularGastoPorDispositivoEnRango);
+
+        pestanaCalculoPorDispositivoEnRango.add(etiquetaElegirDispositivoGastoEnRango);
+        pestanaCalculoPorDispositivoEnRango.add(comboSeleccionaDispositivoEnRango);
+        pestanaCalculoPorDispositivoEnRango.add(etiquetaElegirFechaDispositivoEnRango1);
+        pestanaCalculoPorDispositivoEnRango.add(comboSeleccionDia4);
+        pestanaCalculoPorDispositivoEnRango.add(etiquetaElegirFechaDispositivoEnRango2);
+        pestanaCalculoPorDispositivoEnRango.add(comboSeleccionDia5);
+        pestanaCalculoPorDispositivoEnRango.add(btnCalcularGastoPorDispositivoEnRango);
+
         
         
 
@@ -153,6 +176,7 @@ public class MonitorizacionGUI extends JFrame {
         panelPestanias.addTab("Calcular Gasto por Dia",pestanaCalculoGastoDia);
         panelPestanias.addTab("Calcular Gasto por Rango",pestanaCalculoGastoRango);
         panelPestanias.addTab("Calculo por Dispositivo",pestanaCalculoPorDispositivo);
+        panelPestanias.addTab("Calculo por Dispositivo en Rango",pestanaCalculoPorDispositivoEnRango);
 
         add(panelPestanias, BorderLayout.CENTER);
         // hace jframe visible
@@ -211,6 +235,7 @@ public class MonitorizacionGUI extends JFrame {
             comboDispositivosEliminar.addItem(dispositivo);
             comboDispositivosModificar.addItem(dispositivo);
             comboSeleccionaDispositivoCalculo.addItem(dispositivo);
+            comboSeleccionaDispositivoEnRango.addItem(dispositivo);
         }
 
     }
@@ -290,9 +315,12 @@ public class MonitorizacionGUI extends JFrame {
 
     private void calcularGastoDia(ActionEvent event) {
 
+        NumberFormat truncar = NumberFormat.getInstance();
+        truncar.setMaximumFractionDigits(2);            
+        truncar.setGroupingUsed(false);
         String diaElegido = comboSeleccionDia1.getSelectedItem().toString();
         float gastoTotal = EventosPrecioDAO.calcularConsumoPorDia(diaElegido);
-        String mensaje = "El dia "+diaElegido+" se gastó "+gastoTotal+" Euros en total en el importe de la luz";
+        String mensaje = "El dia "+diaElegido+" se gastó "+truncar.format(gastoTotal)+" Euros en total en el importe de la luz";
 
         JOptionPane.showMessageDialog(this,mensaje);
 
@@ -303,10 +331,13 @@ public class MonitorizacionGUI extends JFrame {
 
     private void calcularGastoRango(ActionEvent event) {
 
+        NumberFormat truncar = NumberFormat.getInstance();
+        truncar.setMaximumFractionDigits(2);            
+        truncar.setGroupingUsed(false);
         String diaElegido1 = comboSeleccionDia2.getSelectedItem().toString();
         String diaElegido2 = comboSeleccionDia3.getSelectedItem().toString();
         float gastoTotal = EventosPrecioDAO.calcularConsumoPorRango(diaElegido1,diaElegido2);
-        String mensaje ="Entre el "+diaElegido1+" y el "+diaElegido2+" se gastó "+ gastoTotal+" Euros en total en el importe de la luz.";
+        String mensaje ="Entre el "+diaElegido1+" y el "+diaElegido2+" se gastó "+ truncar.format(gastoTotal)+" Euros en total en el importe de la luz.";
         JOptionPane.showMessageDialog(this,mensaje);
 
     }
@@ -315,9 +346,30 @@ public class MonitorizacionGUI extends JFrame {
 
     private void calcularGastoPorDispositivo (ActionEvent event) {
 
+        NumberFormat truncar = NumberFormat.getInstance();
+        truncar.setMaximumFractionDigits(2);            
+        truncar.setGroupingUsed(false);
         Dispositivo dispositivo = (Dispositivo) comboSeleccionaDispositivoCalculo.getSelectedItem();
         float gastoTotal = EventosPrecioDAO.calculoConsumoPorDispositivo(dispositivo);
-        String mensaje ="El gasto total del dispositivo "+dispositivo.getDescripcion()+" durante todo el mes ha sido de "+gastoTotal+" Euros";
+        String mensaje ="El gasto total del dispositivo "+dispositivo.getDescripcion()+" durante todo el mes ha sido de "+truncar.format(gastoTotal)+" Euros";
+        JOptionPane.showMessageDialog(this,mensaje);
+
+    
+
+    }
+
+    //funcion calculo por dispositivo en rango
+
+    private void calcularGastoPorDispositivoEnRango (ActionEvent event) {
+        NumberFormat truncar = NumberFormat.getInstance();
+        truncar.setMaximumFractionDigits(2);            
+        truncar.setGroupingUsed(false);
+        Dispositivo dispositivo = (Dispositivo) comboSeleccionaDispositivoEnRango.getSelectedItem();
+        String diaElegido1 = comboSeleccionDia4.getSelectedItem().toString();
+        String diaElegido2 = comboSeleccionDia5.getSelectedItem().toString();
+
+        float gastoTotal = EventosPrecioDAO.calculoConsumoPorDispositivoEnRango(dispositivo,diaElegido1,diaElegido2);
+        String mensaje ="El gasto total del dispositivo "+dispositivo.getDescripcion()+" entre el "+diaElegido1+" y el "+diaElegido2+" ha sido de "+truncar.format(gastoTotal)+" Euros";
         JOptionPane.showMessageDialog(this,mensaje);
 
     
@@ -332,6 +384,8 @@ public class MonitorizacionGUI extends JFrame {
             comboSeleccionDia1.addItem(dia);
             comboSeleccionDia2.addItem(dia);
             comboSeleccionDia3.addItem(dia);
+            comboSeleccionDia4.addItem(dia);
+            comboSeleccionDia5.addItem(dia);
 
 
         }
