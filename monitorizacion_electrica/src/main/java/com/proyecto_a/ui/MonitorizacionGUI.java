@@ -13,17 +13,20 @@ import com.proyecto_a.dao.Dispositivos_has_franjaHorariaDAO;
 import com.proyecto_a.dao.EventosConsumosDAO;
 import com.proyecto_a.dao.EventosPrecioDAO;
 import com.proyecto_a.dto.Dispositivo;
+import com.proyecto_a.dto.EventosPrecio;
 import com.proyecto_a.dto.PrecioElectricidad;
 
 public class MonitorizacionGUI extends JFrame {
 
-    // inicializacion de todos los elementos que se vayan a usar y que tenga que
-    // leer una funcion: botones, combobox,paneles,campos de texto....
-    // txt=caja de texto, btn=boton , combo=combobox (desplegable)
-    private JTextField txtDispositivoDescripcion, txtDispositivoModificar;
-    private JButton btnAgregarDispositivo, btnActualizarBaseDatos;
-    private JComboBox<Dispositivo> comboDispositivosEliminar, comboDispositivosModificar;
-    private JComboBox<String> comboSeleccionarDispositivo;
+
+
+    //inicializacion de todos los elementos que se vayan a usar y que tenga que leer una funcion: botones, combobox,paneles,campos de texto....
+    //txt=caja de texto, btn=boton , combo=combobox (desplegable)
+    private JTextField txtDispositivoDescripcion,txtDispositivoModificar;
+    private JButton btnAgregarDispositivo,btnActualizarBaseDatos;
+    private JComboBox<Dispositivo>  comboDispositivosEliminar, comboDispositivosModificar;
+    private JComboBox<String>  comboSeleccionarDispositivo,comboSeleccionDia;
+
 
     public MonitorizacionGUI() {
         setTitle("Sistema de Monitorización eléctrica");
@@ -95,71 +98,36 @@ public class MonitorizacionGUI extends JFrame {
         pestanaModificarDispositivo.add(txtDispositivoModificar);
         pestanaModificarDispositivo.add(btnModificarDispositivo);
 
-        // Añadimos las pestañas al panel
+        //UI CALCULAR GASTO POR DIA
+
+        JPanel pestanaCalculoGastoDia = new JPanel(new GridLayout(0,2,10,10));
+        JButton btnCalcularGastoDia = new JButton("Calcular Gasto en el Dia indicado");
+        JLabel etiquetaElegirDia = new JLabel("Seleccione un día para ver el gasto total");
+        comboSeleccionDia = new JComboBox<>();
+        btnCalcularGastoDia.addActionListener(this::calcularGastoDia);
+        pestanaCalculoGastoDia.add(etiquetaElegirDia);
+        pestanaCalculoGastoDia.add(comboSeleccionDia);
+        pestanaCalculoGastoDia.add(btnCalcularGastoDia);
+        
+
+
+        //Añadimos las pestañas al panel
 
         panelPestanias.addTab("Agregar Dispositivo", pestanaAgregarDispositivo);
         panelPestanias.addTab("Eliminar Dispositivo", pestanaEliminarDispositivo);
-        panelPestanias.addTab("Modificar Dispositivo", pestanaModificarDispositivo);
+        panelPestanias.addTab("Modificar Dispositivo",pestanaModificarDispositivo);
+        panelPestanias.addTab("Calcular Gasto por Dia",pestanaCalculoGastoDia);
         add(panelPestanias, BorderLayout.CENTER);
         // hace jframe visible
         setVisible(true);
 
-        /*
-         * PRUEBA MENU
-         * 
-         * //creacion barra de menus
-         * JMenuBar menuBar = new JMenuBar();
-         * 
-         * //crear menu
-         * JMenu menuDispositivo = new JMenu("Dispositivos");
-         * //añadir menu a barra de menus
-         * menuBar.add(menuDispositivo);
-         * //crear items del menu
-         * JMenuItem agregarDispositivoMenu = new JMenuItem("Agregar Dispositivos");
-         * JMenuItem eliminarDispositivosMenu = new JMenuItem("Eliminar Dispositivos");
-         * JMenuItem modificarDispositivosMenu = new
-         * JMenuItem("Modificar Dispositivos");
-         * 
-         * // Añadir ítems al menú
-         * menuDispositivo.add(agregarDispositivoMenu);
-         * menuDispositivo.add(eliminarDispositivosMenu);
-         * menuDispositivo.add(modificarDispositivosMenu);
-         * 
-         * // Establecer la barra de menús en el JFrame
-         * setJMenuBar(menuBar);
-         * 
-         * // Añadir acciones a los ítems del menú
-         * agregarDispositivoMenu.addActionListener(new ActionListener() {
-         * 
-         * @Override
-         * public void actionPerformed(ActionEvent e) {
-         * 
-         * 
-         * 
-         * }
-         * });
-         * 
-         * eliminarDispositivosMenu.addActionListener(new ActionListener() {
-         * 
-         * @Override
-         * public void actionPerformed(ActionEvent e) {
-         * System.exit(0);
-         * }
-         * });
-         * 
-         * 
-         * 
-         * 
-         * 
-         * FIN PRUEBA MENU
-         */
-
-        // ejecutamos las funciones para rellenar los comboBox al inicializar el
-        // programa
+        
+        // ejecutamos las funciones para rellenar los comboBox al inicializar el programa
 
         cargarDispositivosBDD();
         cargarDispositivosDefaultComboBox(Dispositivo.getDispositivosDefault());
-
+        cargarComboDiasMayo(EventosPrecio.diasDeMayo);
+     
     }
 
     // aqui se crean las funciones que leen/toman cosas de los elementos de la UI
@@ -278,7 +246,32 @@ public class MonitorizacionGUI extends JFrame {
         //cargarDispositivosBDD();
 
     }
+      
 
+    //funcion calcularGastosDia
+
+    private void calcularGastoDia(ActionEvent event) {
+
+        String diaElegido = comboSeleccionDia.getSelectedItem().toString();
+        float gastoTotal = EventosPrecioDAO.calcularConsumoPorDia(diaElegido);
+
+        System.out.println("El dia "+diaElegido+" se gastó "+gastoTotal+" Euros en total en el importe de la luz");
+
+
+    }
+    
+    //funcion cargar combo box dias mayo
+
+    private void cargarComboDiasMayo(String[] diasMayo) {
+
+        for (String dia : diasMayo) {
+            
+            comboSeleccionDia.addItem(dia);
+
+        }
+
+
+    }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MonitorizacionGUI().setVisible(true));
     }
