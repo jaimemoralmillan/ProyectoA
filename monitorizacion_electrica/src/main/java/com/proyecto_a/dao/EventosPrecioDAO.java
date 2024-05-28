@@ -109,11 +109,50 @@ public class EventosPrecioDAO {
         e.printStackTrace();
         return 0;
     
+    } } 
+
+
+    public static float calcularConsumoPorRango(String fecha1,String fecha2){
+
+        String SQL = "SELECT SUM(ep.consumoParcial * pe.precioKwh) AS gastoTotal\r\n" + //
+                        "FROM EventoPrecio ep\r\n" + //
+                        "JOIN PrecioElectricidad pe ON ep.idPrecioElectricidad = pe.idPrecioElectricidad\r\n" + //
+                        "JOIN EventosConsumo ec ON ep.idEventosConsumo = ec.idEventosConsumo\r\n" + //
+                        "WHERE  ep.periodoInicio BETWEEN ? AND ?"
+                        ;
+        float gastoTotal=0;
+        try (
+            Connection conn = Conexion.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(SQL);) {
+                pstmt.setString(1, fecha1);
+                pstmt.setString(2, fecha2);
+
+
+            ResultSet  rs = pstmt.executeQuery();
+            
+            while (rs.next()) {
+
+                gastoTotal=rs.getFloat(1);
+                
+            }
+
+            return gastoTotal;
+
+
+    }  catch (SQLException e ) {
+
+        e.printStackTrace();
+        return 0;
+    
     }
 
 
 
-} }
+}
+
+
+
+}
 
 
 
