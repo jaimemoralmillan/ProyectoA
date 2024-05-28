@@ -13,7 +13,7 @@ import com.proyecto_a.dao.Dispositivos_has_franjaHorariaDAO;
 public class Main {
     public static void main(String[] args) {
         
-        GestorMonitorizacion.insertarCategorias();
+        /*GestorMonitorizacion.insertarCategorias();
         GestorMonitorizacion.insertarFranjas();
 
         PrecioElectricidad precioElectricidad = new PrecioElectricidad();
@@ -29,7 +29,7 @@ public class Main {
         List<String> nombresDispositivos = DispositivosDAO.obtenerNombresDispositivos();
         for (String nombreDispositivo : nombresDispositivos) {
             Dispositivos_has_franjaHorariaDAO.insertarFranjasParaDispositivo(nombreDispositivo);
-        }
+        } */
         
         SwingUtilities.invokeLater(() -> {
             MonitorizacionGUI gui = new MonitorizacionGUI();

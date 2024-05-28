@@ -226,13 +226,13 @@ public class MonitorizacionGUI extends JFrame {
 
     public void funcionesActualizacionBD(ActionEvent event) {
 
-        //PrecioElectricidad precioElectricidad = new PrecioElectricidad();
-        //GestorMonitorizacion.extraerDatosJsonPrecios();
-        //GestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
+        PrecioElectricidad precioElectricidad = new PrecioElectricidad();
+        GestorMonitorizacion.extraerDatosJsonPrecios();
+        GestorMonitorizacion.insertarPrecioElectricidad(precioElectricidad);
 
-        //LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
-        //lectorArchivosJson.extraerDatosJsonDispositivos();
-        //lectorArchivosJson.extraerDatosJsonEventosConsumo();
+        LectorArchivosJson lectorArchivosJson = new LectorArchivosJson();
+        lectorArchivosJson.extraerDatosJsonDispositivos();
+        lectorArchivosJson.extraerDatosJsonEventosConsumo();
 
         GestorMonitorizacion.insertarFranjas();
         List<String> nombresDispositivos = DispositivosDAO.obtenerNombresDispositivos();
@@ -240,10 +240,10 @@ public class MonitorizacionGUI extends JFrame {
             Dispositivos_has_franjaHorariaDAO.insertarFranjasParaDispositivo(nombreDispositivo);
         }
         GestorMonitorizacion.insertarCategorias();
-        
-        //EventosConsumosDAO.actualizarConsumoKwhEventosConsumo();
-        //EventosPrecioDAO.InsertarEventosPrecio();
-        //cargarDispositivosBDD();
+        GestorMonitorizacion.actualizarCategoriasDispositivos();
+        EventosConsumosDAO.actualizarConsumoKwhEventosConsumo();
+        EventosPrecioDAO.InsertarEventosPrecio();
+        cargarDispositivosBDD();
 
     }
       
