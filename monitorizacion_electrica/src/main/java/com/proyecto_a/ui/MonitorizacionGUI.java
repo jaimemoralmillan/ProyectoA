@@ -118,7 +118,7 @@ public class MonitorizacionGUI extends JFrame {
         JPanel pestanaCalculoGastoRango = new JPanel(new GridLayout(0,2,10,10));
         JButton btnCalcularGastoRango = new JButton("Calcular Gasto en el rango indicado");
         JLabel etiquetaElegirRango1 = new JLabel("Seleccione el primer dia del rango");
-        JLabel etiquetaElegirRango2 = new JLabel("Seleccione el segundo dia del rango");
+        JLabel etiquetaElegirRango2 = new JLabel("Seleccione el último dia del rango");
 
         comboSeleccionDia2 = new JComboBox<>();
         comboSeleccionDia3 = new JComboBox<>();
