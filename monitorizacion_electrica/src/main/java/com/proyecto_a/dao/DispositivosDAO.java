@@ -1,5 +1,6 @@
 package com.proyecto_a.dao;
 
+import com.proyecto_a.dto.Categoria;
 import com.proyecto_a.dto.Dispositivo;
 
 import java.util.ArrayList;
@@ -184,5 +185,38 @@ public class DispositivosDAO {
             return false;
         }
     }
+
+    // Obtiene la categoría del dispositivo dependiendo de su id.
+    public static Categoria obtenerCategoriaDispositivo(int id) {
+        String obtenerCategoriaSQL = "SELECT idCategoria FROM dispositivos WHERE idDispositivo = ?"; // Obtener la categoría del dispositivo
+        String obtenerDetallesCategoriaSQL = "SELECT nombre, descripcion FROM categoria WHERE idCategoria = ?"; // Obtener los detalles de la categoría
     
+        try (Connection conn = Conexion.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(obtenerCategoriaSQL)) {
+    
+            pstmt.setInt(1, id);
+            ResultSet rs = pstmt.executeQuery();
+            if (!rs.next()) {
+                return null; // No se ha encontrado el dispositivo
+            }
+            int idCategoria = rs.getInt("idCategoria"); // Guardamos el id de la categoría en esta variable
+    
+            // Obtener los detalles de la categoría
+            PreparedStatement pstmt2 = conn.prepareStatement(obtenerDetallesCategoriaSQL);
+            pstmt2.setInt(1, idCategoria);
+            ResultSet rs2 = pstmt2.executeQuery();
+            if (!rs2.next()) {
+                return null; // No se ha encontrado la categoría
+            }
+            String nombre = rs2.getString("nombre"); // Guardamos el nombre de la categoría en esta variable
+            String descripcion = rs2.getString("descripcion"); // Guardamos la descripción de la categoría en esta variable
+    
+            // Crear y devolver una nueva categoría
+            return new Categoria(idCategoria, nombre, descripcion);
+    
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

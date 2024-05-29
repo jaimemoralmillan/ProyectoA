@@ -14,8 +14,11 @@ import com.proyecto_a.dao.DispositivosDAO;
 import com.proyecto_a.dao.Dispositivos_has_franjaHorariaDAO;
 import com.proyecto_a.dao.EventosConsumosDAO;
 import com.proyecto_a.dao.EventosPrecioDAO;
+import com.proyecto_a.dto.Categoria;
 import com.proyecto_a.dto.Dispositivo;
+import com.proyecto_a.dto.Dispositivos_has_franjaHoraria;
 import com.proyecto_a.dto.EventosPrecio;
+import com.proyecto_a.dto.FranjaHoraria;
 import com.proyecto_a.dto.PrecioElectricidad;
 
 public class MonitorizacionGUI extends JFrame {
@@ -26,7 +29,7 @@ public class MonitorizacionGUI extends JFrame {
     //txt=caja de texto, btn=boton , combo=combobox (desplegable)
     private JTextField txtDispositivoDescripcion,txtDispositivoModificar;
     private JButton btnAgregarDispositivo,btnActualizarBaseDatos;
-    private JComboBox<Dispositivo>  comboDispositivosEliminar, comboDispositivosModificar,comboSeleccionaDispositivoCalculo,comboSeleccionaDispositivoEnRango;
+    private JComboBox<Dispositivo>  comboDispositivosEliminar, comboDispositivosModificar,comboSeleccionaDispositivoCalculo,comboSeleccionaDispositivoEnRango, comboSeleccionaDispositivoCategoria;
     private JComboBox<String>  comboSeleccionarDispositivo,comboSeleccionDia1,comboSeleccionDia2,comboSeleccionDia3,comboSeleccionDia4,comboSeleccionDia5;
     
     
@@ -164,7 +167,16 @@ public class MonitorizacionGUI extends JFrame {
         pestanaCalculoPorDispositivoEnRango.add(btnCalcularGastoPorDispositivoEnRango);
 
         
+        // UI Enseñar categoria de dispositivos
+        JPanel pestanaCategoriaDispositivo = new JPanel(new GridLayout(0, 2, 10, 10));
+        JButton btnCategoriaDispositivo = new JButton("Mostrar Categoria de Dispositivo");
+        JLabel etiquetaElegirDispositivoCategoria = new JLabel("Seleccione el dispositivo");
+        comboSeleccionaDispositivoCategoria = new JComboBox<>();
+        btnCategoriaDispositivo.addActionListener(this::enseñarCategoriaDispositivo);
         
+        pestanaCategoriaDispositivo.add(etiquetaElegirDispositivoCategoria);
+        pestanaCategoriaDispositivo.add(comboSeleccionaDispositivoCategoria);
+        pestanaCategoriaDispositivo.add(btnCategoriaDispositivo);
 
 
 
@@ -177,6 +189,8 @@ public class MonitorizacionGUI extends JFrame {
         panelPestanias.addTab("Calcular Gasto por Rango",pestanaCalculoGastoRango);
         panelPestanias.addTab("Calculo por Dispositivo",pestanaCalculoPorDispositivo);
         panelPestanias.addTab("Calculo por Dispositivo en Rango",pestanaCalculoPorDispositivoEnRango);
+        panelPestanias.addTab("Enseñar Categoria de Dispositivo",pestanaCategoriaDispositivo);
+        
 
         add(panelPestanias, BorderLayout.CENTER);
         // hace jframe visible
@@ -236,6 +250,7 @@ public class MonitorizacionGUI extends JFrame {
             comboDispositivosModificar.addItem(dispositivo);
             comboSeleccionaDispositivoCalculo.addItem(dispositivo);
             comboSeleccionaDispositivoEnRango.addItem(dispositivo);
+            comboSeleccionaDispositivoCategoria.addItem(dispositivo);
         }
 
     }
@@ -392,6 +407,17 @@ public class MonitorizacionGUI extends JFrame {
 
 
     }
+
+    //funcion enseñar categoria de dispositivo
+
+    private void enseñarCategoriaDispositivo(ActionEvent event) {
+        Dispositivo dispositivo = (Dispositivo) comboSeleccionaDispositivoCategoria.getSelectedItem();
+        int idDispositivo = dispositivo.getId(); // Obtener el id del dispositivo
+        Categoria categoria = DispositivosDAO.obtenerCategoriaDispositivo(idDispositivo); // Obtener la categoría usando el id del dispositivo
+        String mensaje = "El dispositivo "+dispositivo.getDescripcion()+" pertenece a la categoría: "+ categoria.getNombre() + " - "+ categoria.getDescripcion();
+        JOptionPane.showMessageDialog(this, mensaje);
+    }
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MonitorizacionGUI().setVisible(true));
     }
