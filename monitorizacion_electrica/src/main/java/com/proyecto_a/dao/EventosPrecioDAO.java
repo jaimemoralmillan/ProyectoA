@@ -186,6 +186,10 @@ return 0;
 }
 
 
+//funcion calculo todos dispositivos
+
+
+
 
 }
 
