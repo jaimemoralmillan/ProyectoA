@@ -1,6 +1,13 @@
 package com.proyecto_a.ui;
 
 import javax.swing.*;
+
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.text.NumberFormat;
@@ -64,12 +71,28 @@ public class MonitorizacionGUI extends JFrame {
             menuCalculos.add(menuItemCalc);
         }
 
-      
         menuBar.add(menuCalculos);
         setJMenuBar(menuBar);
 
         cardLayout = new CardLayout();
         panelPrincipal = new JPanel(cardLayout);
+
+        //crear menu graficos
+        JMenu menuGraficos = new JMenu("Gráficos");
+
+        String[] opcionesGraficos = {
+            "Grafico Prueba"
+         };
+
+         for (String opcion : opcionesGraficos) {
+            JMenuItem menuItemGraph = new JMenuItem(opcion);
+            menuItemGraph.addActionListener(e -> mostrarPanel(opcion));
+            menuGraficos.add(menuItemGraph);
+        }
+        //añadir el menu graficos a la barra de menus
+        menuBar.add(menuGraficos);
+    
+    
 
         // Crear y añadir los paneles al panel principal
         panelPrincipal.add(crearPanelAgregarDispositivo(), "Agregar Dispositivo");
@@ -80,6 +103,7 @@ public class MonitorizacionGUI extends JFrame {
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivo(), "Calcular Gasto por Dispositivo");
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivoEnRango(), "Calcular Gasto por Dispositivo en Rango");
         panelPrincipal.add(crearPanelEnseñarCategoriaDispositivo(), "Enseñar Categoria de Dispositivo");
+        panelPrincipal.add(crearPanelGraficoPrueba(DispositivosDAO.obtenerTodosDispositivos()),"Grafico Prueba");
 
         add(panelPrincipal, BorderLayout.CENTER);
         setVisible(true);
@@ -89,12 +113,41 @@ public class MonitorizacionGUI extends JFrame {
         cargarDispositivosBDD();
         cargarDispositivosDefaultComboBox(Dispositivo.getDispositivosDefault());
         cargarComboDiasMayo(EventosPrecio.diasDeMayo);
-    }
+    } // fin del constructor
 
     private void mostrarPanel(String panel) {
         cardLayout.show(panelPrincipal, panel);
     }
 
+
+    //panel graficos
+
+    private ChartPanel crearPanelGraficoPrueba(ArrayList<Dispositivo> dispositivos) {
+       
+      float resultadoDisp0=EventosPrecioDAO.calculoConsumoPorDispositivo(dispositivos.get(0));
+
+        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+        dataset.addValue(resultadoDisp0, "Series1", "Category1");
+        dataset.addValue(2, "Series1", "Category2");
+        dataset.addValue(3, "Series1", "Category3");
+        dataset.addValue(4, "Series1", "Category4");
+        dataset.addValue(1, "Series2", "Category5");
+        dataset.addValue(6, "Series2", "Category6");
+        dataset.addValue(7, "Series2", "Category7");
+        dataset.addValue(8, "Series2", "Category8");
+
+        JFreeChart chart = ChartFactory.createBarChart(
+                "Titulo del grafico", 
+                "Subtitulo del grafico abajito", 
+                "Unidad medida (Euros)", 
+                dataset, 
+                PlotOrientation.VERTICAL, 
+                true, true, false);
+
+        return new ChartPanel(chart);
+    }
+
+    //panel agregar dispositivo
     private JPanel crearPanelAgregarDispositivo() {
         JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
 
@@ -145,6 +198,8 @@ public class MonitorizacionGUI extends JFrame {
         panel.add(btnModificarDispositivo);
         return panel;
     }
+
+
 
     private JPanel crearPanelCalcularGastoDia() {
         JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
