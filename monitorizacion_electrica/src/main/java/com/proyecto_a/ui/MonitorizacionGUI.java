@@ -5,8 +5,13 @@ import javax.swing.*;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.CategoryAxis;
+import org.jfree.chart.axis.CategoryLabelPositions;
+import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.renderer.category.BarRenderer;
 import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.data.general.DefaultPieDataset;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -81,7 +86,9 @@ public class MonitorizacionGUI extends JFrame {
         JMenu menuGraficos = new JMenu("Gráficos");
 
         String[] opcionesGraficos = {
-            "Grafico Prueba"
+            "Gráfico Consumo por Semanas Mayo",
+            "Gráfico Gasto por Dispositivos Mayo",
+            "Gráfico Historigrama"
          };
 
          for (String opcion : opcionesGraficos) {
@@ -92,8 +99,6 @@ public class MonitorizacionGUI extends JFrame {
         //añadir el menu graficos a la barra de menus
         menuBar.add(menuGraficos);
     
-    
-
         // Crear y añadir los paneles al panel principal
         panelPrincipal.add(crearPanelAgregarDispositivo(), "Agregar Dispositivo");
         panelPrincipal.add(crearPanelEliminarDispositivo(), "Eliminar Dispositivo");
@@ -103,7 +108,9 @@ public class MonitorizacionGUI extends JFrame {
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivo(), "Calcular Gasto por Dispositivo");
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivoEnRango(), "Calcular Gasto por Dispositivo en Rango");
         panelPrincipal.add(crearPanelEnseñarCategoriaDispositivo(), "Enseñar Categoria de Dispositivo");
-        panelPrincipal.add(crearPanelGraficoPrueba(DispositivosDAO.obtenerTodosDispositivos()),"Grafico Prueba");
+        panelPrincipal.add(crearPanelGraficoBarrasSemanasMayo(EventosPrecio.diasDeMayo),"Gráfico Consumo por Semanas Mayo");
+        panelPrincipal.add(crearPanelGraficoPastel(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Gasto por Dispositivos Mayo");
+        panelPrincipal.add(crearPanelGraficoHistorigrama(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Historigrama");
 
         add(panelPrincipal, BorderLayout.CENTER);
         setVisible(true);
@@ -120,32 +127,92 @@ public class MonitorizacionGUI extends JFrame {
     }
 
 
-    //panel graficos
+    //panel grafico barras semanas de mayo
 
-    private ChartPanel crearPanelGraficoPrueba(ArrayList<Dispositivo> dispositivos) {
-       
-      float resultadoDisp0=EventosPrecioDAO.calculoConsumoPorDispositivo(dispositivos.get(0));
-
+    private ChartPanel crearPanelGraficoBarrasSemanasMayo(String[] diasDeMayo) {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        dataset.addValue(resultadoDisp0, "Series1", "Category1");
-        dataset.addValue(2, "Series1", "Category2");
-        dataset.addValue(3, "Series1", "Category3");
-        dataset.addValue(4, "Series1", "Category4");
-        dataset.addValue(1, "Series2", "Category5");
-        dataset.addValue(6, "Series2", "Category6");
-        dataset.addValue(7, "Series2", "Category7");
-        dataset.addValue(8, "Series2", "Category8");
+        
+        float gastoSemana1=EventosPrecioDAO.calcularConsumoPorRango("2024-05-01", "2024-05-07");
+        float gastoSemana2=EventosPrecioDAO.calcularConsumoPorRango("2024-05-07", "2024-05-14");
+        float gastoSemana3=EventosPrecioDAO.calcularConsumoPorRango("2024-05-14", "2024-05-21");
+        float gastoSemana4=EventosPrecioDAO.calcularConsumoPorRango("2024-05-21", "2024-05-28");
+      
+        dataset.addValue(gastoSemana1,"Semana 1","2024-05-01 / 2024-05-07");
+        dataset.addValue(gastoSemana2,"Semana 2","2024-05-07 / 2024-05-14");
+        dataset.addValue(gastoSemana3,"Semana 3","2024-05-14 / 2024-05-21");
+        dataset.addValue(gastoSemana4,"Semana 4","2024-05-21 / 2024-05-28");
+
 
         JFreeChart chart = ChartFactory.createBarChart(
-                "Titulo del grafico", 
-                "Subtitulo del grafico abajito", 
-                "Unidad medida (Euros)", 
+                "Consumo por Semanas en Mayo", 
+                "Semanas", 
+                "Consumo(€)", 
                 dataset, 
                 PlotOrientation.VERTICAL, 
                 true, true, false);
 
+                //CategoryPlot plot = chart.getCategoryPlot();
+        //CategoryAxis xAxis = plot.getDomainAxis();
+        //xAxis.setCategoryLabelPositions(CategoryLabelPositions.UP_45); // Rotar las etiquetas del eje X 45 grados
+
+        //BarRenderer renderer = (BarRenderer) plot.getRenderer();
+        //renderer.setMaximumBarWidth(0.15); // Ajustar el ancho de las barras
+
         return new ChartPanel(chart);
     }
+
+
+    //panel grafico pastel
+
+    private ChartPanel crearPanelGraficoPastel(ArrayList<Dispositivo> dispositivos) {
+       
+
+        DefaultPieDataset dataset = new DefaultPieDataset();
+
+
+        for (Dispositivo dispositivo : dispositivos) {
+
+            float resultado=EventosPrecioDAO.calculoConsumoPorDispositivo(dispositivo);
+            String descripcion=dispositivo.getDescripcion();
+            dataset.setValue(descripcion,resultado);
+
+        }
+  
+          JFreeChart chart = ChartFactory.createPieChart(
+                 "Gasto por Dispositivo durante Mayo",
+                 dataset,
+                 true,true,false);
+  
+          return new ChartPanel(chart);
+      }
+
+
+      //panel grafico historigrama TO DO
+
+    private ChartPanel crearPanelGraficoHistorigrama(ArrayList<Dispositivo> dispositivos) {
+       
+        float resultadoDisp0=EventosPrecioDAO.calculoConsumoPorDispositivo(dispositivos.get(0));
+  
+          DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+          dataset.addValue(resultadoDisp0, "Series1", "Category1");
+          dataset.addValue(2, "Series1", "Category2");
+          dataset.addValue(3, "Series1", "Category3");
+          dataset.addValue(4, "Series1", "Category4");
+          dataset.addValue(1, "Series2", "Category5");
+          dataset.addValue(6, "Series2", "Category6");
+          dataset.addValue(7, "Series2", "Category7");
+          dataset.addValue(8, "Series2", "Category8");
+  
+          JFreeChart chart = ChartFactory.createBarChart(
+                  "Titulo del grafico", 
+                  "Subtitulo del grafico abajito", 
+                  "Unidad medida (Euros)", 
+                  dataset, 
+                  PlotOrientation.VERTICAL, 
+                  true, true, false);
+  
+          return new ChartPanel(chart);
+      }
 
     //panel agregar dispositivo
     private JPanel crearPanelAgregarDispositivo() {
