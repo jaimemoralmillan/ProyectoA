@@ -1,0 +1,40 @@
+@startuml
+actor Usuario
+participant "MonitorizacionGUI" as GUI
+participant "LectorArchivosJson" as LectorArchivosJson
+participant "DispositivosDAO" as DAO
+participant "Conexion" as DB
+participant "JSON" as JSON
+
+Usuario -> GUI : Presiona boton "Actualizar Base de Datos"
+activate GUI
+
+GUI -> LectorArchivosJson : extraerDatosJsonDispositivos()
+activate LectorArchivosJson
+
+LectorArchivosJson -> DAO : insertarDispositivoDesdeJson(evento)
+activate DAO
+LectorArchivosJson -> JSON :
+
+
+
+DAO -> DB : getConnection()
+activate DB
+DB --> DAO : connection
+deactivate DB
+
+loop For Each dispositivo
+    DAO -> DB : prepareStatement(sql)
+    activate DB
+    DB --> DAO : pstmt
+    deactivate DB
+
+    DAO -> DB : executeUpdate()
+    DB --> DAO : result
+end
+deactivate DAO
+
+JSON --> GUI : Carga Completa
+
+deactivate GUI
+@enduml

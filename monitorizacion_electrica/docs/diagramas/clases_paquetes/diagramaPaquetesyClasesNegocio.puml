@@ -1,0 +1,36 @@
+@startuml
+
+scale 1200 width
+skinparam dpi 300
+skinparam class {
+    BackgroundColor #E0F3F8
+    ArrowColor Black
+    BorderColor Purple
+    FontSize 12
+    ClassFontSize 12
+    AttributeFontSize 11 
+}
+skinparam package {
+    BackgroundColor #EFE9F5
+    ArrowColor Black
+    BorderColor Purple   
+}
+
+class com.proyecto_a.negocio.GestorMonitorizacion{
+    + {static} agregarDispositivo(dispositivo : Dispositivo) : boolean
+    + {static} insertarFranjas() : void
+    + {static} insertarCategorias() : void
+    + {static} actualizarCategoriasDispositivos() : void
+    + {static} extraerDatosJsonPrecios() : PrecioElectricidad
+    + {static} insertarPrecioElectricidad(precioElectricidad : PrecioElectricidad) : boolean
+ }
+
+class com.proyecto_a.negocio.LectorArchivosJson{
+   
+    - {static} insertado : boolean
+    + {static} extraerDatosJsonPreciosElectricidad() : PrecioElectricidad
+    + extraerDatosJsonEventosConsumo() : List<EventosConsumo>
+    + extraerDatosJsonDispositivos() : List<Dispositivo>
+ }
+ 
+@enduml

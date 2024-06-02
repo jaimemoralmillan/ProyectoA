@@ -1,0 +1,58 @@
+@startuml
+
+scale 1200 width
+skinparam dpi 300
+skinparam class {
+    BackgroundColor #E0F3F8
+    ArrowColor Black
+    BorderColor Purple
+    FontSize 12
+    ClassFontSize 12
+    AttributeFontSize 11 
+}
+skinparam package {
+    BackgroundColor #EFE9F5
+    ArrowColor Black
+    BorderColor Purple   
+}
+
+class com.proyecto_a.ui.Main{
+ + {static} main(args : String[]) : void
+ }
+
+ class com.proyecto_a.ui.MonitorizacionGUI{
+    
+    - txtDispositivoDescripcion : JTextField 
+    - txtDispositivoModificar : JTextField 
+    - btnAgregarDispositivo : JButton
+    - btnActualizarBaseDatos : JButton
+    - comboDispositivosEliminar : JComboBox<Dispositivo>
+    - comboDispositivosModificar : JComboBox<Dispositivo>
+    - comboSeleccionaDispositivoCalculo : JComboBox<Dispositivo>
+    - comboSeleccionaDispositivoEnRango : JComboBox<Dispositivo>
+    - comboSeleccionaDispositivoCategoria : JComboBox<Dispositivo>
+    - comboSeleccionarDispositivo : JComboBox<String>
+    - comboSeleccionDia1 : JComboBox<String>
+    - comboSeleccionDia2 : JComboBox<String>
+    - comboSeleccionDia3 : JComboBox<String>
+    - comboSeleccionDia4 : JComboBox<String>
+    - comboSeleccionDia5 : JComboBox<String>
+
+    + MonitorizacionGUI () : void
+    + agregarDispositivo (event : ActionEvent) : void
+    + cargarDispositivosBDD () : void
+    + cargarDispositivosDefaultComboBox (dispositivosDefault : ArrayList<String>) : void
+    + eliminarDispositivo () : void
+    + modificarDispositivo () : void
+    + funcionesActualizacionBD (event : ActionEvent) : void
+    + calcularGastoDia (event : ActionEvent) : void
+    + calcularGastoRango (event : ActionEvent) : void
+    + calcularGastoPorDispositivo (event : ActionEvent) : void
+    + calcularGastoPorDispositivoEnRango (event : ActionEvent) : void
+    + cargarComboDiasMayo (diasMayo : String[]) : void
+    + enseñarCategoriaDispositivo (event : ActionEvent) : void
+    + crearChartPanel () : ChartPanel
+    + {static} main (args : String[]) : void
+ }
+ 
+@enduml

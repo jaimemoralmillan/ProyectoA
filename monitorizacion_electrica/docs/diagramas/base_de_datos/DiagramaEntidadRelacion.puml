@@ -1,0 +1,78 @@
+@startuml
+skinparam class {
+    BackgroundColor #E0F3F8
+    ArrowColor Black
+    BorderColor Purple
+    FontSize 15
+    ClassFontSize 15
+    AttributeFontSize 14 
+}
+
+entity "Categoria" as categoria {
+  * idCategoria : INT <<PK>>
+  --
+  nombre : VARCHAR(45)
+  descripcion : VARCHAR(300)
+  consumoMinimo : VARCHAR(50)
+  consumoMaximo : VARCHAR(50)
+}
+
+entity "Dispositivos" as dispositivos {
+  * idDispositivo : INT <<PK>>
+  --
+  nombre : VARCHAR(45)
+  descripcion : VARCHAR(300)
+  consumoPorHora : FLOAT
+  idCategoria : INT <<FK>>
+}
+
+entity "EventosConsumo" as eventosConsumo {
+  * idEventosConsumo : INT <<PK>>
+  --
+  fechaInicio : DATETIME
+  fechaFin : DATETIME
+  consumoKwh : FLOAT
+  idDispositivo : INT <<FK>>
+}
+
+entity "PrecioElectricidad" as precioElectricidad {
+  * idPrecioElectricidad : INT <<PK>>
+  --
+  fechaInicio : DATETIME
+  fechaFin : DATETIME
+  precioKwh : FLOAT
+}
+
+entity "EventoPrecio" as eventoPrecio {
+  * idEventoPrecio : INT <<PK>>
+  --
+  idEventosConsumo : INT <<FK>>
+  idPrecioElectricidad : INT <<FK>>
+  periodoInicio : DATETIME
+  periodoFin : DATETIME
+  consumoParcial : FLOAT
+}
+
+entity "FranjaHoraria" as franjaHoraria {
+  * idFranjaHoraria : INT <<PK>>
+  --
+  descripcion : VARCHAR(300)
+  horaInicio : VARCHAR(45)
+  horaFin : VARCHAR(45)
+}
+
+entity "Dispositivos_has_FranjaHoraria" as dispositivos_has_franjaHoraria {
+  * idDispositivo : INT <<FK>>
+  * idFranjaHoraria : INT <<FK>>
+  --
+  nivelPrioridad : VARCHAR(20)
+}
+
+categoria ||--o{ dispositivos : "Contiene"
+dispositivos ||--o{ eventosConsumo : "Usa"
+eventosConsumo ||--o{ eventoPrecio : "Genera"
+precioElectricidad ||--o{ eventoPrecio : "Se refiere"
+franjaHoraria ||--o{ dispositivos_has_franjaHoraria : "Incluye"
+dispositivos ||--o{ dispositivos_has_franjaHoraria : "Asocia"
+
+@enduml
