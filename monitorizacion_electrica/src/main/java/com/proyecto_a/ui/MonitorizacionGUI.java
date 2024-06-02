@@ -88,7 +88,7 @@ public class MonitorizacionGUI extends JFrame {
         String[] opcionesGraficos = {
             "Gráfico Consumo por Semanas Mayo",
             "Gráfico Gasto por Dispositivos Mayo",
-            "Gráfico Historigrama"
+            
          };
 
          for (String opcion : opcionesGraficos) {
@@ -110,7 +110,7 @@ public class MonitorizacionGUI extends JFrame {
         panelPrincipal.add(crearPanelEnseñarCategoriaDispositivo(), "Enseñar Categoria de Dispositivo");
         panelPrincipal.add(crearPanelGraficoBarrasSemanasMayo(EventosPrecio.diasDeMayo),"Gráfico Consumo por Semanas Mayo");
         panelPrincipal.add(crearPanelGraficoPastel(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Gasto por Dispositivos Mayo");
-        panelPrincipal.add(crearPanelGraficoHistorigrama(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Historigrama");
+         // panelPrincipal.add(crearPanelGraficoHistorigrama(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Historigrama");
 
         add(panelPrincipal, BorderLayout.CENTER);
         setVisible(true);
@@ -356,6 +356,7 @@ public class MonitorizacionGUI extends JFrame {
         ArrayList<Dispositivo> dispositivos = DispositivosDAO.obtenerTodosDispositivos();
         comboDispositivosEliminar.removeAllItems();
         comboDispositivosModificar.removeAllItems();
+        comboSeleccionaDispositivoCategoria.removeAllItems();
         for (Dispositivo dispositivo : dispositivos) {
             comboDispositivosEliminar.addItem(dispositivo);
             comboDispositivosModificar.addItem(dispositivo);
