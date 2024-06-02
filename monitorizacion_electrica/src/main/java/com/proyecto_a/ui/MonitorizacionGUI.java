@@ -473,8 +473,24 @@ public class MonitorizacionGUI extends JFrame {
         Dispositivo dispositivo = (Dispositivo) comboSeleccionaDispositivoCategoria.getSelectedItem();
         int idDispositivo = dispositivo.getId();
         Categoria categoria = DispositivosDAO.obtenerCategoriaDispositivo(idDispositivo);
-        String mensaje = "El dispositivo " + dispositivo.getDescripcion() + " pertenece a la categoría: " + categoria.getNombre() + " - " + categoria.getDescripcion();
-        JOptionPane.showMessageDialog(this, mensaje);
+    
+        // Obtener las franjas horarias y sus niveles de prioridad
+        List<Dispositivos_has_franjaHoraria> franjasHorarias = DispositivosDAO.obtenerFranjasHorariasDispositivo(idDispositivo); // Obtener las franjas horarias del dispositivo
+    
+        StringBuilder mensaje = new StringBuilder(); // Mensaje a mostrar en el cuadro de diálogo
+        mensaje.append("El dispositivo ") // Añadir la descripción del dispositivo y la categoría a la variable mensaje
+               .append(dispositivo.getDescripcion()) // Añadir la descripción del dispositivo
+               .append(" pertenece a la categoría: ")
+               .append(categoria.getNombre()) // Añadir el nombre de la categoría
+               .append(" - ")
+               .append(categoria.getDescripcion()) // Añadir la descripción de la categoría
+               .append("\n\nFranjas Horarias:\n"); // Añadir un salto de línea y el texto "Franjas Horarias:"
+    
+        for (Dispositivos_has_franjaHoraria franja : franjasHorarias) { // Recorrer todas las franjas horarias
+            mensaje.append(franja.toString()).append("\n"); // Añadir la franja horaria a la variable mensaje
+        }
+    
+        JOptionPane.showMessageDialog(this, mensaje.toString());
     }
 
     public static void main(String[] args) {

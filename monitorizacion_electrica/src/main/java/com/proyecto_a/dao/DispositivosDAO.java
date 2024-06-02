@@ -2,6 +2,7 @@ package com.proyecto_a.dao;
 
 import com.proyecto_a.dto.Categoria;
 import com.proyecto_a.dto.Dispositivo;
+import com.proyecto_a.dto.Dispositivos_has_franjaHoraria;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -218,5 +219,32 @@ public class DispositivosDAO {
             e.printStackTrace();
             return null;
         }
+    }
+    
+    // Obtiene las franjas horarias de un dispositivo
+    public static List<Dispositivos_has_franjaHoraria> obtenerFranjasHorariasDispositivo(int idDispositivo) {
+        String sql = "SELECT fh.descripcion, dhf.nivelPrioridad " + // Selecciona la descripción de la franja horaria y el nivel de prioridad
+                     "FROM dispositivos_has_franjahoraria dhf " + // Tabla de relación entre dispositivos y franjas horarias
+                     "JOIN franjahoraria fh ON dhf.idFranjaHoraria = fh.idFranjaHoraria " + // Tabla de franjas horarias
+                     "WHERE dhf.idDispositivo = ?"; // Selecciona las franjas horarias del dispositivo con el id especificado
+    
+        List<Dispositivos_has_franjaHoraria> franjas = new ArrayList<>();
+        
+        try (Connection conn = Conexion.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+    
+            pstmt.setInt(1, idDispositivo);
+            ResultSet rs = pstmt.executeQuery();
+            
+            while (rs.next()) {
+                String descripcion = rs.getString("descripcion");
+                String nivelPrioridad = rs.getString("nivelPrioridad");
+                franjas.add(new Dispositivos_has_franjaHoraria(descripcion, nivelPrioridad));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        
+        return franjas;
     }
 }
