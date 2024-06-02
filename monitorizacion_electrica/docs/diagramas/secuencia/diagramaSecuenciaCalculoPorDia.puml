@@ -1,0 +1,37 @@
+@startuml
+actor Usuario
+participant "MonitorizacionGUI" as GUI
+participant "EventosPrecioDAO" as DAO
+participant "Conexion" as DB
+
+
+Usuario -> GUI : Presiona botón "Calcular Gasto por Dia"
+activate GUI
+
+GUI -> DAO : calcularGastoDia()
+
+
+
+activate DAO
+
+
+
+DAO -> DB : getConnection()
+activate DB
+DB --> DAO : connection
+deactivate DB
+DAO->DB :prepareStatement(sql)
+DB->DAO:pstmt
+
+
+DAO->DB : calcularConsumoPorDia()
+DB->DAO: resultado gastoTotal
+DAO->GUI : resultado gastoTotal
+
+
+
+deactivate DAO
+
+
+deactivate GUI
+@enduml

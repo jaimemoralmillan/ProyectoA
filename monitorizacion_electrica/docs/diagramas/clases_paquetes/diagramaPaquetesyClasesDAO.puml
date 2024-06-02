@@ -1,0 +1,77 @@
+@startuml
+
+scale 1200 width
+skinparam dpi 300
+skinparam class {
+    BackgroundColor #E0F3F8
+    ArrowColor Black
+    BorderColor Purple
+    FontSize 15
+    ClassFontSize 15
+    AttributeFontSize 14 
+}
+skinparam package {
+    BackgroundColor #EFE9F5
+    ArrowColor Black
+    BorderColor Purple   
+}
+
+class com.proyecto_a.dao.CategoriaDAO {
+ - {static} idCategoria : int
+
+ + {static} insertarCategorias (Categoria[] categorias) : boolean
+ + {static} obtenerIdCategoria () : List<Integer>
+ + {static} obtenerNivelCategoria (Dispositivo dispositivo, Categoria categoria) : int
+ }
+
+ class com.proyecto_a.dao.Conexion {
+ - {static} connection : Connection
+ {static final} URL : String = "jdbc:mysql://localhost:3306/monitorizacion"
+ {static final} USER : String = root
+ {static final} PASSWORD : String
+ - Conexion ()
+ + {static} getConnection () : Connection <<throws SQLException>>
+ - {static} reconnect () : void <<throws SQLException>>
+ + {static} closeConnection () : void
+ }
+
+ class com.proyecto_a.dao.Dispositivos_has_franjaHorariaDAO{
+ - {static} prioridad : String
+ + {static} insertarFranjasParaDispositivo (String nombreDispositivo) : void
+ - {static} insertarFranjas (Connection conn, int idDispositivo, String nombreDispositivo) : void <<throws SQLException>>
+ - {static} obtenerNivelPrioridad (Dispositivo dispositivo, FranjaHoraria franja) : String
+ }
+
+ class com.proyecto_a.dao.DispositivosDAO{
+ + insertarDispositivoDesdeJson (Dispositivo dispositivo) : boolean
+ + {static} insertarDispositivo (Dispositivo dispositivo) : boolean
+ + {static} eliminarDispositivo (int id) : boolean
+ + {static} modificarDescripcionDispositivo (int id, String descripcion) : boolean
+ + {static} obtenerTodosDispositivos () : ArrayList<Dispositivo>
+ + {static} obtenerNombresDispositivos () : List<String>
+ + {static} modificarCategoriaDispositivo (int id) : boolean
+ + {static} obtenerCategoriaDispositivo (int id) : Categoria
+ }
+
+ class com.proyecto_a.dao.EventosConsumoDAO{
+ + insertarEventosConsumo (EventosConsumo eventosConsumo) : boolean
+ + {static} actualizarConsumoKwhEventosConsumo () : boolean
+ }
+
+ class com.proyecto_a.dao.EventosPrecioDAO{
+ + {static} InsertarEventosPrecio () : void
+ + {static} calcularConsumoPorDia (String fecha) : float
+ + {static} calcularConsumoPorRango (String fecha1, String fecha2) : float
+ + {static} calculoConsumoPorDispositivo (Dispositivo dispositivo) : float
+ + {static} calculoConsumoPorDispositivoEnRango (Dispositivo dispositivo, String fecha1, String fecha2) : float
+ }
+
+ class com.proyecto_a.dao.FranjaHorariaDAO{
+ + {static} insertarFranjas (FranjaHoraria[] franjas) : boolean
+ }
+
+ class com.proyecto_a.dao.PrecioElectricidadDAO{
+ + {static} insertarPrecioElectricidad (PrecioElectricidad precioElectricidad) : boolean
+ }
+ 
+@enduml

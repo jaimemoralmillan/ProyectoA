@@ -1,0 +1,64 @@
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+actor "Usuario" as user
+actor "Sistema de Base de Datos" as db
+
+rectangle "Aplicación Monitorización Eléctrica" {
+    
+    user --> (Actualizar Base de Datos) : Confirma o no
+    
+    user --> (Agregar Dispositivo) : Selecciona dispositivo e ingresa descripción\ny confirma
+
+    user --> (Eliminar Dispositivo) : Selecciona dispositivo\ny confirma
+
+    user --> (Modificar Dispositivo) : Selecciona dispositivo,\ningresa nuevos datos y confirma
+
+    user --> (Calcular Gasto por Día) : Selecciona día para ver el gasto total,\ny confirma
+ 
+    user --> (Calcular Gasto por Rango) : Selecciona  el primer día del rango y el último para ver el gasto en ese período,\ny confirma
+
+    user --> (Calcular Gasto por Dispositivo) : Selecciona  el dispositivo,\ny confirma
+
+    user --> (Calculo por Dispositivo en Rango) : Selecciona  el dispositivo el primer día del rango y el último día,\ny confirma
+
+    user --> (Mostrar gráficos) : Selecciona  el gráfico deseado
+    
+    user --> (Interactuar con Interfaz Gráfica) : Usa GUI
+    
+    (Actualizar Base de Datos) --> db: Consulta datos y realiza las inserciones
+
+    (Agregar Dispositivo) --> db : Realiza inserción
+    
+    (Eliminar Dispositivo) --> db : Realiza eliminación
+
+    (Modificar Dispositivo) --> db : Realiza actualización
+    
+    (Calcular Gasto por Día) --> db : Consulta datos y realiza los cálculos
+    
+    (Calcular Gasto por Rango) --> db : Consulta datos y realiza los cálculos
+
+    (Calcular Gasto por Dispositivo) --> db : Consulta datos y realiza los cálculos
+
+    (Calculo por Dispositivo en Rango) --> db : Consulta datos y realiza los cálculos
+
+    db --> (Conectar a la Base de Datos) : Requiere conexión
+
+    db --> (Desconectar de la Base de Datos) : Cierra conexión
+
+    (Eliminar Dispositivo) .> (Agregar Dispositivo) : Extiende
+
+    (Modificar Dispositivo) .> (Agregar Dispositivo) : Extiende
+
+    (Calcular Gasto por Día) .> (Mostrar Gráficos) : Extiende
+    
+    (Calcular Gasto por Rango) .> (Mostrar Gráficos) : Extiende
+
+    (Calcular Gasto por Dispositivo) .> (Mostrar Gráficos) : Extiende
+
+    (Calculo por Dispositivo en Rango) .> (Mostrar Gráficos) : Extiende
+}
+
+@enduml
+

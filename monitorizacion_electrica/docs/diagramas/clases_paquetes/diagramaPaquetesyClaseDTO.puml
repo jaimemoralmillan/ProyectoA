@@ -1,0 +1,90 @@
+@startuml
+
+scale 1200 width
+skinparam dpi 300
+skinparam class {
+    BackgroundColor #E0F3F8
+    ArrowColor Black
+    BorderColor Purple
+    FontSize 12
+    ClassFontSize 12
+    AttributeFontSize 11 
+}
+skinparam package {
+    BackgroundColor #EFE9F5
+    ArrowColor Black
+    BorderColor Purple   
+}
+
+class com.proyecto_a.dto.Categoria{
+
+ - idCategoria : int
+ - nombre: String
+ - descripcion: String
+ - consumoMinimo : double
+ - consumoMaximo : double
+ + categorias : Categoria[]
+
+ }
+
+class com.proyecto_a.dto.Dispositivo{
+ - idDispositivo:int
+ - nombre:String
+ - descripcion:String
+ - dispositivosDefault:ArrayList<String>
+ - consumoPorHora:float
+ - idCategoria:int
+ + rellenarArrayDispositivosDefault() : void
+
+ }
+
+class com.proyecto_a.dto.Dispositivos_has_franjahoraria{
+  
+ - idFranjaHoraria : int
+ - idDispositivo : int
+ - nivelPrioridad : String
+ + {static} optimo : String
+ + {static} aceptable: String
+ + {static} mala: String
+ + {static} siempreEncendido: String
+
+ }
+
+ class com.proyecto_a.dto.EventosConsumo{
+    - idEventosConsumo : int
+    - fechaInicio : String
+    - fechaFin : String
+    - consumoKwh : float
+    - idDispositivo : int
+ }
+
+class com.proyecto_a.dto.EventosPrecio{
+     -idEventoPrecio: int;
+    -idEventosConsumo: int;
+    -idPrecioElectricidad: String;
+    -periodoInicio: String;
+    -periodoFin: String;
+    -consumoParcial float
+    +{static} diasDeMayo: String[];    
+ }
+
+ class com.proyecto_a.dto.FranjaHoraria{
+
+    -idFranjaHoraria : int
+    -descripcion: String
+    -horaInicio: String
+    -HoraFin: String
+    -dispositivos_id : int
+    +{static} franjas : FranjaHoraria    
+ }
+
+ class com.proyecto_a.dto.PrecioElectricidad{
+
+    -id : int
+    -fechaInicio : String
+    -fechaFin : String
+    -precioKwh : float
+
+ }
+ 
+@enduml
