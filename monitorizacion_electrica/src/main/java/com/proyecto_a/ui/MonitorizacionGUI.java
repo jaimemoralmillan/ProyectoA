@@ -47,7 +47,7 @@ public class MonitorizacionGUI extends JFrame {
             "Agregar Dispositivo",
             "Eliminar Dispositivo",
             "Modificar Dispositivo",
-            "Enseñar Categoria de Dispositivo"
+            "Mostrar Categoría y Franjas de Dispositivo"
         };
 
         for (String opcion : opcionesDisp) {
@@ -107,7 +107,7 @@ public class MonitorizacionGUI extends JFrame {
         panelPrincipal.add(crearPanelCalcularGastoRango(), "Calcular Gasto por Rango");
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivo(), "Calcular Gasto por Dispositivo");
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivoEnRango(), "Calcular Gasto por Dispositivo en Rango");
-        panelPrincipal.add(crearPanelEnseñarCategoriaDispositivo(), "Enseñar Categoria de Dispositivo");
+        panelPrincipal.add(crearPanelEnseñarCategoriaDispositivo(), "Mostrar Categoría y Franjas de Dispositivo");
         panelPrincipal.add(crearPanelGraficoBarrasSemanasMayo(EventosPrecio.diasDeMayo),"Gráfico Consumo por Semanas Mayo");
         panelPrincipal.add(crearPanelGraficoPastel(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Gasto por Dispositivos Mayo");
          // panelPrincipal.add(crearPanelGraficoHistorigrama(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Historigrama");
