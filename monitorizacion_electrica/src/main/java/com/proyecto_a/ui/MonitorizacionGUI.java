@@ -24,7 +24,7 @@ import com.toedter.calendar.JCalendar;
 public class MonitorizacionGUI extends JFrame {
 
     private JTextField txtDispositivoDescripcion, txtDispositivoModificar;
-    private JButton btnAgregarDispositivo, btnActualizarBaseDatos;
+    private JButton btnAgregarDispositivo; //btnActualizarBaseDatos;
     private JComboBox<Dispositivo> comboDispositivosEliminar, comboDispositivosModificar, comboSeleccionaDispositivoCalculo, comboSeleccionaDispositivoEnRango, comboSeleccionaDispositivoCategoria;
     private JComboBox<String> comboSeleccionarDispositivo;
     private JCalendar calendarSeleccionDia1,calendarRangoDias1,calendarRangoDias2,calendarRangoDispositivo1,calendarRangoDispositivo2;
@@ -32,8 +32,8 @@ public class MonitorizacionGUI extends JFrame {
     private CardLayout cardLayout;
     private JPanel panelPrincipal;
 
-    
-    
+    private JPanel panelInicio;
+
 
     public MonitorizacionGUI() {
         setTitle("Sistema de Monitorización eléctrica");
@@ -42,77 +42,21 @@ public class MonitorizacionGUI extends JFrame {
         setLayout(new BorderLayout());
 
         
-
         // Crear la barra de los menús
         JMenuBar menuBar = new JMenuBar();
 
-        //Menú inicio foto
-        JMenu menuInicio = new JMenu("Inicio");
-        menuBar.add(menuInicio);
+        // Crear el menú de actualización de base de datos
+        JMenu menuActualizar = new JMenu("Actualizar");
+        JMenuItem menuItemActualizarBD = new JMenuItem("Actualizar Base de Datos");
+        menuItemActualizarBD.addActionListener(this::funcionesActualizacionBD);
+        menuActualizar.add(menuItemActualizarBD);
 
+        menuBar.add(menuActualizar);
 
-
-
-
-        // Configuración del JFrame
-        setTitle("Imagen en el Panel Principal");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800, 600);
-        setLocationRelativeTo(null); // Centrar el JFrame en la pantalla
-
-        // Crear la barra de menú
         setJMenuBar(menuBar);
 
-        // Crear el panel con la imagen
-        JPanel imagePanel = new JPanel() {
-            private Image image;
-
-            {
-                // Cargar la imagen
-                java.net.URL imgURL = getClass().getResource("portada.png");
-                if (imgURL != null) {
-                    image = new ImageIcon(imgURL).getImage();
-                } else {
-                    System.err.println("No se pudo encontrar la imagen en la ruta especificada.");
-                }
-            }
-
-            @Override
-            protected void paintComponent(Graphics g) {
-                super.paintComponent(g);
-                // Pintar la imagen si no es null
-                if (image != null) {
-                    g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
-                }
-            }
-        };
-
-        // Añadir el panel al frame
-        setContentPane(imagePanel);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        cardLayout = new CardLayout();
+        panelPrincipal = new JPanel(cardLayout);
 
 
         //Menú de dispositivos
@@ -174,7 +118,11 @@ public class MonitorizacionGUI extends JFrame {
         //añadir el menu graficos a la barra de menus
         menuBar.add(menuGraficos);
     
+    
+
+
         // Crear y añadir los paneles al panel principal
+        panelPrincipal.add(crearPanelInicio(), "Inicio");
         panelPrincipal.add(crearPanelAgregarDispositivo(), "Agregar Dispositivo");
         panelPrincipal.add(crearPanelEliminarDispositivo(), "Eliminar Dispositivo");
         panelPrincipal.add(crearPanelModificarDispositivo(), "Modificar Dispositivo");
@@ -185,6 +133,7 @@ public class MonitorizacionGUI extends JFrame {
         panelPrincipal.add(crearPanelMostrarInfoDispositivo(), "Mostrar Información de Dispositivo");
         panelPrincipal.add(crearPanelGraficoBarrasSemanasMayo(EventosPrecio.diasDeMayo),"Gráfico Consumo por Semanas Mayo");
         panelPrincipal.add(crearPanelGraficoPastel(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Gasto por Dispositivos Mayo");
+        
          // panelPrincipal.add(crearPanelGraficoHistorigrama(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Historigrama");
 
         add(panelPrincipal, BorderLayout.CENTER);
@@ -201,6 +150,22 @@ public class MonitorizacionGUI extends JFrame {
         cardLayout.show(panelPrincipal, panel);
     }
 
+
+    //Panel de Inicio (Imagen nada más abrir la aplicación)
+
+    private JPanel crearPanelInicio() {
+        JPanel panel = new JPanel(new BorderLayout());
+        JLabel label = new JLabel("Bienvenid@ al Sistema de Monitorización de Consumo Eléctrico", JLabel.CENTER);
+        label.setFont(new Font("Arial", Font.BOLD, 24));
+        panel.add(label, BorderLayout.NORTH);
+    
+        // Añadir una imagen
+        ImageIcon imagen = new ImageIcon("monitorizacion_electrica\\src\\main\\java\\com\\proyecto_a\\ui\\portada.png"); 
+        JLabel labelImagen = new JLabel(imagen);
+        panel.add(labelImagen, BorderLayout.CENTER);
+    
+        return panel;
+    }
 
     //panel grafico barras semanas de mayo
 
@@ -272,17 +237,17 @@ public class MonitorizacionGUI extends JFrame {
         JLabel etiquetaDescripcionDispositivo = new JLabel("Descripcion del Dispositivo: ");
         txtDispositivoDescripcion = new JTextField();
         btnAgregarDispositivo = new JButton("Agregar Dispositivo");
-        btnActualizarBaseDatos = new JButton("Actualizar Base de Datos");
+        // btnActualizarBaseDatos = new JButton("Actualizar Base de Datos");
 
         btnAgregarDispositivo.addActionListener(this::agregarDispositivo);
-        btnActualizarBaseDatos.addActionListener(this::funcionesActualizacionBD);
+        // btnActualizarBaseDatos.addActionListener(this::funcionesActualizacionBD);
 
         panel.add(etiquetaNombreDispositivo);
         panel.add(comboSeleccionarDispositivo);
         panel.add(etiquetaDescripcionDispositivo);
         panel.add(txtDispositivoDescripcion);
         panel.add(btnAgregarDispositivo);
-        panel.add(btnActualizarBaseDatos);
+        // panel.add(btnActualizarBaseDatos);
         return panel;
     }
 
