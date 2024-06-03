@@ -33,14 +33,90 @@ public class MonitorizacionGUI extends JFrame {
     private CardLayout cardLayout;
     private JPanel panelPrincipal;
 
+    
+    
+
     public MonitorizacionGUI() {
         setTitle("Sistema de Monitorización eléctrica");
         setSize(1200, 800);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        // Crear el menú de dispositivos
+        
+
+        // Crear la barra de los menús
         JMenuBar menuBar = new JMenuBar();
+
+        //Menú inicio foto
+        JMenu menuInicio = new JMenu("Inicio");
+        menuBar.add(menuInicio);
+
+
+
+
+
+        // Configuración del JFrame
+        setTitle("Imagen en el Panel Principal");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(800, 600);
+        setLocationRelativeTo(null); // Centrar el JFrame en la pantalla
+
+        // Crear la barra de menú
+        setJMenuBar(menuBar);
+
+        // Crear el panel con la imagen
+        JPanel imagePanel = new JPanel() {
+            private Image image;
+
+            {
+                // Cargar la imagen
+                java.net.URL imgURL = getClass().getResource("portada.png");
+                if (imgURL != null) {
+                    image = new ImageIcon(imgURL).getImage();
+                } else {
+                    System.err.println("No se pudo encontrar la imagen en la ruta especificada.");
+                }
+            }
+
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                // Pintar la imagen si no es null
+                if (image != null) {
+                    g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
+                }
+            }
+        };
+
+        // Añadir el panel al frame
+        setContentPane(imagePanel);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //Menú de dispositivos
         JMenu menuDispositivos = new JMenu("Dispositivos");
 
         String[] opcionesDisp = {
