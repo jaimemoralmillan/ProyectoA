@@ -223,7 +223,7 @@ public class DispositivosDAO {
     
     // Obtiene las franjas horarias de un dispositivo
     public static List<Dispositivos_has_franjaHoraria> obtenerFranjasHorariasDispositivo(int idDispositivo) {
-        String sql = "SELECT fh.descripcion, dhf.nivelPrioridad " + // Selecciona la descripción de la franja horaria y el nivel de prioridad
+        String sql = "SELECT fh.descripcion, fh.horaInicio, fh.horaFin, dhf.nivelPrioridad " + // Selecciona la descripción de la franja horaria y el nivel de prioridad
                      "FROM dispositivos_has_franjahoraria dhf " + // Tabla de relación entre dispositivos y franjas horarias
                      "JOIN franjahoraria fh ON dhf.idFranjaHoraria = fh.idFranjaHoraria " + // Tabla de franjas horarias
                      "WHERE dhf.idDispositivo = ?"; // Selecciona las franjas horarias del dispositivo con el id especificado
@@ -239,7 +239,9 @@ public class DispositivosDAO {
             while (rs.next()) {
                 String descripcion = rs.getString("descripcion");
                 String nivelPrioridad = rs.getString("nivelPrioridad");
-                franjas.add(new Dispositivos_has_franjaHoraria(descripcion, nivelPrioridad));
+                String horaInicio = rs.getString("horaInicio");
+                String horaFin = rs.getString("horaFin");
+                franjas.add(new Dispositivos_has_franjaHoraria(descripcion, nivelPrioridad, horaInicio, horaFin));
             }
         } catch (SQLException e) {
             e.printStackTrace();
