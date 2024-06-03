@@ -5,11 +5,7 @@ import javax.swing.*;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
-import org.jfree.chart.axis.CategoryAxis;
-import org.jfree.chart.axis.CategoryLabelPositions;
-import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.chart.renderer.category.BarRenderer;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.general.DefaultPieDataset;
 
@@ -30,7 +26,7 @@ public class MonitorizacionGUI extends JFrame {
     private JTextField txtDispositivoDescripcion, txtDispositivoModificar;
     private JButton btnAgregarDispositivo, btnActualizarBaseDatos;
     private JComboBox<Dispositivo> comboDispositivosEliminar, comboDispositivosModificar, comboSeleccionaDispositivoCalculo, comboSeleccionaDispositivoEnRango, comboSeleccionaDispositivoCategoria;
-    private JComboBox<String> comboSeleccionarDispositivo, comboSeleccionDia1, comboSeleccionDia2, comboSeleccionDia3, comboSeleccionDia4, comboSeleccionDia5;
+    private JComboBox<String> comboSeleccionarDispositivo;
     private JCalendar calendarSeleccionDia1,calendarRangoDias1,calendarRangoDias2,calendarRangoDispositivo1,calendarRangoDispositivo2;
 
     private CardLayout cardLayout;
@@ -50,7 +46,7 @@ public class MonitorizacionGUI extends JFrame {
             "Agregar Dispositivo",
             "Eliminar Dispositivo",
             "Modificar Dispositivo",
-            "Enseñar Categoria de Dispositivo"
+            "Mostrar Información de Dispositivo"
         };
 
         for (String opcion : opcionesDisp) {
@@ -110,7 +106,7 @@ public class MonitorizacionGUI extends JFrame {
         panelPrincipal.add(crearPanelCalcularGastoRango(), "Calcular Gasto por Rango");
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivo(), "Calcular Gasto por Dispositivo");
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivoEnRango(), "Calcular Gasto por Dispositivo en Rango");
-        panelPrincipal.add(crearPanelEnseñarCategoriaDispositivo(), "Enseñar Categoria de Dispositivo");
+        panelPrincipal.add(crearPanelMostrarInfoDispositivo(), "Mostrar Información de Dispositivo");
         panelPrincipal.add(crearPanelGraficoBarrasSemanasMayo(EventosPrecio.diasDeMayo),"Gráfico Consumo por Semanas Mayo");
         panelPrincipal.add(crearPanelGraficoPastel(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Gasto por Dispositivos Mayo");
          // panelPrincipal.add(crearPanelGraficoHistorigrama(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Historigrama");
@@ -185,34 +181,6 @@ public class MonitorizacionGUI extends JFrame {
                  "Gasto por Dispositivo durante Mayo",
                  dataset,
                  true,true,false);
-  
-          return new ChartPanel(chart);
-      }
-
-
-      //panel grafico historigrama TO DO
-
-    private ChartPanel crearPanelGraficoHistorigrama(ArrayList<Dispositivo> dispositivos) {
-       
-        float resultadoDisp0=EventosPrecioDAO.calculoConsumoPorDispositivo(dispositivos.get(0));
-  
-          DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-          dataset.addValue(resultadoDisp0, "Series1", "Category1");
-          dataset.addValue(2, "Series1", "Category2");
-          dataset.addValue(3, "Series1", "Category3");
-          dataset.addValue(4, "Series1", "Category4");
-          dataset.addValue(1, "Series2", "Category5");
-          dataset.addValue(6, "Series2", "Category6");
-          dataset.addValue(7, "Series2", "Category7");
-          dataset.addValue(8, "Series2", "Category8");
-  
-          JFreeChart chart = ChartFactory.createBarChart(
-                  "Titulo del grafico", 
-                  "Subtitulo del grafico abajito", 
-                  "Unidad medida (Euros)", 
-                  dataset, 
-                  PlotOrientation.VERTICAL, 
-                  true, true, false);
   
           return new ChartPanel(chart);
       }
@@ -459,11 +427,11 @@ public class MonitorizacionGUI extends JFrame {
         return panel;
     }
 
-    private JPanel crearPanelEnseñarCategoriaDispositivo() {
+    private JPanel crearPanelMostrarInfoDispositivo() {
         JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
         Color fondo = new Color(216, 228, 236);
         panel.setBackground(fondo);
-        JButton btnCategoriaDispositivo = new JButton("Mostrar Categoria de Dispositivo");
+        JButton btnCategoriaDispositivo = new JButton("Mostrar Información de Dispositivo");
         JLabel etiquetaElegirDispositivoCategoria = new JLabel("Seleccione el dispositivo");
         comboSeleccionaDispositivoCategoria = new JComboBox<>();
         btnCategoriaDispositivo.addActionListener(this::enseñarCategoriaDispositivo);
@@ -596,7 +564,7 @@ public class MonitorizacionGUI extends JFrame {
         JOptionPane.showMessageDialog(this, mensaje);
     }
 
-    private void cargarComboDiasMayo(String[] diasMayo) {
+   /*  private void cargarComboDiasMayo(String[] diasMayo) {
         for (String dia : diasMayo) {
             comboSeleccionDia1.addItem(dia);
             comboSeleccionDia2.addItem(dia);
@@ -605,6 +573,7 @@ public class MonitorizacionGUI extends JFrame {
             comboSeleccionDia5.addItem(dia);
         }
     }
+    */
 
     private void enseñarCategoriaDispositivo(ActionEvent event) {
         Dispositivo dispositivo = (Dispositivo) comboSeleccionaDispositivoCategoria.getSelectedItem();

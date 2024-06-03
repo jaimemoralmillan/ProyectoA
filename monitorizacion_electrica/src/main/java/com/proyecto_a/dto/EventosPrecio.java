@@ -1,5 +1,4 @@
 package com.proyecto_a.dto;
-import java.time.*;
 public class EventosPrecio {
     
     private int idEventoPrecio ;
@@ -17,7 +16,7 @@ public class EventosPrecio {
         "2024-05-21", "2024-05-22", "2024-05-23", "2024-05-24", "2024-05-25",
         "2024-05-26", "2024-05-27", "2024-05-28", "2024-05-29", "2024-05-30",
         "2024-05-31"
-    };
+    }; 
 
 
     public int getIdEventoPrecio() {

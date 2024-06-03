@@ -4,7 +4,6 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 
 import com.proyecto_a.dto.Dispositivo;
-import com.proyecto_a.dto.EventosConsumo;
 
 
 public class EventosPrecioDAO {
@@ -42,7 +41,7 @@ public class EventosPrecioDAO {
                     int priceId = rsPrecioElectricidad.getInt("idPrecioElectricidad");
                     Timestamp tsPriceStart = rsPrecioElectricidad.getTimestamp("fechaInicio");
                     Timestamp tsPriceEnd = rsPrecioElectricidad.getTimestamp("fechaFin");
-                    float price = rsPrecioElectricidad.getFloat("precioKwh");
+                   // float price = rsPrecioElectricidad.getFloat("precioKwh");
 
                     if (tsPriceStart != null && tsPriceEnd != null) {
                         LocalDateTime priceStart = tsPriceStart.toLocalDateTime();
