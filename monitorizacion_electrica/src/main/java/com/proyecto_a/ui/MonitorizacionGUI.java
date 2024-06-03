@@ -5,30 +5,29 @@ import javax.swing.*;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
-import org.jfree.chart.axis.CategoryAxis;
-import org.jfree.chart.axis.CategoryLabelPositions;
-import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.chart.renderer.category.BarRenderer;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.general.DefaultPieDataset;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.proyecto_a.dao.*;
 import com.proyecto_a.dto.*;
 import com.proyecto_a.negocio.*;
+import com.toedter.calendar.JCalendar;
 
 public class MonitorizacionGUI extends JFrame {
 
     private JTextField txtDispositivoDescripcion, txtDispositivoModificar;
     private JButton btnAgregarDispositivo, btnActualizarBaseDatos;
     private JComboBox<Dispositivo> comboDispositivosEliminar, comboDispositivosModificar, comboSeleccionaDispositivoCalculo, comboSeleccionaDispositivoEnRango, comboSeleccionaDispositivoCategoria;
-    private JComboBox<String> comboSeleccionarDispositivo, comboSeleccionDia1, comboSeleccionDia2, comboSeleccionDia3, comboSeleccionDia4, comboSeleccionDia5;
+    private JComboBox<String> comboSeleccionarDispositivo;
+    private JCalendar calendarSeleccionDia1,calendarRangoDias1,calendarRangoDias2,calendarRangoDispositivo1,calendarRangoDispositivo2;
 
     private CardLayout cardLayout;
     private JPanel panelPrincipal;
@@ -47,7 +46,7 @@ public class MonitorizacionGUI extends JFrame {
             "Agregar Dispositivo",
             "Eliminar Dispositivo",
             "Modificar Dispositivo",
-            "Mostrar Categoría y Franjas de Dispositivo"
+            "Mostrar Información de Dispositivo"
         };
 
         for (String opcion : opcionesDisp) {
@@ -107,7 +106,7 @@ public class MonitorizacionGUI extends JFrame {
         panelPrincipal.add(crearPanelCalcularGastoRango(), "Calcular Gasto por Rango");
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivo(), "Calcular Gasto por Dispositivo");
         panelPrincipal.add(crearPanelCalcularGastoPorDispositivoEnRango(), "Calcular Gasto por Dispositivo en Rango");
-        panelPrincipal.add(crearPanelEnseñarCategoriaDispositivo(), "Mostrar Categoría y Franjas de Dispositivo");
+        panelPrincipal.add(crearPanelMostrarInfoDispositivo(), "Mostrar Información de Dispositivo");
         panelPrincipal.add(crearPanelGraficoBarrasSemanasMayo(EventosPrecio.diasDeMayo),"Gráfico Consumo por Semanas Mayo");
         panelPrincipal.add(crearPanelGraficoPastel(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Gasto por Dispositivos Mayo");
          // panelPrincipal.add(crearPanelGraficoHistorigrama(DispositivosDAO.obtenerTodosDispositivos()),"Gráfico Historigrama");
@@ -119,7 +118,7 @@ public class MonitorizacionGUI extends JFrame {
         Dispositivo.rellenarArrayDispositivosDefault();
         cargarDispositivosBDD();
         cargarDispositivosDefaultComboBox(Dispositivo.getDispositivosDefault());
-        cargarComboDiasMayo(EventosPrecio.diasDeMayo);
+      //  cargarComboDiasMayo(EventosPrecio.diasDeMayo);
     } // fin del constructor
 
     private void mostrarPanel(String panel) {
@@ -186,38 +185,11 @@ public class MonitorizacionGUI extends JFrame {
           return new ChartPanel(chart);
       }
 
-
-      //panel grafico historigrama TO DO
-
-    private ChartPanel crearPanelGraficoHistorigrama(ArrayList<Dispositivo> dispositivos) {
-       
-        float resultadoDisp0=EventosPrecioDAO.calculoConsumoPorDispositivo(dispositivos.get(0));
-  
-          DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-          dataset.addValue(resultadoDisp0, "Series1", "Category1");
-          dataset.addValue(2, "Series1", "Category2");
-          dataset.addValue(3, "Series1", "Category3");
-          dataset.addValue(4, "Series1", "Category4");
-          dataset.addValue(1, "Series2", "Category5");
-          dataset.addValue(6, "Series2", "Category6");
-          dataset.addValue(7, "Series2", "Category7");
-          dataset.addValue(8, "Series2", "Category8");
-  
-          JFreeChart chart = ChartFactory.createBarChart(
-                  "Titulo del grafico", 
-                  "Subtitulo del grafico abajito", 
-                  "Unidad medida (Euros)", 
-                  dataset, 
-                  PlotOrientation.VERTICAL, 
-                  true, true, false);
-  
-          return new ChartPanel(chart);
-      }
-
     //panel agregar dispositivo
     private JPanel crearPanelAgregarDispositivo() {
         JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
-
+        Color fondo = new Color(216, 228, 236);
+        panel.setBackground(fondo);
         JLabel etiquetaNombreDispositivo = new JLabel("Seleccione el dispositivo para agregar: ");
         comboSeleccionarDispositivo = new JComboBox<>();
 
@@ -240,6 +212,8 @@ public class MonitorizacionGUI extends JFrame {
 
     private JPanel crearPanelEliminarDispositivo() {
         JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
+        Color fondo = new Color(216, 228, 236);
+        panel.setBackground(fondo);
         JButton btnEliminarDispositivo = new JButton("Eliminar Dispositivo");
         JLabel etiquetaElegirDispositivo = new JLabel("Elegir Dispositivo");
         comboDispositivosEliminar = new JComboBox<>();
@@ -252,6 +226,8 @@ public class MonitorizacionGUI extends JFrame {
 
     private JPanel crearPanelModificarDispositivo() {
         JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
+        Color fondo = new Color(216, 228, 236);
+        panel.setBackground(fondo);
         JButton btnModificarDispositivo = new JButton("Modificar Dispositivo");
         JLabel etiquetaModificarDispositivo = new JLabel("Seleccione Dispositivo a Modificar");
         JLabel etiquetaNuevaDescripcion = new JLabel("Nueva descripcion del dispositivo");
@@ -269,68 +245,193 @@ public class MonitorizacionGUI extends JFrame {
 
 
     private JPanel crearPanelCalcularGastoDia() {
-        JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
-        JButton btnCalcularGastoDia = new JButton("Calcular Gasto en el Dia indicado");
+        JPanel panel = new JPanel(new GridBagLayout());
+        Color fondo = new Color(216, 228, 236);
+        panel.setBackground(fondo);
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(10, 10, 10, 10); // Añadir espacio alrededor de los componentes
+
         JLabel etiquetaElegirDia = new JLabel("Seleccione un día para ver el gasto total");
-        comboSeleccionDia1 = new JComboBox<>();
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(etiquetaElegirDia, gbc);
+
+        //creacion del calendar y configuracion de tamaño, estetica etc
+        calendarSeleccionDia1 = new JCalendar();
+        calendarSeleccionDia1.setPreferredSize(new Dimension(800, 600));
+        calendarSeleccionDia1.setFont(new Font("Arial", Font.PLAIN, 14));
+        calendarSeleccionDia1.setWeekOfYearVisible(false);
+
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(calendarSeleccionDia1, gbc);
+
+        JButton btnCalcularGastoDia = new JButton("Calcular Gasto en el Día indicado");
         btnCalcularGastoDia.addActionListener(this::calcularGastoDia);
-        panel.add(etiquetaElegirDia);
-        panel.add(comboSeleccionDia1);
-        panel.add(btnCalcularGastoDia);
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(btnCalcularGastoDia, gbc);
+
         return panel;
     }
 
     private JPanel crearPanelCalcularGastoRango() {
-        JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
-        JButton btnCalcularGastoRango = new JButton("Calcular Gasto en el rango indicado");
+        JPanel panel = new JPanel(new GridBagLayout());
+        Color fondo = new Color(216, 228, 236);
+        panel.setBackground(fondo);
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(10, 10, 10, 10); // Añadir espacio alrededor de los componentes
+
+        // crear etiqueta 1 y colocarla
         JLabel etiquetaElegirRango1 = new JLabel("Seleccione el primer dia del rango");
-        JLabel etiquetaElegirRango2 = new JLabel("Seleccione el segundo dia del rango");
-        comboSeleccionDia2 = new JComboBox<>();
-        comboSeleccionDia3 = new JComboBox<>();
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(etiquetaElegirRango1,gbc);
+
+        //crear primer calendario y colocarlo
+        calendarRangoDias1 = new JCalendar();
+        calendarRangoDias1.setPreferredSize(new Dimension(400, 300));
+        calendarRangoDias1.setFont(new Font("Arial", Font.PLAIN, 14));
+        calendarRangoDias1.setWeekOfYearVisible(false);
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(calendarRangoDias1,gbc);
+
+         // crear etiqueta2 y colocarla
+
+        JLabel etiquetaElegirRango2 = new JLabel("Seleccione el último dia del rango");
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(etiquetaElegirRango2,gbc);
+
+        //crear segundo calendario y colocarlo
+        calendarRangoDias2 = new JCalendar();
+        calendarRangoDias2.setPreferredSize(new Dimension(400, 300));
+        calendarRangoDias2.setFont(new Font("Arial", Font.PLAIN, 14));
+        calendarRangoDias2.setWeekOfYearVisible(false);
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(calendarRangoDias2,gbc);
+
+        //crear boton y colocarlo
+        JButton btnCalcularGastoRango = new JButton("Calcular Gasto en el rango indicado");
+        gbc.gridx = 1;
+        gbc.gridy = 2;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(btnCalcularGastoRango,gbc);
+     
+    
         btnCalcularGastoRango.addActionListener(this::calcularGastoRango);
-        panel.add(etiquetaElegirRango1);
-        panel.add(comboSeleccionDia2);
-        panel.add(etiquetaElegirRango2);
-        panel.add(comboSeleccionDia3);
-        panel.add(btnCalcularGastoRango);
+        
         return panel;
     }
 
     private JPanel crearPanelCalcularGastoPorDispositivo() {
-        JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
-        JButton btnCalcularGastoPorDispositivo = new JButton("Calcular Gasto Dispositivo");
+        JPanel panel = new JPanel(new GridBagLayout());
+        Color fondo = new Color(216, 228, 236);
+        panel.setBackground(fondo);
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(10, 10, 10, 10); // Añadir espacio alrededor de los componentes
+
+        //etiqueta 1
         JLabel etiquetaElegirDispositivoGasto = new JLabel("Seleccione el dispositivo");
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(etiquetaElegirDispositivoGasto,gbc);
+
+        //selector dispositivo
         comboSeleccionaDispositivoCalculo = new JComboBox<>();
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(comboSeleccionaDispositivoCalculo,gbc);
+        //boton
+        JButton btnCalcularGastoPorDispositivo = new JButton("Calcular Gasto Dispositivo");
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+       gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(btnCalcularGastoPorDispositivo,gbc);
+
+
         btnCalcularGastoPorDispositivo.addActionListener(this::calcularGastoPorDispositivo);
-        panel.add(etiquetaElegirDispositivoGasto);
-        panel.add(comboSeleccionaDispositivoCalculo);
-        panel.add(btnCalcularGastoPorDispositivo);
+     
         return panel;
     }
 
     private JPanel crearPanelCalcularGastoPorDispositivoEnRango() {
-        JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
-        JButton btnCalcularGastoPorDispositivoEnRango = new JButton("Calcular Gasto Dispositivo en Rango");
-        JLabel etiquetaElegirDispositivoGastoEnRango = new JLabel("Seleccione el dispositivo");
+
+        JPanel panel = new JPanel(new GridBagLayout());
+        Color fondo = new Color(216, 228, 236);
+        panel.setBackground(fondo);
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(10, 10, 10, 10); // Añadir espacio alrededor de los componentes
+
+            //etiqueta1
         JLabel etiquetaElegirFechaDispositivoEnRango1 = new JLabel("Seleccione el primer dia del rango");
+        gbc.gridx = 0;
+        gbc.gridy=0;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(etiquetaElegirFechaDispositivoEnRango1,gbc);
+
+        //calendar1
+        calendarRangoDispositivo1 = new JCalendar();
+        gbc.gridx = 1;
+        gbc.gridy=0;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(calendarRangoDispositivo1,gbc);
+
+        //etiqueta2
         JLabel etiquetaElegirFechaDispositivoEnRango2 = new JLabel("Seleccione el ultimo dia del rango");
+        gbc.gridx = 0;
+        gbc.gridy=1;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(etiquetaElegirFechaDispositivoEnRango2,gbc);
+
+        //calendar2
+         calendarRangoDispositivo2 = new JCalendar();
+         gbc.gridx = 1;
+         gbc.gridy=1;
+         gbc.anchor = GridBagConstraints.CENTER;
+         panel.add(calendarRangoDispositivo2,gbc);
+        //etiqueta3
+        JLabel etiquetaElegirDispositivoGastoEnRango = new JLabel("Seleccione el dispositivo");
+        gbc.gridx = 0;
+        gbc.gridy=3;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(etiquetaElegirDispositivoGastoEnRango,gbc);
+        //combobox dispositivo
         comboSeleccionaDispositivoEnRango = new JComboBox<>();
-        comboSeleccionDia4 = new JComboBox<>();
-        comboSeleccionDia5 = new JComboBox<>();
+        gbc.gridx = 1;
+        gbc.gridy=3;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(comboSeleccionaDispositivoEnRango,gbc);
+
+        //boton
+        JButton btnCalcularGastoPorDispositivoEnRango = new JButton("Calcular Gasto Dispositivo en Rango");
+        gbc.gridx = 1;
+        gbc.gridy=4;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(btnCalcularGastoPorDispositivoEnRango,gbc);
+
+    
         btnCalcularGastoPorDispositivoEnRango.addActionListener(this::calcularGastoPorDispositivoEnRango);
-        panel.add(etiquetaElegirDispositivoGastoEnRango);
-        panel.add(comboSeleccionaDispositivoEnRango);
-        panel.add(etiquetaElegirFechaDispositivoEnRango1);
-        panel.add(comboSeleccionDia4);
-        panel.add(etiquetaElegirFechaDispositivoEnRango2);
-        panel.add(comboSeleccionDia5);
-        panel.add(btnCalcularGastoPorDispositivoEnRango);
+       
         return panel;
     }
 
-    private JPanel crearPanelEnseñarCategoriaDispositivo() {
+    private JPanel crearPanelMostrarInfoDispositivo() {
         JPanel panel = new JPanel(new GridLayout(0, 2, 10, 10));
-        JButton btnCategoriaDispositivo = new JButton("Mostrar Categoria de Dispositivo");
+        Color fondo = new Color(216, 228, 236);
+        panel.setBackground(fondo);
+        JButton btnCategoriaDispositivo = new JButton("Mostrar Información de Dispositivo");
         JLabel etiquetaElegirDispositivoCategoria = new JLabel("Seleccione el dispositivo");
         comboSeleccionaDispositivoCategoria = new JComboBox<>();
         btnCategoriaDispositivo.addActionListener(this::enseñarCategoriaDispositivo);
@@ -421,7 +522,8 @@ public class MonitorizacionGUI extends JFrame {
         NumberFormat truncar = NumberFormat.getInstance();
         truncar.setMaximumFractionDigits(2);
         truncar.setGroupingUsed(false);
-        String diaElegido = comboSeleccionDia1.getSelectedItem().toString();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String diaElegido = sdf.format(calendarSeleccionDia1.getDate());
         float gastoTotal = EventosPrecioDAO.calcularConsumoPorDia(diaElegido);
         String mensaje = "El dia " + diaElegido + " se gastó " + truncar.format(gastoTotal) + " Euros en total en el importe de la luz";
         JOptionPane.showMessageDialog(this, mensaje);
@@ -431,8 +533,9 @@ public class MonitorizacionGUI extends JFrame {
         NumberFormat truncar = NumberFormat.getInstance();
         truncar.setMaximumFractionDigits(2);
         truncar.setGroupingUsed(false);
-        String diaElegido1 = comboSeleccionDia2.getSelectedItem().toString();
-        String diaElegido2 = comboSeleccionDia3.getSelectedItem().toString();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String diaElegido1 = sdf.format(calendarRangoDias1.getDate());
+        String diaElegido2 = sdf.format(calendarRangoDias2.getDate());
         float gastoTotal = EventosPrecioDAO.calcularConsumoPorRango(diaElegido1, diaElegido2);
         String mensaje = "Entre el " + diaElegido1 + " y el " + diaElegido2 + " se gastó " + truncar.format(gastoTotal) + " Euros en total en el importe de la luz.";
         JOptionPane.showMessageDialog(this, mensaje);
@@ -452,15 +555,16 @@ public class MonitorizacionGUI extends JFrame {
         NumberFormat truncar = NumberFormat.getInstance();
         truncar.setMaximumFractionDigits(2);
         truncar.setGroupingUsed(false);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Dispositivo dispositivo = (Dispositivo) comboSeleccionaDispositivoEnRango.getSelectedItem();
-        String diaElegido1 = comboSeleccionDia4.getSelectedItem().toString();
-        String diaElegido2 = comboSeleccionDia5.getSelectedItem().toString();
+        String diaElegido1 = sdf.format(calendarRangoDispositivo1.getDate());
+        String diaElegido2 = sdf.format(calendarRangoDispositivo2.getDate());
         float gastoTotal = EventosPrecioDAO.calculoConsumoPorDispositivoEnRango(dispositivo, diaElegido1, diaElegido2);
         String mensaje = "El gasto total del dispositivo " + dispositivo.getDescripcion() + " entre el " + diaElegido1 + " y el " + diaElegido2 + " ha sido de " + truncar.format(gastoTotal) + " Euros";
         JOptionPane.showMessageDialog(this, mensaje);
     }
 
-    private void cargarComboDiasMayo(String[] diasMayo) {
+   /*  private void cargarComboDiasMayo(String[] diasMayo) {
         for (String dia : diasMayo) {
             comboSeleccionDia1.addItem(dia);
             comboSeleccionDia2.addItem(dia);
@@ -469,6 +573,7 @@ public class MonitorizacionGUI extends JFrame {
             comboSeleccionDia5.addItem(dia);
         }
     }
+    */
 
     private void enseñarCategoriaDispositivo(ActionEvent event) {
         Dispositivo dispositivo = (Dispositivo) comboSeleccionaDispositivoCategoria.getSelectedItem();
