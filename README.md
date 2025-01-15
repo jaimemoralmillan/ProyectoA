@@ -4,13 +4,10 @@ Este proyecto fue desarrollado como el proyecto final del primer curso del ciclo
 
 <h2>Integrantes del equipo</h2>
 
-- Jaime Moral
-
-- Ángela Hernández
-
-- Nicklas Staehr
-
-- Briceida Fernández
+- [Ángela Hernández](https://github.com/angelaherval96)
+- [Briceida Fernandez](https://github.com/BricFer)
+- [Jaime Moral](https://github.com/jaimemoralmillan)
+- [Nicklas Staehr](https://github.com/nicklasperez)
 
 <h2>Tecnologías utilizadas</h2>
 
