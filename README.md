@@ -1,5 +1,11 @@
  <h1 align="center">Proyecto de Monitorización Eléctrica</h1>
 
+<div align="center">
+  <img alt="portada"  width="600" src="https://i.imgur.com/JHdLYTP.jpeg">
+</div>
+
+<br/><br/>
+
 Este proyecto fue desarrollado como el proyecto final del primer curso del ciclo superior de Desarrollo de Aplicaciones Multiplataforma (DAM), en el año 2024, para la asignatura de Programación.
 
 <h2>Integrantes del equipo</h2>
@@ -57,15 +63,15 @@ El programa es una aplicación de escritorio que permite monitorizar el consumo 
 
     <img alt="calculos" alight="center" width="600" src="https://i.imgur.com/HrRWvCS.png">
 
-    
+    <br/><br/>
   
     <img alt="calculodia" alight="center" width="600" src="https://i.imgur.com/TnUzYbn.png">
 
-    
+    <br/><br/>
    
     <img alt="calculorango" alight="center" width="600" src="https://i.imgur.com/qpSLU0q.png">
 
-    
+    <br/><br/>
 
 <h3>Visualización de datos:</h3> 
 
@@ -74,6 +80,8 @@ El programa es una aplicación de escritorio que permite monitorizar el consumo 
 - Gráfico de pastel: Distribución del consumo por dispositivo.
 
 <img alt="barras" alight="center" width="600" src="https://i.imgur.com/vWUn4sQ.png">
+
+<br/><br/>
 
 <img alt="pie" alight="center" width="600" src="https://i.imgur.com/nWp4XAH.png">
 
